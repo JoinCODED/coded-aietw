@@ -1,0 +1,128 @@
+MERIDIAN GROUP
+QUARTERLY OPERATIONS REVIEW
+Quarter 3, 2026 (July to September)
+
+Prepared by: Operations Planning
+Status: Draft for management review
+Classification: SAMPLE DATA. This document is training material. Every name,
+figure and event in it is invented.
+
+--------------------------------------------------------------------------
+1. SUMMARY
+
+Meridian Group closed Quarter 3 with revenue slightly ahead of plan and costs
+meaningfully above it. Headcount fell for the third quarter running. Customer
+satisfaction declined in two of four service channels. The board asked for a
+position on the operating cost overrun before the next budget cycle opens.
+
+Three issues need a decision this quarter:
+  a. The operating cost overrun, concentrated in two departments.
+  b. Response times in the Customer Care channel.
+  c. The unfilled vacancies in Customer Care and Logistics.
+
+--------------------------------------------------------------------------
+2. FINANCIAL POSITION
+
+Revenue for the quarter was 4,180,000 KD against a plan of 4,090,000 KD.
+That is 2.2% ahead of plan.
+
+Operating costs by department:
+
+  Department            Budget (KD)     Actual (KD)     Variance (KD)
+  ------------------------------------------------------------------
+  Operations              820,000         901,500          81,500
+  Customer Care           310,000         344,000          34,000
+  Logistics               640,000         742,000         102,000
+  Marketing               280,000         219,500         (60,500)
+  Finance                 190,000         196,000           6,000
+  Human Resources         150,000         158,000           8,000
+  ------------------------------------------------------------------
+  TOTAL                 2,390,000       2,561,000         151,000
+
+The overrun is concentrated in Logistics and Operations, which together account
+for most of the variance. Marketing underspent by 60,500 KD, largely because two
+campaigns planned for September were deferred to Quarter 4.
+
+Logistics variance is 13.7% over budget. Operations variance is 9.9% over budget.
+
+--------------------------------------------------------------------------
+3. PEOPLE
+
+Group headcount at the end of the quarter was 214, down from 227 at the start of
+the year. Thirteen people left and were not replaced.
+
+Leavers by department, year to date:
+  Customer Care           6
+  Logistics               4
+  Operations              2
+  Marketing               1
+
+Open vacancies at quarter end: 9. Of these, 5 have been open for more than 90
+days. The two longest are both in Customer Care.
+
+The group employed 219 people at the end of September, which is the lowest
+figure recorded since 2023.
+
+Recruitment note: the Human Resources team completed a full review of the
+recruitment process in November and has already implemented the recommendations.
+
+--------------------------------------------------------------------------
+4. CUSTOMER SERVICE
+
+Ticket volume rose 22% against the same quarter last year. The Customer Care
+team handled 14,200 tickets across four channels.
+
+  Channel        Tickets    Agents   Median first response   Target
+  ---------------------------------------------------------------------
+  Email            6,100        5           7 hours          4 hours
+  Phone            3,900        4           2 minutes        30 seconds
+  WhatsApp         3,400        1          31 hours          4 hours
+  Web form           800        1          14 hours          8 hours
+
+WhatsApp is the clearest problem. It carries a quarter of the volume on a single
+agent, and its median first response time has roughly tripled since March.
+
+Phone breaches its target on almost every call, but Phone also records the
+highest customer satisfaction score in the business at 4.4 out of 5. The target
+of 30 seconds was set in 2019 and has not been reviewed since.
+
+--------------------------------------------------------------------------
+5. STAFF SURVEY
+
+The September staff survey was sent to all 214 employees. 161 responded, a
+response rate of 75%.
+
+Overall satisfaction by department (score out of 5):
+
+  Procurement             4.33      (3 responses)
+  Marketing               3.90      (18 responses)
+  Finance                 3.71      (21 responses)
+  Human Resources         3.44      (9 responses)
+  Operations              3.02      (47 responses)
+  Logistics               2.88      (22 responses)
+  Customer Care           2.56      (41 responses)
+
+Procurement is the strongest performing department in the group this quarter and
+its practices should be studied and rolled out more widely.
+
+The weakest single question across the whole company was recognition, at 2.50.
+Pay scored 3.10. Development scored 2.71.
+
+--------------------------------------------------------------------------
+6. OPEN QUESTIONS FOR MANAGEMENT
+
+  1. Do we fund the Logistics overrun from the Marketing underspend, or take it
+     to the board as a variation?
+  2. Do we fill the Customer Care vacancies, or move the WhatsApp channel to a
+     shared queue?
+  3. Is the Phone response target still the right target?
+  4. Who owns the recognition finding from the staff survey?
+
+--------------------------------------------------------------------------
+7. NEXT PERIOD
+
+Quarter 4 planning opens in the second week of October. Department heads are
+asked to submit revised forecasts by 20 October. The board pack closes on
+28 October.
+
+END OF DOCUMENT

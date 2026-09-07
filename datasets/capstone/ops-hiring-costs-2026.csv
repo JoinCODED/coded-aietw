@@ -1,0 +1,6 @@
+role,team,annual_salary_kd,recruitment_cost_kd,onboarding_weeks,standard_monthly_hours,overtime_rate_kd_per_hour
+Night operative,Night Shift,5760,800,4,176,7.5
+Warehouse operative,Warehouse,5040,600,3,176,6.5
+Maintenance technician,Maintenance,6600,900,6,176,8.5
+Driver,Fleet,5400,700,4,176,7.0
+Site services assistant,Site Services,4320,450,2,176,6.0

@@ -1,0 +1,22 @@
+# Instructor only. Answer keys and planted-fault solutions.
+# This repo is public, so none of this is committed.
+instructor/
+day-1-keys.md
+day-2-keys.md
+day-3-keys.md
+datasets/DATA-NOTES.md
+
+# Working notes and drafts, not part of the site
+*-PROPOSAL.md
+day-1-*.md
+day-2-*.md
+day-3-*.md
+facilitator-kit.md
+workshop-architecture.md
+participant-cheatsheet.md
+01-prework-email.md
+README-workshop.md
+
+.DS_Store
+__pycache__/
+*.pyc

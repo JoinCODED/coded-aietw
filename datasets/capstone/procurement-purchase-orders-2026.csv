@@ -1,0 +1,194 @@
+po_number,order_date,category,supplier,value_kd,delivery_days,on_time,requested_by
+PO90021,2026-02-14,IT hardware,Gulf Digital Supply,3266,18,No,Operations
+PO90126,2026-09-02,Office supplies,Office Plus Kuwait,313,12,Yes,Human Resources
+PO90117,2026-03-24,Office supplies,Al Rashed Trading,1881,30,No,Warehouse
+PO90039,2026-06-12,IT hardware,Al-Rashed Trading Co.,1174,8,Yes,Information Technology
+PO90048,2026-05-12,Facilities,AL-RASHED TRADING CO.,2070,12,Yes,Finance
+PO90071,2026-04-04,Facilities,Kuwait Clean Co.,1511,5,Yes,Facilities
+PO90045,2026-01-26,IT hardware,TechPoint WLL,2337,10,Yes,Facilities
+PO90130,2026-03-02,Office supplies,Office Plus Kuwait,347,11,Yes,Facilities
+PO90161,2026-03-07,Office supplies,Bayan Office Supplies,707,27,No,Customer Service
+PO90158,2026-09-12,Office supplies,Gulf Paper Co.,455,4,Yes,Information Technology
+PO90151,2026-07-02,Office supplies,Gulf Paper Co.,684,7,Yes,Customer Service
+PO90029,2026-08-10,IT hardware,Al-Rashed Trading Co.,564,25,No,Finance
+PO90142,2026-01-25,Office supplies,Stationery House,266,7,Yes,Operations
+PO90165,2026-05-30,Office supplies,Bayan Office Supplies,430,8,Yes,Human Resources
+PO90030,2026-06-17,IT hardware,Al-Rashed Trading Co.,1089,4,Yes,Operations
+PO90103,2026-02-20,Safety equipment,Al-Amn Safety Supplies,590,8,Yes,Human Resources
+PO90101,2026-06-21,Safety equipment,Al-Amn Safety Supplies,843,7,Yes,Customer Service
+PO90063,2026-06-05,Facilities,Bayan Facilities Services,635,28,No,Information Technology
+PO90035,2026-02-28,IT hardware,Al-Rashed Trading Co.,948,10,Yes,Human Resources
+PO90085,2026-01-15,Facilities,Arabian Maintenance WLL,877,3,Yes,Customer Service
+PO90192,2026-03-14,Printing,Rapid Print WLL,1013,11,Yes,Warehouse
+PO90093,2026-07-17,Safety equipment,SafeGuard Gulf,1818,4,Yes,Finance
+PO90007,2026-08-12,IT hardware,Nexa Systems,1574,6,Yes,Facilities
+PO90040,2026-05-07,IT hardware,Al-Rashed Trading Co.,1110,9,Yes,Finance
+PO90110,2026-07-05,Safety equipment,ProTect Industrial,1461,5,Yes,Facilities
+PO90104,2026-06-13,Safety equipment,Al-Amn Safety Supplies,965,24,No,Information Technology
+PO90033,2026-05-06,IT hardware,Al-Rashed Trading Co.,953,3,Yes,Warehouse
+PO90143,2026-01-10,Office supplies,Stationery House,581,11,Yes,Operations
+PO90028,2026-07-18,IT hardware,Al-Rashed Trading Co.,1345,33,No,Operations
+PO90120,2026-09-01,Office supplies,Al-Rashed Trading Co.,1095,7,Yes,Customer Service
+PO90052,2026-02-11,Facilities,Bayan Facilities Services,1433,5,Yes,Warehouse
+PO90114,2026-05-16,Safety equipment,ProTect Industrial,1283,4,Yes,Human Resources
+PO90150,2026-02-18,Office supplies,Gulf Paper Co.,612,6,Yes,Information Technology
+PO90005,2026-09-16,IT hardware,Nexa Systems,3649,3,Yes,Information Technology
+PO90034,2026-04-20,IT hardware,Al-Rashed Trading Co.,1080,11,Yes,Customer Service
+PO90108,2026-06-13,Safety equipment,ProTect Industrial,1147,20,No,Facilities
+PO90018,2026-08-12,IT hardware,Gulf Digital Supply,2037,17,No,Customer Service
+PO90138,2026-02-12,Office supplies,Stationery House,170,15,No,Operations
+PO90012,2026-04-14,IT hardware,Nexa Systems,2318,33,No,Information Technology
+PO90041,2026-09-28,IT hardware,TechPoint WLL,2543,5,Yes,Human Resources
+PO90057,2026-03-25,Facilities,Bayan Facilities Services,1619,9,Yes,Facilities
+PO90078,2026-06-27,Facilities,Arabian Maintenance WLL,373,3,Yes,Information Technology
+PO90169,2026-02-23,Printing,Printworks Kuwait,767,17,No,Facilities
+PO90118,2026-08-11,Office supplies,Al-Rashed Trading Co.,883,10,Yes,Warehouse
+PO90134,2026-09-30,Office supplies,Office Plus Kuwait,471,7,Yes,Information Technology
+PO90154,2026-02-25,Office supplies,Gulf Paper Co.,416,11,Yes,Warehouse
+PO90135,2026-02-18,Office supplies,Office Plus Kuwait,286,5,Yes,Operations
+PO90061,2026-02-24,Facilities,Bayan Facilities Services,624,2,Yes,Operations
+PO90145,2026-08-13,Office supplies,Stationery House,483,2,Yes,Human Resources
+PO90137,2026-05-11,Office supplies,Stationery House,407,4,Yes,Information Technology
+PO90032,2026-06-03,IT hardware,Al-Rashed Trading Co.,617,2,Yes,Warehouse
+PO90086,2026-08-14,Safety equipment,SafeGuard Gulf,771,6,Yes,Information Technology
+PO90079,2026-05-31,Facilities,Arabian Maintenance WLL,1141,34,No,Operations
+PO90010,2026-06-10,IT hardware,Nexa Systems,3426,11,Yes,Finance
+PO90090,2026-05-18,Safety equipment,SafeGuard Gulf,648,4,Yes,Operations
+PO90200,2026-09-24,Office supplies,Gulf Paper Co.,216,15,No,Facilities
+PO90026,2026-06-20,IT hardware,Al-Rashed Trading Co.,1424,36,No,Operations
+PO90127,2026-01-11,Office supplies,Office Plus Kuwait,271,6,Yes,Warehouse
+PO90133,2026-08-07,Office supplies,Office Plus Kuwait,243,17,No,Finance
+PO90100,2026-02-22,Safety equipment,Al-Amn Safety Supplies,1066,9,Yes,Customer Service
+PO90084,2026-09-25,Facilities,Arabian Maintenance WLL,1433,10,Yes,Warehouse
+PO90082,2026-06-19,Facilities,Arabian Maintenance WLL,925,20,No,Warehouse
+PO90149,2026-09-26,Office supplies,Stationery House,283,2,Yes,Finance
+PO90006,2026-08-10,IT hardware,Nexa Systems,3049,4,Yes,Information Technology
+PO90183,2026-07-26,Printing,Al-Manar Press,587,5,Yes,Customer Service
+PO90073,2026-02-04,Facilities,Kuwait Clean Co.,902,4,Yes,Operations
+PO90179,2026-04-07,Printing,Al-Manar Press,795,5,Yes,Warehouse
+PO90131,2026-02-10,Office supplies,Office Plus Kuwait,670,9,Yes,Warehouse
+PO90074,2026-02-11,Facilities,Kuwait Clean Co.,732,8,Yes,Information Technology
+PO90177,2026-03-29,Printing,Printworks Kuwait,527,21,No,Finance
+PO90167,2026-07-22,Printing,Printworks Kuwait,605,35,No,Warehouse
+PO90025,2026-08-07,IT hardware,Al-Rashed Trading Co.,1382,5,Yes,Customer Service
+PO90058,2026-03-04,Facilities,Bayan Facilities Services,896,36,No,Customer Service
+PO90164,2026-06-20,Office supplies,Bayan Office Supplies,431,6,Yes,Human Resources
+PO90113,2026-02-09,Safety equipment,ProTect Industrial,643,7,Yes,Warehouse
+PO90024,2026-06-12,IT hardware,Al-Rashed Trading Co.,382,5,Yes,Facilities
+PO90070,2026-08-21,Facilities,Kuwait Clean Co.,921,5,Yes,Human Resources
+PO90152,2026-01-27,Office supplies,Office Plus Kuwait,443,6,Yes,Warehouse
+PO90148,2026-06-16,Office supplies,Stationery House,606,8,Yes,Operations
+PO90160,2026-03-23,Office supplies,Bayan Office Supplies,473,7,Yes,Operations
+PO90175,2026-02-09,Printing,Printworks Kuwait,937,8,Yes,Warehouse
+PO90182,2026-06-30,Printing,Al-Manar Press,800,27,No,Human Resources
+PO90162,2026-06-17,Office supplies,Bayan Office Supplies,632,4,Yes,Information Technology
+PO90139,2026-08-02,Office supplies,Stationery House,535,9,Yes,Operations
+PO90125,2026-05-27,Office supplies,Office Plus Kuwait,461,25,No,Information Technology
+PO90129,2026-02-04,Office supplies,Office Plus Kuwait,451,6,Yes,Human Resources
+PO90044,2026-08-27,IT hardware,TechPoint WLL,2005,23,No,Facilities
+PO90004,2026-08-12,IT hardware,Nexa Systems,2135,3,Yes,Information Technology
+PO90089,2026-09-23,Safety equipment,SafeGuard Gulf,1852,9,Yes,Finance
+PO90047,2026-08-19,Facilities,Al-Rashed Trading Co.,2589,37,No,Information Technology
+PO90105,2026-01-12,Safety equipment,Al-Amn Safety Supplies,1117,5,Yes,Information Technology
+PO90172,2026-03-16,Printing,Printworks Kuwait,393,3,Yes,Human Resources
+PO90156,2026-06-09,Office supplies,Gulf Paper Co.,582,8,Yes,Warehouse
+PO90015,2026-01-17,IT hardware,Nexa Systems,1475,3,Yes,Warehouse
+PO90099,2026-04-21,Safety equipment,Al-Amn Safety Supplies,944,5,Yes,Facilities
+PO90112,2026-08-18,Safety equipment,ProTect Industrial,1356,12,Yes,Operations
+PO90121,2026-01-04,Office supplies,Office Plus Kuwait,673,11,Yes,Operations
+PO90076,2026-09-25,Facilities,Arabian Maintenance WLL,1248,19,No,Finance
+PO90016,2026-04-05,IT hardware,Nexa Systems,2822,5,Yes,Warehouse
+PO90077,2026-05-11,Facilities,Arabian Maintenance WLL,472,8,Yes,Facilities
+PO90092,2026-05-11,Safety equipment,SafeGuard Gulf,1265,14,No,Customer Service
+PO90003,2026-05-27,IT hardware,Nexa Systems,3973,4,Yes,Operations
+PO90163,2026-08-13,Office supplies,Bayan Office Supplies,733,6,Yes,Finance
+PO90190,2026-01-07,Printing,Rapid Print WLL,944,11,Yes,Operations
+PO90119,2026-01-20,Office supplies,Al-Rashed Trading Co.,2382,3,Yes,Customer Service
+PO90053,2026-01-22,Facilities,Bayan Facilities Services,1775,6,Yes,Human Resources
+PO90068,2026-09-11,Facilities,Kuwait Clean Co.,571,34,No,Warehouse
+PO90017,2026-09-13,IT hardware,Nexa Systems,2332,11,Yes,Human Resources
+PO90072,2026-07-31,Facilities,Kuwait Clean Co.,1303,2,Yes,Warehouse
+PO90022,2026-07-18,IT hardware,Gulf Digital Supply,5428,35,No,Human Resources
+PO90011,2026-01-15,IT hardware,Nexa Systems,2554,10,Yes,Warehouse
+PO90088,2026-08-31,Safety equipment,SafeGuard Gulf,800,36,No,Operations
+PO90141,2026-05-12,Office supplies,Stationery House,190,28,No,Information Technology
+PO90094,2026-07-18,Safety equipment,SafeGuard Gulf,1017,3,Yes,Facilities
+PO90055,2026-03-03,Facilities,Bayan Facilities Services,1742,11,Yes,Human Resources
+PO90054,2026-02-26,Facilities,Bayan Facilities Services,1843,12,Yes,Finance
+PO90027,2026-07-14,IT hardware,Al-Rashed Trading Co.,887,27,No,Facilities
+PO90188,2026-01-24,Printing,Rapid Print WLL,934,31,No,Warehouse
+PO90123,2026-04-22,Office supplies,Office Plus Kuwait,538,8,Yes,Warehouse
+PO90066,2026-03-08,Facilities,Kuwait Clean Co.,1168,35,No,Human Resources
+PO90049,2026-02-13,Facilities,Al-Rashed Trading Co.,1350,9,Yes,Operations
+PO90065,2026-08-04,Facilities,Kuwait Clean Co.,1179,7,Yes,Warehouse
+PO90064,2026-03-13,Facilities,Kuwait Clean Co.,1033,11,Yes,Customer Service
+PO90184,2026-09-17,Printing,Al-Manar Press,491,6,Yes,Warehouse
+PO90060,2026-02-18,Facilities,Bayan Facilities Services,608,3,Yes,Information Technology
+PO90187,2026-07-29,Printing,Rapid Print WLL,855,27,No,Information Technology
+PO90185,2026-01-12,Printing,Al-Manar Press,807,9,Yes,Facilities
+PO90075,2026-07-07,Facilities,Kuwait Clean Co.,1651,7,Yes,Customer Service
+PO90043,2026-01-28,IT hardware,TechPoint WLL,2461,14,No,Warehouse
+PO90178,2026-02-25,Printing,Al-Manar Press,531,9,Yes,Facilities
+PO90050,2026-06-09,Facilities,Bayan Facilities Services,1784,2,Yes,Warehouse
+PO90176,2026-07-01,Printing,Printworks Kuwait,1391,6,Yes,Customer Service
+PO90171,2026-06-11,Printing,Printworks Kuwait,1607,4,Yes,Finance
+PO90046,2026-06-20,Facilities,Al-Rashed Trading Co.,2991,8,Yes,Human Resources
+PO90146,2026-02-05,Office supplies,Stationery House,525,4,Yes,Human Resources
+PO90036,2026-02-09,IT hardware,Al-Rashed Trading Co.,940,6,Yes,Warehouse
+PO90153,2026-02-01,Office supplies,Gulf Paper Co.,736,14,No,Finance
+PO90062,2026-03-01,Facilities,Bayan Facilities Services,1003,12,Yes,Information Technology
+PO90181,2026-07-08,Printing,Al-Manar Press,1335,11,Yes,Customer Service
+PO90189,2026-05-04,Printing,Rapid Print WLL,528,4,Yes,Facilities
+PO90191,2026-05-18,Printing,Rapid Print WLL,726,4,Yes,Warehouse
+PO90147,2026-06-02,Office supplies,Stationery House,377,2,Yes,Human Resources
+PO90083,2026-07-15,Facilities,Arabian Maintenance WLL,959,10,Yes,Finance
+PO90144,2026-05-12,Office supplies,Stationery House,426,6,Yes,Operations
+PO90080,2026-01-19,Facilities,Arabian Maintenance WLL,1509,11,Yes,Operations
+PO90159,2026-03-19,Office supplies,Bayan Office Supplies,594,4,Yes,Facilities
+PO90166,2026-01-05,Printing,Printworks Kuwait,616,4,Yes,Facilities
+PO90109,2026-03-20,Safety equipment,ProTect Industrial,481,10,Yes,Facilities
+PO90152,2026-01-27,Office supplies,Office Plus Kuwait,443,6,Yes,Warehouse
+PO90037,2026-01-09,IT hardware,Al-Rashed Trading Co.,1029,10,Yes,Finance
+PO90115,2026-09-25,Safety equipment,ProTect Industrial,799,5,Yes,Operations
+PO90186,2026-06-25,Printing,Al-Manar Press,1049,22,No,Information Technology
+PO90106,2026-05-30,Safety equipment,Al-Amn Safety Supplies,925,12,Yes,Information Technology
+PO90023,2026-04-14,IT hardware,Al-Rashed Trading Co.,1030,10,Yes,Customer Service
+PO90111,2026-09-15,Safety equipment,ProTect Industrial,830,3,Yes,Operations
+PO90014,2026-09-27,IT hardware,Nexa Systems,1611,20,No,Facilities
+PO90140,2026-08-07,Office supplies,Stationery House,651,11,Yes,Information Technology
+PO90157,2026-07-23,Office supplies,Gulf Paper Co.,223,5,Yes,Operations
+PO90107,2026-03-16,Safety equipment,Al-Amn Safety Supplies,866,12,Yes,Information Technology
+PO90087,2026-09-09,Safety equipment,SafeGuard Gulf,743,7,Yes,Finance
+PO90136,2026-02-20,Office supplies,Office Plus Kuwait,533,16,No,Customer Service
+PO90031,2026-09-28,IT hardware,Al-Rashed Trading Co.,1230,3,Yes,Operations
+PO90051,2026-05-09,Facilities,Bayan Facilities Services,932,4,Yes,Information Technology
+PO90038,2026-03-14,IT hardware,Al-Rashed Trading Co.,812,33,No,Operations
+PO90122,2026-08-01,Office supplies,Office Plus Kuwait,293,9,Yes,Operations
+PO90128,2026-03-29,Office supplies,Office Plus Kuwait,639,12,Yes,Warehouse
+PO90095,2026-09-08,Safety equipment,SafeGuard Gulf,1338,9,Yes,Facilities
+PO90102,2026-03-13,Safety equipment,Al-Amn Safety Supplies,1057,6,Yes,Facilities
+PO90098,2026-06-11,Safety equipment,Al-Amn Safety Supplies,1127,37,No,Information Technology
+PO90096,2026-01-02,Safety equipment,SafeGuard Gulf,1245,10,Yes,Information Technology
+PO90042,2026-02-21,IT hardware,TechPoint WLL,949.00,4,Yes,Human Resources
+PO90124,2026-07-09,Office supplies,Office Plus Kuwait,554,5,Yes,Customer Service
+PO90180,2026-05-10,Printing,Al-Manar Press,605,9,Yes,Customer Service
+PO90001,2026-08-09,IT hardware,Nexa Systems,5206,10,Yes,Finance
+PO90173,2026-04-03,Printing,Printworks Kuwait,852,8,Yes,Operations
+PO90056,2026-04-05,Facilities,Bayan Facilities Services,728,12,Yes,Information Technology
+PO90069,2026-07-10,Facilities,Kuwait Clean Co.,837,11,Yes,Facilities
+PO90091,2026-07-26,Safety equipment,SafeGuard Gulf,1586,9,Yes,Operations
+PO90002,2026-04-28,IT hardware,Nexa Systems,3869,6,Yes,Customer Service
+PO90020,2026-04-24,IT hardware,Gulf Digital Supply,3136,30,No,Finance
+PO90116,2026-04-29,Office supplies,Al-Rashed Trading Co.,2730,24,No,Finance
+PO90170,2026-04-21,Printing,Printworks Kuwait,1139,2,Yes,Warehouse
+PO90009,2026-08-28,IT hardware,Nexa Systems,4727,6,Yes,Customer Service
+PO90081,2026-06-20,Facilities,Arabian Maintenance WLL,1063,-6,Yes,Customer Service
+PO90097,2026-07-16,Safety equipment,SafeGuard Gulf,1127,2,Yes,Customer Service
+PO90155,2026-05-27,Office supplies,Gulf Paper Co.,576,5,Yes,Information Technology
+PO90008,2026-08-03,IT hardware,Nexa Systems,2867,10,Yes,Finance
+PO90013,2026-06-28,IT hardware,Nexa Systems,1465,9,Yes,Human Resources
+PO90059,2026-01-13,Facilities,Bayan Facilities Services,1878,16,No,Information Technology
+PO90174,2026-08-10,Printing,Printworks Kuwait,673,2,Yes,Information Technology
+PO90067,2026-02-10,Facilities,Kuwait Clean Co.,894,11,Yes,Operations
+PO90168,2026-01-29,Printing,Printworks Kuwait,548,4,Yes,Facilities
+PO90019,2026-02-15,IT hardware,Gulf Digital Supply,6033,7,Yes,Information Technology

@@ -1,0 +1,96 @@
+{
+  "title": "AI Essentials in the Workplace",
+  "code": "AIET",
+  "tool": "Claude",
+  "audience": "client",
+  "dates": "8 to 10 September 2026",
+  "time": "09:00 to 14:00",
+  "venue": "CODED Campus, Kuwait",
+
+  "branding": {
+    "mode": "coded",
+    "_theme_source": "https://coded-reels-playbook.vercel.app/ (CODED navy + blue brand theme)",
+    "partner_name": null,
+    "ramp": {
+      "deepest": "#00224D",
+      "deep": "#004AA3",
+      "primary": "#2F74D6",
+      "soft": "#6F9CE8",
+      "light": "#A8C6F2",
+      "indigo": "#3E50DD",
+      "red": "#F84B4B"
+    },
+    "base": "#00081C",
+    "fonts": { "sans": "IBM Plex Sans", "mono": "IBM Plex Mono", "arabic": "IBM Plex Sans Arabic" }
+  },
+
+  "deliverables": {
+    "landing": true,
+    "day_pages": true,
+    "decks": true,
+    "trainee_labs": true,
+    "instructor_labs": true,
+    "presenter_notes": true,
+    "answer_key": true,
+    "lab_walkthrough": true,
+    "instructor_solutions": true,
+    "cheat_sheet": true,
+    "practice_quiz": "tbc",
+    "exam": "tbc",
+    "facilitator_kit": true,
+    "workshop_index": true
+  },
+
+  "assessments": {
+    "map_pre":  { "day": 1, "label": "Pre-program MAP test",  "url": null },
+    "map_post": { "day": 3, "label": "Post-program MAP test", "url": null },
+    "survey":   { "day": 3, "label": "End of program survey", "url": null }
+  },
+
+  "days": [
+    { "n": 1, "title": "Foundations and prompting", "tagline": "Ask better, get better",
+      "topics": [
+        {"id":"t1","name":"AI and LLM foundations"},
+        {"id":"t2","name":"Workplace tool landscape"},
+        {"id":"t3","name":"Limits, hallucinations and privacy"},
+        {"id":"t4","name":"CTFT with role and constraints"},
+        {"id":"t5","name":"Zero-shot and few-shot"},
+        {"id":"t6","name":"Professional writing"},
+        {"id":"t7","name":"Research and summarization"}
+      ],
+      "outputs": ["Improved professional document","Research summary","Reusable CTFT prompts"],
+      "lab_challenges": 7 },
+
+    { "n": 2, "title": "Presentations and data", "tagline": "From draft to deliverable",
+      "topics": [
+        {"id":"t1","name":"Presentations with Claude Design"},
+        {"id":"t2","name":"Gamma demo and exercise"},
+        {"id":"t3","name":"Review and refinement"},
+        {"id":"t4","name":"Data analysis and visualization"},
+        {"id":"t5","name":"Validation and spot-checking"},
+        {"id":"t6","name":"AI and Excel hybrid workflow"},
+        {"id":"t7","name":"Department prompt templates"}
+      ],
+      "outputs": ["Short Gamma or Claude Design deck","Validated data visualizations","Personal prompt library"],
+      "lab_challenges": 7 },
+
+    { "n": 3, "title": "Claude features and capstone", "tagline": "Build it, then present it",
+      "topics": [
+        {"id":"t1","name":"Connectors and MCP"},
+        {"id":"t2","name":"Skills"},
+        {"id":"t3","name":"Workflow audit"},
+        {"id":"t4","name":"Scenario and dataset review"},
+        {"id":"t5","name":"Executive briefing"},
+        {"id":"t6","name":"Stakeholder presentation"},
+        {"id":"t7","name":"Reusable prompt templates"}
+      ],
+      "outputs": ["Complete AI implementation package"],
+      "lab_challenges": 6 }
+  ],
+
+  "deploy": {
+    "host": "netlify_dragdrop",
+    "domain": "tbc",
+    "day_page_filename": "coded-aiet-day-<n>.html"
+  }
+}

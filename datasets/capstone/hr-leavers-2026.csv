@@ -1,0 +1,147 @@
+employee_id,department,hire_date,leave_date,tenure_band,leave_reason,voluntary,exit_interview_completed
+E4087,Retail Operations,2025-01-05,2025-07-19,6-12 months,better offer elsewhere,Yes,No
+E4110,Customer Care,2025-09-08,2025-09-08,1-2 years,No development opportunities,Yes,Yes
+E4029,Retail Operations,2023-06-21,2023-05-12,1-2 years,No development opportunities,Yes,No
+E4154,Retail Operations,2020-12-23,2025-05-31,2-5 years,Management,Yes,Yes
+E4159,Customer Care,2024-05-16,2026-09-04,2-5 years,No development opportunities,Yes,Yes
+E4053,Retail Operations,2016-12-12,2025-07-22,5+ years,Management,Yes,Yes
+E4064,Retail Operations,2025-01-01,2025-04-12,<6 months,Family reasons,Yes,Yes
+E4083,Customer Care,2025-02-21,2025-05-18,<6 months,No development opportunities,Yes,Yes
+E4062,Retail Operations,2024-03-31,2025-04-11,1-2 years,Better offer elsewhere,Yes,No
+E4025,Retail Operations,2024-01-01,2025-12-19,1-2 years,Family reasons,Yes,No
+E4077,Facilities,2025-03-07,2026-08-03,1-2 years,Better offer elsewhere,Yes,Yes
+E4023,Facilities,2022-08-12,2026-09-14,2-5 years,Pay,Yes,No
+E4156,Technology,2024-08-28,2025-09-21,1-2 years,Pay,Yes,Yes
+E4079,Warehouse,2022-06-15,2025-12-31,2-5 years,Pay,Yes,Yes
+E4129,Warehouse,2025-08-30,2025-10-03,<6 months,Pay,Yes,No
+E4102,Finance,2021-11-15,2026-05-24,2-5 years,Family reasons,Yes,Yes
+E4063,Marketing,2023-08-18,2026-03-22,2-5 years,No development opportunities,Yes,Yes
+E4041,Technology,2022-07-17,2025-11-24,2-5 years,Workload,Yes,Yes
+E4082,Retail Operations,2024-09-27,2025-08-28,6-12 months,Workload,Yes,Yes
+E4007,Retail Operations,2016-06-06,2025-08-15,5+ years,better offer elsewhere,Yes,Yes
+E4016,Warehouse,2022-03-25,2026-07-04,2-5 years,Better offer elsewhere,Yes,No
+E4104,Retail Operations,2022-09-27,2026-07-30,2-5 years,No development opportunities,Yes,Yes
+E4093,Customer Care,2021-02-24,2026-02-28,5+ years,Pay,Yes,No
+E4022,Retail Operations,2024-07-10,2025-09-21,1-2 years,Pay,Yes,Yes
+E4140,Retail Operations,2025-02-14,2025-05-10,<6 months,Workload,Yes,Yes
+E4109,Retail Operations,2025-07-29,2025-12-11,<6 months,Better offer elsewhere,Yes,Yes
+E4084,Warehouse,2017-05-13,2026-05-07,5+ years,Better offer elsewhere,Yes,Yes
+E4155,Customer Care,2026-01-30,2026-05-18,<6 months,Relocation,Yes,Yes
+E4015,Retail Operations,2021-04-30,2025-04-09,2-5 years,Family reasons,Yes,No
+E4130,,2025-08-21,2026-08-17,6-12 months,No development opportunities,Yes,Yes
+E4086,Retail Operations,2025-01-23,2025-06-01,<6 months,Pay,Yes,Yes
+E4042,Customer Care,2021-03-08,2025-04-14,2-5 years,Workload,Yes,Yes
+E4085,Technology,2022-06-30,2026-06-06,2-5 years,Better offer elsewhere,Yes,Yes
+E4121,Finance,2024-04-18,2026-02-12,1-2 years,Better offer elsewhere,Yes,Yes
+E4076,Customer Care,2022-08-06,2025-09-28,2-5 years,No development opportunities,Yes,Yes
+E4100,Customer Care,2022-08-22,2026-02-28,2-5 years,No development opportunities,Yes,Yes
+E4024,Customer Care,2020-11-12,2025-05-11,2-5 years,Workload,Yes,Yes
+E4108,Customer Care,2025-05-04,2026-04-13,6-12 months,No development opportunities,Yes,Yes
+E4013,Customer Care,2026-01-16,2026-05-21,<6 months,No development opportunities,Yes,Yes
+E4114,Retail Operations,2025-04-11,2025-08-22,<6 months,Better offer elsewhere,Yes,No
+E4116,Retail Operations,2025-04-02,2026-07-22,1-2 years,Better offer elsewhere,Yes,No
+E4018,Technology,2026-03-17,2026-06-12,<6 months,Workload,Yes,Yes
+E4046,Warehouse,2020-01-13,2026-08-09,5+ years,Career change,Yes,Yes
+E4147,Technology,2022-12-01,2025-11-02,2-5 years,Dismissed,No,No
+E4014,Retail Operations,2024-05-02,2025-08-21,1-2 years,Career change,Yes,No
+E4078,Warehouse,2017-10-12,2026-07-19,5+ years,Pay,Yes,Yes
+E4092,Facilities,2024-12-04,2026-05-11,1-2 years,Better offer elsewhere,Yes,No
+E4132,Retail Operations,2025-12-17,2026-06-07,<6 months,End of contract,No,Yes
+E4043,Retail Operations,2021-11-01,2025-11-10,2-5 years,Better offer elsewhere,Yes,Yes
+E4145,Retail Operations,2019-02-10,2026-07-28,5+ years,Relocation,Yes,No
+E4148,Finance,2024-11-24,2026-01-06,1-2 years,Better offer elsewhere,Yes,Yes
+E4157,Technology,2025-05-04,2026-02-03,6-12 months,No development opportunities,Yes,No
+E4051,Customer Care,2025-05-04,2026-02-12,6-12 months,Workload,Yes,Yes
+E4045,Marketing,2024-11-07,2025-05-15,6-12 months,Pay,Yes,Yes
+E4105,Retail Operations,2025-05-01,2025-07-22,<6 months,Retirement,Yes,No
+E4120,Technology,2024-11-18,2025-12-22,1-2 years,Workload,Yes,Yes
+E4146,Customer Care,2021-01-23,2025-11-25,2-5 years,Better offer elsewhere,Yes,Yes
+E4006,Technology,2024-08-05,2025-10-20,1-2 years,better offer elsewhere,Yes,No
+E4072,Retail Operations,2024-01-28,2025-09-04,1-2 years,Management,Yes,Yes
+E4094,Retail Operations,2026-02-05,2026-03-21,<6 months,No development opportunities,Yes,No
+E4074,Retail Operations,2016-12-03,2025-10-31,5+ years,Better offer elsewhere,Yes,No
+E4031,Customer Care,2025-04-19,2026-07-30,1-2 years,Workload,Yes,Yes
+E4119,Customer Care,2020-10-03,2026-02-17,5+ years,Better offer elsewhere,Yes,Yes
+E4039,Customer Care,2026-04-27,2026-08-02,<6 months,No development opportunities,Yes,Yes
+E4138,Retail Operations,2024-03-03,2025-10-16,1-2 years,Better offer elsewhere,Yes,No
+E4052,Customer Care,2024-12-24,2026-04-02,1-2 years,better offer elsewhere,Yes,Yes
+E4036,Customer Care,2025-01-30,2025-11-15,6-12 months,Better offer elsewhere,Yes,Yes
+E4009,Retail Operations,2025-03-03,2026-01-10,6-12 months,Pay,Yes,Yes
+E4002,Customer Care,2023-03-18,2026-03-27,2-5 years,Better offer elsewhere,Yes,No
+E4075,Retail Operations,2018-06-03,2025-06-11,5+ years,Better offer elsewhere,Yes,No
+E4115,Warehouse,2024-11-01,2025-11-09,1-2 years,Pay,Yes,Yes
+E4087,Retail Operations,2025-01-05,2025-07-19,6-12 months,better offer elsewhere,Yes,No
+E4020,Customer Care,2025-04-07,2025-09-27,<6 months,No development opportunities,Yes,Yes
+E4125,Customer Care,2025-05-28,2025-08-30,<6 months,Workload,Yes,No
+E4026,Retail Operations,2022-04-11,2026-09-16,2-5 years,Pay,Yes,Yes
+E4107,Technology,2026-01-18,2026-06-15,<6 months,Pay,Yes,Yes
+E4060,Customer Care,2021-03-30,2025-05-11,2-5 years,No development opportunities,Yes,No
+E4073,Customer Care,2025-08-29,2026-03-28,6-12 months,Pay,Yes,Yes
+E4133,Retail Operations,2025-01-09,2026-04-25,1-2 years,Better Offer Elsewhere,Yes,No
+E4030,Retail Operations,2025-11-10,2026-01-21,<6 months,Pay,Yes,No
+E4103,Retail Operations,2017-01-23,2026-06-27,5+ years,Relocation,Yes,Yes
+E4150,Marketing,2025-07-16,2025-09-19,<6 months,Workload,Yes,Yes
+E4069,Warehouse,2025-10-23,2026-03-01,<6 months,Pay,Yes,No
+E4012,Customer Care,2026-02-23,2026-03-26,<6 months,Better offer elsewhere,Yes,Yes
+E4065,Retail Operations,2024-06-24,2025-04-19,6-12 months,Workload,Yes,No
+E4008,Customer Care,2023-02-04,2025-04-15,2-5 years,Better offer elsewhere,Yes,Yes
+E4071,Customer Care,2026-05-31,2026-08-19,<6 months,No development opportunities,Yes,Yes
+E4141,Marketing,2024-01-29,2025-11-23,1-2 years,Better offer elsewhere,Yes,Yes
+E4055,Retail Operations,2024-05-01,2025-04-14,6-12 months,No development opportunities,Yes,Yes
+E4096,Customer Care,2021-05-25,2025-05-03,2-5 years,Better offer elsewhere,Yes,Yes
+E4101,Warehouse,2024-09-20,2025-06-15,6-12 months,Workload,Yes,Yes
+E4027,Retail Operations,2025-05-13,2026-08-30,1-2 years,Pay,Yes,Yes
+E4068,Retail Operations,2020-02-25,2026-06-18,5+ years,Workload,Yes,Yes
+E4123,Retail Operations,2023-03-26,2025-10-14,2-5 years,Management,Yes,Yes
+E4097,Retail Operations,2025-01-15,2026-04-02,1-2 years,End of contract,No,Yes
+E4122,Warehouse,2025-12-28,2026-07-09,6-12 months,Better Offer Elsewhere,Yes,No
+E4038,Customer Care,2024-12-05,2025-09-21,6-12 months,Workload,Yes,No
+E4151,Warehouse,2025-10-24,2026-09-27,6-12 months,Better offer elsewhere,Yes,Yes
+E4137,Retail Operations,2025-01-12,2026-03-17,1-2 years,Pay,Yes,No
+E4034,Retail Operations,2023-04-07,2025-09-16,2-5 years,Pay,Yes,Yes
+E4153,Retail Operations,2025-11-17,2026-03-27,<6 months,Pay,Yes,No
+E4019,Customer Care,2017-05-07,2025-10-06,5+ years,Pay,Yes,No
+E4001,Customer Care,2024-11-10,2025-05-22,6-12 months,Pay,Yes,Yes
+E4118,Retail Operations,2018-09-22,2026-04-20,5+ years,End of contract,No,No
+E4005,Retail Operations,2024-03-08,2026-03-18,2-5 years,Pay,Yes,Yes
+E4067,Warehouse,2026-05-12,2026-07-28,<6 months,Better offer elsewhere,Yes,Yes
+E4106,Warehouse,2023-12-18,2025-09-06,1-2 years,Retirement,Yes,Yes
+E4047,Warehouse,2019-07-02,2025-05-03,5+ years,Relocation,Yes,Yes
+E4054,Retail Operations,2021-06-07,2025-07-12,2-5 years,Pay,Yes,Yes
+E4136,Warehouse,2021-12-03,2025-07-12,2-5 years,Better offer elsewhere,Yes,Yes
+E4080,Retail Operations,2025-04-25,2026-03-07,6-12 months,No development opportunities,Yes,No
+E4033,Retail Operations,2021-11-07,2026-02-27,2-5 years,Career change,Yes,Yes
+E4021,Customer Care,2016-12-10,2025-08-23,5+ years,Management,Yes,Yes
+E4040,Retail Operations,2024-02-18,2026-01-15,1-2 years,End of contract,No,Yes
+E4057,Customer Care,2025-04-20,2026-02-13,6-12 months,Career change,Yes,Yes
+E4050,Marketing,2025-08-06,2026-09-08,1-2 years,Better offer elsewhere,Yes,Yes
+E4111,Retail Operations,2024-06-17,2026-02-20,1-2 years,Relocation,Yes,No
+E4081,Customer Care,2025-01-09,2025-08-10,6-12 months,Pay,Yes,Yes
+E4037,Technology,2024-11-10,2025-10-04,6-12 months,Career change,Yes,Yes
+E4044,Customer Care,2018-08-04,2026-03-21,5+ years,Workload,Yes,Yes
+E4004,Customer Care,2024-08-04,2026-01-15,1-2 years,Family reasons,Yes,No
+E4061,Retail Operations,2021-04-06,2025-07-11,2-5 years,Workload,Yes,Yes
+E4090,Retail Operations,2026-06-26,2026-09-11,<6 months,Family reasons,Yes,Yes
+E4028,Retail Operations,2022-10-25,2026-01-28,2-5 years,No development opportunities,Yes,No
+E4144,Retail Operations,2025-03-23,2025-07-29,<6 months,No development opportunities,Yes,No
+E4128,Retail Operations,2026-01-28,2026-05-19,<6 months,Retirement,Yes,Yes
+E4158,Customer Care,2025-01-10,2025-09-12,6-12 months,Better offer elsewhere,Yes,Yes
+E4142,Technology,2022-10-28,2025-12-26,2-5 years,Retirement,Yes,Yes
+E4066,Retail Operations,2023-01-01,2026-08-07,2-5 years,Dismissed,No,Yes
+E4056,Technology,2024-01-09,2026-09-02,2-5 years,Pay,Yes,Yes
+E4049,Technology,2021-06-30,2026-01-16,2-5 years,No development opportunities,Yes,No
+E4059,Retail Operations,2022-11-22,2026-07-25,2-5 years,Workload,Yes,No
+E4135,Customer Care,2023-09-18,2025-06-17,1-2 years,Relocation,Yes,Yes
+E4127,Customer Care,2025-07-04,2025-10-09,<6 months,No development opportunities,Yes,Yes
+E4010,Warehouse,2023-09-21,2025-05-16,1-2 years,Better offer elsewhere,Yes,No
+E4011,Retail Operations,2025-04-20,2026-07-26,1-2 years,Career change,Yes,Yes
+E4003,Retail Operations,2022-05-11,2025-08-20,2-5 years,Workload,Yes,Yes
+E4017,Retail Operations,2025-10-22,2026-07-24,6-12 months,No development opportunities,Yes,No
+E4035,Retail Operations,2025-04-30,2025-06-02,<6 months,Pay,Yes,No
+E4131,Warehouse,2024-10-28,2025-04-25,<6 months,Relocation,Yes,Yes
+E4134,Warehouse,2026-01-29,2026-07-09,<6 months,No development opportunities,Yes,No
+E4095,Retail Operations,2026-02-03,2026-09-07,6-12 months,Workload,Yes,Yes
+E4152,Customer Care,2025-04-13,2025-11-05,6-12 months,Better offer elsewhere,Yes,Yes
+E4099,Warehouse,2023-12-29,2025-07-23,1-2 years,Relocation,Yes,Yes
+E4117,Customer Care,2026-04-16,2026-07-30,<6 months,Family reasons,Yes,Yes
+E4070,Warehouse,2024-10-07,2026-05-25,1-2 years,Pay,Yes,No
