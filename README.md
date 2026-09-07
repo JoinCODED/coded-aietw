@@ -12,11 +12,16 @@ Workshop site for the CODED three day programme.
 | Day 1 hub | `site/coded-aiet-day-1.html` |
 | Day 1 deck, 57 slides | `site/coded-aiet-day-1-deck.html` |
 | Day 1 lab, 7 tasks | `site/coded-aiet-day-1-lab.html` |
-| Sample report for Day 1 task 6 | `site/aiet-sample-operations-report.txt` |
+| Day 2 hub | `site/coded-aiet-day-2.html` |
+| Day 2 deck, 39 slides | `site/coded-aiet-day-2-deck.html` |
+| Day 2 lab, 7 tasks | `site/coded-aiet-day-2-lab.html` |
 
-Day 2 and Day 3 are not built yet. The landing page already links to
-`coded-aiet-day-2.html` and `coded-aiet-day-3.html`, so those two links are dead
-until those pages exist.
+Participant files, all invented and safe to upload:
+`aiet-sample-operations-report.txt`, `employee-satisfaction-2026.csv`,
+`department-budget-2026.xlsx` and its `.csv` twin.
+
+Day 3 is not built yet, so the landing page link to `coded-aiet-day-3.html`
+is dead until it exists.
 
 ## Deploy
 
@@ -76,6 +81,21 @@ Three assessment links are not live yet.
 To activate the Day 1 one, change the `<span class="slides-btn ph">` to an
 `<a href="..." class="slides-btn">` and drop the `ph` class and the
 `data-placeholder` attribute.
+
+## Day 2 at a glance
+
+| Time | Section |
+|---|---|
+| 09:00 to 09:10 | Open |
+| 09:10 to 10:10 | Report to deck, Claude Design. Task 1 |
+| 10:25 to 11:10 | Another tool, Gamma. Task 2 |
+| 11:25 to 12:10 | Data analysis. Tasks 3 and 4 |
+| 12:55 to 13:25 | Validation and charts. Tasks 5 and 6 |
+| 13:35 to 13:57 | Prompt library and one Skill. Task 7 |
+| 13:57 to 14:00 | Close |
+
+Participants need a free Gamma account before 10:25 and a spreadsheet app for
+task 6. Notes save under `aiet_day2_lab`.
 
 ## Day 1 at a glance
 

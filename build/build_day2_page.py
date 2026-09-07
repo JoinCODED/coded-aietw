@@ -1,0 +1,268 @@
+# -*- coding: utf-8 -*-
+import os
+
+PLAN = [
+ ("09:00","09:10","Open","Yesterday in one line. Three things you leave with.","open"),
+ ("09:10","10:10","Section 1 &middot; Report to deck","Where the hours actually go. Claude Design and the six part deck brief. Task 1.","lab"),
+ ("10:10","10:25","Break","Pick 10 or 15 minutes.","brk"),
+ ("10:25","11:10","Section 2 &middot; Another tool","Gamma, the side by side, and the PowerPoint export test. Task 2.","lab"),
+ ("11:10","11:25","Break","Pick 10 or 15 minutes.","brk"),
+ ("11:25","12:10","Section 3 &middot; Data analysis","Profile the file before you trust it. The small sample trap. Tasks 3 and 4.","lab"),
+ ("12:10","12:55","Lunch and prayer","The deck has a 45 or 60 minute countdown.","brk"),
+ ("12:55","13:25","Section 4 &middot; Validation and charts","Four checks. Ask for the formula. One claim per chart. Tasks 5 and 6.","lab"),
+ ("13:25","13:35","Break","Pick 10 or 15 minutes.","brk"),
+ ("13:35","13:57","Section 5 &middot; Stop retyping","Prompt library, and your first Skill. Task 7.","lab"),
+ ("13:57","14:00","Close","What you built. What to bring tomorrow.","open"),
+]
+
+LABS = [
+ ("01","Report to deck","Claude Design","Six slides from the report you already know is dirty."),
+ ("02","Same prompt, different tool","Gamma","One prompt, two decks, and the export test."),
+ ("03","Clean it before you trust it","In Claude","161 survey responses, and not one of them checked."),
+ ("04","The answer and the trap","In Claude","Which team is struggling, and which result is noise."),
+ ("05","Three answers to one question","In Claude","One budget file, three defensible totals."),
+ ("06","The formula and the chart","Claude + Excel","Ask for the formula. Then two charts that make a claim."),
+ ("07","The library, then one Skill","In Claude","Five prompts with placeholders, and one that runs itself."),
+]
+
+def plan_rows():
+    out=""
+    for a,b,t,d,cls in PLAN:
+        out += ('<div class="prow ' + cls + '"><div class="ptime">' + a + '<span>' + b + '</span></div>'
+                '<div class="pmain"><div class="pt">' + t + '</div>'
+                + ('<div class="pd">' + d + '</div>' if d else '') + '</div></div>')
+    return out
+
+def lab_rows():
+    out=""
+    for n,t,c,d in LABS:
+        out += ('<a class="lrow" href="coded-aiet-day-2-lab.html#t' + str(int(n)) + '">'
+                '<span class="ln">' + n + '</span>'
+                '<span class="lm"><span class="lt">' + t + '</span><span class="ld">' + d + '</span></span>'
+                '<span class="lc' + (' onpage' if c == 'On this page' else '') + '">' + c + '</span>'
+                '<span class="la">&rarr;</span></a>')
+    return out
+
+HTML = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 2 &middot; Presentations and Data &middot; CODED</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --base:#00081C; --card:#00112F; --card-2:#14243F; --surf:#12294F;
+    --ink:#F2F6FC; --ink-dim:#9FB2D4; --ink-faint:#6F83A8;
+    --deepest:#00224D; --deep:#004AA3; --primary:#2F74D6; --soft:#6F9CE8; --light:#A8C6F2;
+    --indigo:#3E50DD;
+    --line:rgba(255,255,255,.10); --line-2:rgba(255,255,255,.18);
+    --f:'IBM Plex Sans','IBM Plex Sans Arabic',system-ui,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  html{scroll-behavior:smooth}
+  body{background:radial-gradient(1100px 640px at 85% -8%,rgba(0,74,163,.20),transparent 60%),var(--base);
+    color:var(--ink);font-family:var(--f);-webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--soft);outline-offset:3px;border-radius:4px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 30px}
+
+  .bar{position:sticky;top:0;z-index:30;background:rgba(0,8,28,.9);backdrop-filter:blur(16px);
+    border-bottom:1px solid var(--line)}
+  .bar .wrap{display:flex;align-items:center;gap:14px;padding-top:13px;padding-bottom:13px}
+  .backlink{font-weight:600;font-size:13px;color:var(--ink-dim);background:rgba(255,255,255,.05);
+    border:1px solid var(--line);border-radius:8px;padding:7px 12px;transition:all .15s}
+  .backlink:hover{color:var(--ink);border-color:var(--line-2)}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:600;letter-spacing:-.3px;font-size:16px}
+  .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--primary);box-shadow:0 0 10px var(--primary)}
+  .brand b{color:var(--soft);font-weight:600}
+  .bar .tabs{margin-left:auto;display:flex;gap:8px}
+  .bar .tabs a{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-faint);background:rgba(255,255,255,.05);border:1px solid var(--line);
+    border-radius:99px;padding:7px 14px;transition:all .15s}
+  .bar .tabs a:hover{color:var(--ink);border-color:var(--line-2)}
+  @media(max-width:760px){.bar .tabs{display:none}}
+
+  .dhero{padding:64px 0 44px}
+  .eyebrow{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--soft)}
+  .dhero h1{font-size:clamp(34px,5.4vw,58px);font-weight:700;letter-spacing:-.03em;line-height:1.06;margin-top:16px}
+  .dhero .tag{margin-top:14px;font-size:17px;font-weight:600;color:var(--soft)}
+  .dhero .lede{margin-top:20px;max-width:640px;font-size:16.5px;line-height:1.62;color:var(--ink-dim)}
+  .dmeta{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px 26px;font-family:var(--mono);
+    font-size:13px;color:var(--ink-dim)}
+  .dmeta span{display:inline-flex;align-items:center;gap:9px}
+  .dmeta svg{color:var(--soft);flex:none}
+
+  .ctas{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:22px}
+  @media(max-width:900px){.ctas{grid-template-columns:1fr}}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+  .panel + .panel{margin-top:20px}
+  .panel h2{font-size:18px;font-weight:600;letter-spacing:-.01em}
+  .panel .ph{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+  .panel .ph .pn{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+  .cta-panel{background:linear-gradient(150deg,rgba(47,116,214,.16),rgba(0,74,163,.05));
+    border-color:rgba(47,116,214,.34);display:flex;flex-direction:column}
+  .cta-ico{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;
+    background:rgba(47,116,214,.2);color:var(--soft);margin-bottom:14px}
+  .cta-panel h3{font-size:19px;font-weight:700;letter-spacing:-.3px}
+  .cta-panel p{margin-top:8px;font-size:13.5px;line-height:1.55;color:var(--ink-dim);flex:1}
+  .slides-btn{margin-top:18px;display:flex;align-items:center;justify-content:center;gap:9px;padding:14px;
+    border-radius:12px;color:#fff;font-size:14.5px;font-weight:600;
+    background:linear-gradient(135deg,var(--primary),var(--deep));box-shadow:0 8px 26px rgba(0,74,163,.4);
+    transition:transform .2s,box-shadow .2s}
+  .slides-btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(0,74,163,.6)}
+  .slides-btn.ph{background:rgba(255,255,255,.05);border:1px dashed var(--line-2);color:var(--ink-faint);
+    box-shadow:none;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;cursor:default}
+  .slides-btn.ph:hover{transform:none;box-shadow:none}
+
+  .prow{display:grid;grid-template-columns:118px 1fr;gap:20px;padding:15px 0;border-bottom:1px solid var(--line)}
+  .prow:last-child{border-bottom:none}
+  .ptime{font-family:var(--mono);font-size:13px;color:var(--soft);font-weight:600;line-height:1.5}
+  .ptime span{display:block;color:var(--ink-faint);font-weight:400}
+  .pt{font-size:16px;font-weight:600;letter-spacing:-.2px}
+  .pd{margin-top:5px;font-size:14px;color:var(--ink-dim);line-height:1.5}
+  .prow.brk .pt{color:var(--ink-faint);font-weight:500}
+  .prow.brk .pd{color:var(--ink-faint);font-size:13px}
+  .prow.brk .ptime{color:var(--ink-faint)}
+  .prow.lab .pt::after{content:'LAB';font-family:var(--mono);font-size:9px;letter-spacing:.14em;
+    background:rgba(47,116,214,.2);border:1px solid rgba(47,116,214,.4);color:var(--soft);
+    border-radius:20px;padding:3px 8px;margin-left:10px;vertical-align:middle}
+  .prow.open .pt{color:var(--light)}
+  .prow.flex .pt::after{content:'FLEX';font-family:var(--mono);font-size:9px;letter-spacing:.14em;
+    background:rgba(233,196,106,.16);border:1px solid rgba(233,196,106,.42);color:#E9C46A;
+    border-radius:20px;padding:3px 8px;margin-left:10px;vertical-align:middle}
+  @media(max-width:620px){.prow{grid-template-columns:1fr;gap:6px}}
+
+  .lrow{display:flex;align-items:center;gap:16px;padding:15px 0;border-bottom:1px solid var(--line);transition:padding .15s}
+  .lrow:last-of-type{border-bottom:none}
+  .lrow:hover{padding-left:6px}
+  .lrow .ln{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--soft);width:30px;flex:none}
+  .lrow .lm{flex:1;min-width:0}
+  .lrow .lt{display:block;font-size:15.5px;font-weight:600;letter-spacing:-.2px}
+  .lrow .ld{display:block;margin-top:3px;font-size:13.5px;color:var(--ink-dim)}
+  .lrow .lc{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-faint);background:rgba(255,255,255,.05);border:1px solid var(--line);
+    border-radius:99px;padding:5px 11px;flex:none}
+  .lrow .lc.onpage{color:var(--light);background:rgba(47,116,214,.16);border-color:rgba(47,116,214,.4)}
+  .lrow .la{color:var(--ink-faint);flex:none}
+  .lrow:hover .la{color:var(--soft)}
+  @media(max-width:620px){.lrow .lc{display:none}}
+
+  .outs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:820px){.outs{grid-template-columns:1fr}}
+  .out{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .out .on{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--soft);letter-spacing:.14em}
+  .out .ot{margin-top:10px;font-size:15.5px;font-weight:600;letter-spacing:-.2px;line-height:1.3}
+  .out .od{margin-top:6px;font-size:13.5px;color:var(--ink-dim);line-height:1.5}
+
+  .res{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}
+  .res:last-of-type{border-bottom:none}
+  .res .ri{color:var(--soft);flex:none}
+  .res .rt{flex:1;font-size:15px}
+  .res .rs{font-family:var(--mono);font-size:11px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase}
+
+  .foot-row{margin:52px 0 40px;padding-top:26px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  .copy{font-family:var(--mono);font-size:12px;color:var(--ink-faint)}
+</style>
+</head>
+<body>
+
+<div class="bar"><div class="wrap">
+  <a class="backlink" href="index.html">&lsaquo; All days</a>
+  <span class="brand"><span class="dot"></span>AI Essentials <b>Day 2</b></span>
+  <span class="tabs">
+    <a href="#plan">Plan</a><a href="#labs">Labs</a><a href="#outputs">Outputs</a><a href="#files">Files</a>
+  </span>
+</div></div>
+
+<header class="dhero"><div class="wrap">
+  <div class="eyebrow">Day 02 &middot; Wednesday 9 September 2026</div>
+  <h1>Presentations and data</h1>
+  <div class="tag">From draft to deliverable</div>
+  <p class="lede">Today you build a deck without formatting one, then analyse a real shaped data file and
+    check every number before you put your name on it. Seven tasks, all on sample data we supply.</p>
+  <div class="dmeta">
+    <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3 2"/></svg> 09:00 to 14:00</span>
+    <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10.5c0 6.5-9 12.5-9 12.5s-9-6-9-12.5a9 9 0 0118 0z"/><circle cx="12" cy="10.5" r="3"/></svg> CODED Campus, Kuwait</span>
+    <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H4z"/><path d="M9 20h6M12 16v4"/></svg> 39 slides &middot; 7 tasks</span>
+  </div>
+</div></header>
+
+<div class="wrap">
+
+  <div class="ctas">
+    <div class="panel cta-panel">
+      <div class="cta-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+      <h3>The slides</h3>
+      <p>All 39 slides for today. Arrow keys to move, F for full screen, and a countdown on every break slide.</p>
+      <a class="slides-btn" href="coded-aiet-day-2-deck.html">Open the deck &rarr;</a>
+    </div>
+    <div class="panel cta-panel">
+      <div class="cta-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v6.5L4.5 18a2 2 0 001.8 3h11.4a2 2 0 001.8-3L15 9.5V3"/><path d="M8 3h8M7.5 14h9"/></svg></div>
+      <h3>The lab</h3>
+      <p>Seven tasks, all of them inside Claude. Your notes save in this browser.</p>
+      <a class="slides-btn" href="coded-aiet-day-2-lab.html">Open the lab &rarr;</a>
+    </div>
+    <div class="panel cta-panel">
+      <div class="cta-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/><path d="M18 15l3 3-3 3"/></svg></div>
+      <h3>The files</h3>
+      <p>The survey export, the budget workbook, and yesterday's report. All invented, all safe to upload.</p>
+      <a class="slides-btn" href="#files">See the files &darr;</a>
+    </div>
+  </div>
+
+  <div class="panel" id="plan">
+    <div class="ph"><h2>The plan</h2><span class="pn">09:00 to 14:00 &middot; four breaks</span></div>
+    __PLAN__
+  </div>
+
+  <div class="panel" id="labs">
+    <div class="ph"><h2>The seven tasks</h2><span class="pn">All seven inside Claude</span></div>
+    __LABS__
+  </div>
+
+  <div class="panel" id="outputs">
+    <div class="ph"><h2>What you leave with</h2><span class="pn">Bring all three tomorrow</span></div>
+    <div class="outs">
+      <div class="out"><div class="on">01</div><div class="ot">A deck, built twice</div>
+        <div class="od">One prompt, two tools, and an opinion about which you would use.</div></div>
+      <div class="out"><div class="on">02</div><div class="ot">Charts you can defend</div>
+        <div class="od">From data you cleaned, with a formula that reproduces the number. Tasks 5 and 6.</div></div>
+      <div class="out"><div class="on">03</div><div class="ot">A library and one Skill</div>
+        <div class="od">Five prompts with placeholders, and one that Claude loads on its own.</div></div>
+    </div>
+  </div>
+
+  <div class="panel" id="files">
+    <div class="ph"><h2>The files</h2><span class="pn">All invented, safe to upload</span></div>
+    <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v5h5"/><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg></span>
+      <span class="rt"><a href="aiet-sample-operations-report.txt" download>aiet-sample-operations-report.txt</a><br><span style="color:var(--ink-dim);font-size:13.5px">Yesterday's report. Still has five deliberate faults.</span></span><span class="rs">Tasks 1, 2</span></div>
+    <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16M9 6v12"/></svg></span>
+      <span class="rt"><a href="employee-satisfaction-2026.csv" download>employee-satisfaction-2026.csv</a><br><span style="color:var(--ink-dim);font-size:13.5px">161 survey responses. The file is not clean, and that is the exercise.</span></span><span class="rs">Tasks 3, 4</span></div>
+    <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg></span>
+      <span class="rt"><a href="department-budget-2026.xlsx" download>department-budget-2026.xlsx</a><br><span style="color:var(--ink-dim);font-size:13.5px">Two sheets, 32 detail lines. A CSV version is beside it.</span></span><span class="rs">Tasks 5, 6</span></div>
+    <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.2v.3"/></svg></span>
+      <span class="rt">You need a <b>Gamma account</b> before 10:25. The free tier is enough.</span><span class="rs">Task 2</span></div>
+    <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M2 20h20"/></svg></span>
+      <span class="rt">A laptop with Excel or Google Sheets, for task 6</span><span class="rs">Required</span></div>
+  </div>
+
+  <div class="foot-row">
+    <span class="copy">&copy; 2026 CODED &middot; AI Essentials in the Workplace</span>
+    <span class="copy">Day 2 of 3 &middot; 9 September 2026</span>
+  </div>
+</div>
+
+</body>
+</html>
+"""
+
+html = HTML.replace('__PLAN__', plan_rows()).replace('__LABS__', lab_rows())
+out = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'site', 'coded-aiet-day-2.html')
+open(out, 'w').write(html)
+print('bytes:', len(html))

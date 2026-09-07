@@ -561,7 +561,7 @@ add('c3', 'Close · Prompt library',
         ('Good name', '"Summarize a supplier report, source only"'),
         ('Bad name', '"Untitled chat"'),
     ]) +
-    '<div class="keyline b">Bring the library tomorrow. <b>Day 2 adds to it, and opens with the rules for using this on your own real data.</b></div>')
+    '<div class="keyline b">Bring the library tomorrow. <b>Day 2 adds to it.</b></div>')
 
 add('c4', 'Close · Tomorrow',
     eyebrow('Tomorrow') +
