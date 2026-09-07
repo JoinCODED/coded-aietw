@@ -16,8 +16,8 @@ Workshop site for the CODED three day programme.
 | Day 2 deck, 39 slides | `site/coded-aiet-day-2-deck.html` |
 | Day 2 lab, 7 tasks | `site/coded-aiet-day-2-lab.html` |
 | Day 3 hub | `site/coded-aiet-day-3.html` |
-| Day 3 deck, 36 slides | `site/coded-aiet-day-3-deck.html` |
-| Day 3 lab, 7 tasks | `site/coded-aiet-day-3-lab.html` |
+| Day 3 deck, 49 slides | `site/coded-aiet-day-3-deck.html` |
+| Day 3 lab, 8 tasks | `site/coded-aiet-day-3-lab.html` |
 
 All three days are built and every internal link resolves.
 
@@ -99,22 +99,49 @@ To activate the Day 1 one, change the `<span class="slides-btn ph">` to an
 
 | Time | Section |
 |---|---|
-| 09:00 to 09:25 | Open and data security. Where your text goes, the five second scan, your paste rule |
-| 09:25 to 10:05 | Connectors, MCP and Skills. Task 1 |
-| 10:20 to 11:00 | Workflow audit. Task 2 |
-| 11:10 to 12:10 | Capstone, the analysis. Task 3 |
-| 12:50 to 13:20 | The package: briefing, deck, templates. Task 4 |
-| 13:20 to 13:35 | Present it, in trios. Tasks 5 and 6 |
-| 13:35 to 13:55 | Practice quiz, MAP test, survey. Task 7 |
-| 13:55 to 14:00 | Certificates |
+| 09:00 to 09:20 | Review. Day 1 and Day 2 in four lines each |
+| 09:20 to 09:55 | Security and data sharing, then use cases by department |
+| 10:10 to 10:35 | Connectors, MCP and Skills. Task 1 |
+| 10:35 to 10:45 | Capstone Phase 0. Pair up, pick an idea. Task 2 |
+| 10:45 to 11:25 | Deliverable 1, the executive briefing. Task 3 |
+| 11:35 to 12:10 | Deliverable 2, the stakeholder deck. Task 4 |
+| 12:50 to 13:15 | Deliverable 3, charts that argue. Task 5 |
+| 13:15 to 13:30 | Deliverable 4, the communication pack. Task 6 |
+| 13:30 to 13:50 | Present, six minutes per pair. Task 7 |
+| 13:50 to 14:00 | Quiz, MAP test, survey, certificates. Task 8 |
 
-The capstone offers five scenarios. A Operations, B Human Resources,
-C Customer Service, D Procurement, and E the participant's own redacted work,
-which needs instructor sign off against four questions first. Every scenario
-file carries deliberate flaws. Notes save under `aiet_day3_lab`.
+### The security block
 
-The quiz at 13:35 is an external link the instructor supplies. It is a
-placeholder on both the Day 3 page and the deck until then.
+Five slides on where pasted text goes, anonymising before you paste, and a
+side by side on why a public AI tool needs more care than Microsoft Copilot:
+Copilot sits inside the tenant with the guardrail configured by IT, a public
+tool sits outside it with your own judgment as the only guardrail. Then four
+use case slides, one per department, each with safe productivity boosters,
+strict guardrails, and the ethical risk.
+
+### The capstone
+
+Participants work **in pairs** and pick one of seven ideas. For every
+deliverable one of them builds and the other verifies. The ideas map onto the
+datasets already in the repo:
+
+| # | Idea | Department | Data |
+|---|---|---|---|
+| 01 | The Overtime Decision | Operations | `ops-overtime`, `ops-hiring-costs` |
+| 02 | The Retention Programme | Human Resources | `hr-leavers`, `hr-headcount` |
+| 03 | The Channel Rescue | Customer Service | `cs-tickets`, `cs-staffing` |
+| 04 | The Supplier Consolidation | Procurement | `procurement-purchase-orders` |
+| 05 | The Recognition Programme | People | `employee-satisfaction-2026` |
+| 06 | The Cost Control Programme | Finance | `department-budget-2026` |
+| 07 | Your Own Work | Bring your own | Redacted, instructor sign off first |
+
+Each idea carries the situation, the initiative, its data, and a "watch out"
+that points at the trap without giving it away. Every dataset has deliberate
+flaws. Notes save under `aiet_day3_lab`.
+
+The four deliverables are an executive briefing, a stakeholder deck, two or
+three charts that each defend one claim, and a communication pack with three
+reusable templates.
 
 ## Day 2 at a glance
 

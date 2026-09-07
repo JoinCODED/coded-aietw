@@ -2,28 +2,30 @@
 import os
 
 PLAN = [
- ("09:00","09:25","Open and data security","Where your text goes. The five second scan. Write your own paste rule. Today you use your own material.","open"),
- ("09:25","10:05","Section 1 &middot; Connectors, MCP and Skills","What a connector does and does not do. When a task deserves a Skill. Task 1.","lab"),
- ("10:05","10:20","Break","Pick 10 or 15 minutes.","brk"),
- ("10:20","11:00","Section 2 &middot; Workflow audit","Map one real task with minutes attached. Mark every step P or J. Task 2.","lab"),
- ("11:00","11:10","Break","Pick 10 or 15 minutes.","brk"),
- ("11:10","12:10","Section 3 &middot; Capstone, the analysis","Pick a scenario, profile the files, answer the question, find the trap. Task 3.","lab"),
+ ("09:00","09:20","Review","Day 1 and Day 2 in four lines each. Say what is still fuzzy.","open"),
+ ("09:20","09:55","Security and data sharing","Where your text goes. Anonymise first. Why a public tool needs more care than Copilot. Use cases by department.","open"),
+ ("09:55","10:10","Break","Pick 10 or 15 minutes.","brk"),
+ ("10:10","10:35","Connectors, MCP and Skills","What a connector does and does not do. Task 1.","lab"),
+ ("10:35","10:45","Capstone &middot; Phase 0","Pair up, pick one of seven ideas, split build and verify. Task 2.","lab"),
+ ("10:45","11:25","Deliverable 1 &middot; Executive briefing","Profile, analyse, argue against yourself, then write one page. Task 3.","lab"),
+ ("11:25","11:35","Break","Pick 10 or 15 minutes.","brk"),
+ ("11:35","12:10","Deliverable 2 &middot; Stakeholder deck","Five or six slides, Claude Design or Gamma. Task 4.","lab"),
  ("12:10","12:50","Lunch and prayer","The deck has a 40 or 50 minute countdown.","brk"),
- ("12:50","13:20","Section 4 &middot; The package","Briefing, deck and reusable templates. Task 4.","lab"),
- ("13:20","13:35","Section 5 &middot; Present it","Trios. Three minutes to present, two to defend. Tasks 5 and 6.","lab"),
- ("13:35","13:45","Quiz","Across all three days. A warm up for the MAP test.","open"),
- ("13:45","13:55","MAP test and survey","The same test as Tuesday morning, then five minutes of honest feedback.","open"),
- ("13:55","14:00","Certificates","And a photograph.","open"),
+ ("12:50","13:15","Deliverable 3 &middot; Charts that argue","One claim each, cited rows, plus the counter chart. Task 5.","lab"),
+ ("13:15","13:30","Deliverable 4 &middot; Communication pack","Two items and three reusable templates. Task 6.","lab"),
+ ("13:30","13:50","Present","Six minutes per pair, then one question from the room. Task 7.","lab"),
+ ("13:50","14:00","Quiz, test, survey and certificates","Task 8.","open"),
 ]
 
 LABS = [
  ("01","Connect something real","In Claude","One connector, one question that needs it, then revoke it."),
- ("02","The workflow audit","Paper, then Claude","One task, every step, minutes attached, P or J."),
- ("03","Interrogate the data","In Claude","Pick a scenario. Profile it, answer it, then find the trap."),
- ("04","Briefing, deck, templates","Claude or Gamma","The package a leader can act on in five minutes."),
- ("05","Present it","In the room","Three minutes to present, two to defend."),
- ("06","The Monday plan","In Claude","One task, one method, one month, with a date on it."),
- ("07","Quiz, test and survey","Assessment","Three short things, in that order."),
+ ("02","Phase 0. Pick your idea","In pairs","Seven ideas. Read two, pick one, split build and verify."),
+ ("03","Executive briefing","In Claude","Profile, analyse, argue against yourself, then one page."),
+ ("04","Stakeholder deck","Claude or Gamma","Five or six slides that carry the briefing into a room."),
+ ("05","Charts that argue","In Claude","One claim each, cited rows, plus the counter chart."),
+ ("06","Communication pack","In Claude","Two items, three reusable templates."),
+ ("07","Assemble and present","In the room","Six minutes per pair, then one question."),
+ ("08","Quiz, test and survey","Assessment","Three short things, in that order."),
 ]
 
 def plan_rows():
@@ -177,7 +179,7 @@ HTML = """<!DOCTYPE html>
   <a class="backlink" href="index.html">&lsaquo; All days</a>
   <span class="brand"><span class="dot"></span>AI Essentials <b>Day 3</b></span>
   <span class="tabs">
-    <a href="#plan">Plan</a><a href="#labs">Labs</a><a href="#outputs">Outputs</a><a href="#files">Capstone</a><a href="#assessment">Assessment</a>
+    <a href="#plan">Plan</a><a href="#labs">Labs</a><a href="#outputs">Outputs</a><a href="#files">Ideas</a><a href="#assessment">Assessment</a>
   </span>
 </div></div>
 
@@ -185,12 +187,12 @@ HTML = """<!DOCTYPE html>
   <div class="eyebrow">Day 03 &middot; Thursday 10 September 2026</div>
   <h1>Features and capstone</h1>
   <div class="tag">Build it, then present it</div>
-  <p class="lede">Two days on sample data. Today you connect Claude to your own tools, audit a real workflow,
-    and build an implementation package you present to the room. Seven tasks.</p>
+  <p class="lede">A review, then the rules for sharing data, then the capstone. In pairs you pick one of seven
+    ideas and build a full implementation package, which you present to the room at 13:30.</p>
   <div class="dmeta">
     <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3 2"/></svg> 09:00 to 14:00</span>
     <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10.5c0 6.5-9 12.5-9 12.5s-9-6-9-12.5a9 9 0 0118 0z"/><circle cx="12" cy="10.5" r="3"/></svg> CODED Campus, Kuwait</span>
-    <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H4z"/><path d="M9 20h6M12 16v4"/></svg> 36 slides &middot; 7 tasks</span>
+    <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H4z"/><path d="M9 20h6M12 16v4"/></svg> 49 slides &middot; 8 tasks</span>
   </div>
 </div></header>
 
@@ -200,13 +202,13 @@ HTML = """<!DOCTYPE html>
     <div class="panel cta-panel">
       <div class="cta-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
       <h3>The slides</h3>
-      <p>All 36 slides for today. Arrow keys to move, F for full screen, and a countdown on every break slide.</p>
+      <p>All 49 slides for today. Arrow keys to move, F for full screen, and a countdown on every break slide.</p>
       <a class="slides-btn" href="coded-aiet-day-3-deck.html">Open the deck &rarr;</a>
     </div>
     <div class="panel cta-panel">
       <div class="cta-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v6.5L4.5 18a2 2 0 001.8 3h11.4a2 2 0 001.8-3L15 9.5V3"/><path d="M8 3h8M7.5 14h9"/></svg></div>
       <h3>The lab</h3>
-      <p>Seven tasks. The capstone runs from 11:10 and you present it at 13:20.</p>
+      <p>Eight tasks. You work in pairs from 10:35 and present at 13:30.</p>
       <a class="slides-btn" href="coded-aiet-day-3-lab.html">Open the lab &rarr;</a>
     </div>
     <div class="panel cta-panel">
@@ -240,19 +242,23 @@ HTML = """<!DOCTYPE html>
   </div>
 
   <div class="panel" id="files">
-    <div class="ph"><h2>The capstone scenarios</h2><span class="pn">Pick one at 11:10</span></div>
-    <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V8M10 20V4M16 20v-6M22 20H2"/></svg></span>
-      <span class="rt"><b>A &middot; Operations</b>. Hire, or keep paying overtime?<br><span style="color:var(--ink-dim);font-size:13.5px">Nine months of overtime by team, against hiring costs.</span></span><span class="rs">2 files</span></div>
-    <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20a6.5 6.5 0 0113 0M16 5.5a3 3 0 010 5.6M18 20a6 6 0 00-2-4.5"/></svg></span>
-      <span class="rt"><b>B &middot; Human Resources</b>. Where does the retention budget go?<br><span style="color:var(--ink-dim);font-size:13.5px">Eighteen months of leavers, against headcount by department.</span></span><span class="rs">2 files</span></div>
-    <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 01-9 8.4L3 21l1.1-4.6A8.4 8.4 0 1121 11.5z"/></svg></span>
-      <span class="rt"><b>C &middot; Customer Service</b>. Which channel is failing?<br><span style="color:var(--ink-dim);font-size:13.5px">564 tickets across five channels, against staffing and targets.</span></span><span class="rs">2 files</span></div>
-    <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18l-2 12H5z"/><path d="M8 6V4h8v2"/></svg></span>
-      <span class="rt"><b>D &middot; Procurement</b>. Consolidate, or not?<br><span style="color:var(--ink-dim);font-size:13.5px">193 purchase orders across five categories. Count the suppliers carefully.</span></span><span class="rs">2 files</span></div>
+    <div class="ph"><h2>The seven capstone ideas</h2><span class="pn">Pairs pick one at 10:35</span></div>
+    <div class="res"><span class="ri" style="font-family:var(--mono);font-size:12px;color:var(--soft)">01</span>
+      <span class="rt"><b>The Overtime Decision</b><br><span style="color:var(--ink-dim);font-size:13.5px">Hire, or keep paying overtime? Nine months of overtime against hiring costs.</span></span><span class="rs">2 files</span></div>
+    <div class="res"><span class="ri" style="font-family:var(--mono);font-size:12px;color:var(--soft)">02</span>
+      <span class="rt"><b>The Retention Programme</b><br><span style="color:var(--ink-dim);font-size:13.5px">Where does the retention budget go? Eighteen months of leavers.</span></span><span class="rs">2 files</span></div>
+    <div class="res"><span class="ri" style="font-family:var(--mono);font-size:12px;color:var(--soft)">03</span>
+      <span class="rt"><b>The Channel Rescue</b><br><span style="color:var(--ink-dim);font-size:13.5px">Which channel is genuinely failing, and why? 564 tickets against staffing.</span></span><span class="rs">2 files</span></div>
+    <div class="res"><span class="ri" style="font-family:var(--mono);font-size:12px;color:var(--soft)">04</span>
+      <span class="rt"><b>The Supplier Consolidation</b><br><span style="color:var(--ink-dim);font-size:13.5px">Fewer suppliers, or not? 193 purchase orders across five categories.</span></span><span class="rs">2 files</span></div>
+    <div class="res"><span class="ri" style="font-family:var(--mono);font-size:12px;color:var(--soft)">05</span>
+      <span class="rt"><b>The Recognition Programme</b><br><span style="color:var(--ink-dim);font-size:13.5px">The weakest score in the company. 161 survey responses.</span></span><span class="rs">1 file</span></div>
+    <div class="res"><span class="ri" style="font-family:var(--mono);font-size:12px;color:var(--soft)">06</span>
+      <span class="rt"><b>The Cost Control Programme</b><br><span style="color:var(--ink-dim);font-size:13.5px">Three measures, each tied to a budget line. 32 detail lines.</span></span><span class="rs">2 files</span></div>
+    <div class="res"><span class="ri" style="font-family:var(--mono);font-size:12px;color:var(--soft)">07</span>
+      <span class="rt"><b>Your Own Work</b><br><span style="color:var(--ink-dim);font-size:13.5px">Your decision, your redacted data. Four questions and instructor sign off first.</span></span><span class="rs">Ask first</span></div>
     <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.2v.3"/></svg></span>
-      <span class="rt"><b>E &middot; Your own work</b>. Redacted, and signed off by the instructor first.<br><span style="color:var(--ink-dim);font-size:13.5px">Four qualifying questions on the lab page before you start.</span></span><span class="rs">Ask first</span></div>
-    <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
-      <span class="rt">Every scenario file downloads from inside the lab, with a preview first</span><span class="rs">Task 3</span></div>
+      <span class="rt">Every dataset carries deliberate problems, exactly like yesterday. Files download from inside the lab.</span><span class="rs">Task 2</span></div>
   </div>
 
   <div class="panel" id="assessment">

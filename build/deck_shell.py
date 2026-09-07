@@ -239,6 +239,37 @@ svg{display:block}
 .closebar b{color:var(--soft)}
 .subline{margin-top:14px;font-size:19px;color:var(--w6);line-height:1.5;max-width:900px}
 
+/* ---- use case: safe vs guardrails, plus an ethical risk bar ---- */
+.uc{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px;max-width:1160px}
+@media(max-width:860px){.uc{grid-template-columns:1fr}}
+.ucol{border-radius:16px;padding:22px 24px}
+.ucol.safe{background:linear-gradient(180deg,rgba(61,200,115,.10),rgba(61,200,115,.02));border:1px solid rgba(61,200,115,.34)}
+.ucol.stop{background:linear-gradient(180deg,rgba(255,90,110,.09),rgba(255,90,110,.02));border:1px solid rgba(255,90,110,.32)}
+.ucol .uh{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+  margin-bottom:16px;display:flex;align-items:center;gap:9px}
+.ucol.safe .uh{color:var(--green-lt)} .ucol.stop .uh{color:var(--danger)}
+.ucol ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.ucol li{font-size:16.5px;color:var(--w8);line-height:1.4;display:flex;gap:12px;align-items:flex-start}
+.ucol li::before{flex:none;font-weight:700;font-size:15px;margin-top:1px}
+.ucol.safe li::before{content:'\2713';color:var(--green)}
+.ucol.stop li::before{content:'\2715';color:var(--danger)}
+.ethbar{margin-top:18px;background:linear-gradient(135deg,rgba(233,196,106,.12),rgba(233,196,106,.02));
+  border:1px solid rgba(233,196,106,.34);border-radius:14px;padding:18px 24px;max-width:1160px;
+  font-size:16.5px;color:var(--w8);line-height:1.5}
+.ethbar b{color:var(--amber);font-weight:700}
+
+/* ---- side by side compare (Copilot) ---- */
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px;max-width:1160px}
+@media(max-width:860px){.cmp{grid-template-columns:1fr}}
+.cmp .cc{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.014));
+  border:1px solid var(--w1);border-radius:16px;padding:22px 24px}
+.cmp .cc.hi{border-color:rgba(47,116,214,.4);background:linear-gradient(180deg,rgba(47,116,214,.13),rgba(47,116,214,.02))}
+.cmp .ct{font-size:19px;font-weight:700;letter-spacing:-.4px;margin-bottom:6px}
+.cmp .cs{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-bottom:15px}
+.cmp .cr{display:flex;gap:11px;font-size:15px;color:var(--w7);line-height:1.45;margin-bottom:11px}
+.cmp .cr b{color:#fff;font-weight:600}
+.cmp .cr::before{content:'\2022';color:var(--soft);flex:none}
+
 /* ---- why-care card grid ---- */
 .wc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:26px}
 @media(max-width:1080px){.wc{grid-template-columns:repeat(2,1fr)}}

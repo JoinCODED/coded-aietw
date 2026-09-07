@@ -5,77 +5,77 @@ from lab_shell import page
 
 CLAUDE="https://claude.ai/new"; GAMMA="https://gamma.app"
 
-def sc(key,label,q,files,head,rows,more):
-    return {"key":key,"label":label,"q":q,"files":files,"head":head,"rows":rows,"more":more}
+# ---------------------------------------------------------------- the ideas
+IDEAS = [
+ {"n":"01","name":"The Overtime Decision","dept":"Operations",
+  "sit":"Overtime has been climbing for nine months while headcount falls. Two vacancies have been open since April and were never filled. One team is running noticeably higher absence than every other.",
+  "ini":"A staffing decision you can defend in a budget meeting: hire, or keep paying overtime. Say which team, how many people, and what it costs or saves in year one.",
+  "files":[("ops-overtime-2026.csv","Nine months of overtime by team and month: hours, cost, headcount, absence per person, open vacancies."),
+           ("ops-hiring-costs-2026.csv","Salary, recruitment cost, onboarding weeks, standard hours and the overtime rate for each role.")],
+  "warn":"One row is obviously impossible. Do not just delete it. The cost cell on that row is correct, so the real number can be recovered."},
 
-SCEN = [
- sc("a","A &middot; Operations","Hire, or keep paying overtime?",
-    [("ops-overtime-2026.csv","Nine months of overtime by team and month: hours, cost, headcount, absence days per person, and open vacancies."),
-     ("ops-hiring-costs-2026.csv","Salary, recruitment cost, onboarding time, standard monthly hours and the overtime rate for each role.")],
-    ["month","team","overtime_hours","overtime_cost_kd","headcount","absence_days","open_vacancies"],
-    [["2026-01","Night Shift","115","862.50","12","3.14","0"],
-     ["2026-01","Warehouse","138","897.00","34","1.42","1"],
-     ["2026-07","Warehouse","264","(blank)","34","1.51","1"],
-     ["2026-08","Night Shift","9999","1221.00","10","3.02","2"]],
-    "46 rows across five teams. Look hard at that last one."),
- sc("b","B &middot; Human Resources","Where does the retention budget go?",
-    [("hr-leavers-2026.csv","Eighteen months of leavers: department, hire and leave dates, tenure band, reason, whether they went voluntarily, and whether an exit interview happened."),
-     ("hr-headcount-2026.csv","Average headcount and number of locations per department, for the same period.")],
-    ["employee_id","department","hire_date","leave_date","tenure_band","leave_reason","voluntary"],
-    [["E4087","Retail Operations","2025-01-05","2025-07-19","6-12 months","better offer elsewhere","Yes"],
-     ["E4110","Customer Care","2025-09-08","2025-09-08","1-2 years","No development opportunities","Yes"]],
-    "146 leavers across seven departments. The biggest number is not the biggest problem."),
- sc("c","C &middot; Customer Service","Which channel is failing?",
-    [("cs-tickets-2026.csv","Six months of tickets: channel, date, hour opened, request type, first response time, whether it resolved first contact, and a satisfaction score."),
-     ("cs-staffing-2026.csv","Agents assigned, hours covered and the response target for each channel.")],
-    ["ticket_id","channel","date_opened","hour_opened","first_response_hours","resolved_first","satisfaction"],
-    [["T70001","WhatsApp","2026-04-23","10:00","2.5","No","5"],
-     ["T70002","Walk-in","2026-05-09","17:00","0.3","Yes","3"]],
-    "564 tickets across five channels. One channel breaches almost every time and has the happiest customers."),
- sc("d","D &middot; Procurement","Consolidate, or not?",
-    [("procurement-purchase-orders-2026.xlsx","A year of purchase orders: date, category, supplier, value, delivery days, whether it arrived on time, and who requested it."),
-     ("procurement-purchase-orders-2026.csv","The same rows as plain text, if you would rather paste than upload.")],
-    ["po_number","order_date","category","supplier","value_kd","delivery_days","on_time"],
-    [["PO90021","2026-02-14","IT hardware","Gulf Digital Supply","3266","18","No"],
-     ["PO90126","2026-09-02","Office supplies","Office Plus Kuwait","313","12","Yes"]],
-    "193 orders across five categories. Count the suppliers carefully before you rank them."),
+ {"n":"02","name":"The Retention Programme","dept":"Human Resources",
+  "sit":"146 people left over eighteen months. Leadership believes the problem is the biggest department and that people leave for money. Neither belief has been tested against the data.",
+  "ini":"A targeted retention programme: which department the budget goes to, what the actual leaving reason is, and two interventions with an owner each.",
+  "files":[("hr-leavers-2026.csv","Eighteen months of leavers: department, hire and leave dates, tenure band, reason, voluntary, exit interview done."),
+           ("hr-headcount-2026.csv","Average headcount and number of locations per department, same period.")],
+  "warn":"The department with the most leavers is not the department with the problem. You need both files to prove that."},
+
+ {"n":"03","name":"The Channel Rescue","dept":"Customer Service",
+  "sit":"564 tickets across five channels in six months. One channel breaches its target on almost every ticket and yet has the happiest customers in the business. Another is quietly collapsing.",
+  "ini":"A channel rescue plan: name the channel that is genuinely failing, say why, and propose a staffing or target change with the numbers behind it.",
+  "files":[("cs-tickets-2026.csv","Six months of tickets: channel, date, hour, request type, first response hours, resolved first contact, satisfaction."),
+           ("cs-staffing-2026.csv","Agents assigned, hours covered and the response target for each channel.")],
+  "warn":"A high breach rate is not proof of failure. Before you accuse a channel, check whether its target was ever realistic."},
+
+ {"n":"04","name":"The Supplier Consolidation","dept":"Procurement",
+  "sit":"193 purchase orders across five categories and a long tail of suppliers. Spend is concentrated in one category, and one supplier delivers late far more often than the rest.",
+  "ini":"A consolidation recommendation: which category to address first, which supplier relationships to keep or exit, and what the change is worth.",
+  "files":[("procurement-purchase-orders-2026.xlsx","A year of purchase orders: date, category, supplier, value, delivery days, on time, requested by."),
+           ("procurement-purchase-orders-2026.csv","The same rows as plain text, if you would rather paste than upload.")],
+  "warn":"Count your suppliers before you rank them. At least one appears under more than one spelling, and it changes the ranking."},
+
+ {"n":"05","name":"The Recognition Programme","dept":"People",
+  "sit":"161 staff responded to the engagement survey. One department scores far below every other, and one question scores worst across the whole company. The file itself is not clean.",
+  "ini":"A 90 day recognition programme: two actions aimed at the weakest score, an owner for each, and a pulse survey to prove movement.",
+  "files":[("employee-satisfaction-2026.csv","161 survey responses. Six questions scored 1 to 5, an overall score, and free text comments.")],
+  "warn":"The department that looks best has three responses in it. Say what the data supports, and admit what it cannot."},
+
+ {"n":"06","name":"The Cost Control Programme","dept":"Finance",
+  "sit":"The year to date position is over budget, and the Summary sheet does not agree with the detail behind it. Three defensible answers exist to the question of how far over.",
+  "ini":"A cost control programme for the next quarter: three concrete measures, each tied to a budget line, plus a monthly variance review so overruns surface in weeks.",
+  "files":[("department-budget-2026.xlsx","Two sheets: 32 detail lines with budget against actual, and a department Summary."),
+           ("department-budget-2026.csv","The same detail lines as plain text.")],
+  "warn":"Every saving you promise must trace to a line in the workbook. A saving with no line behind it is a wish."},
+
+ {"n":"07","name":"Your Own Work","dept":"Bring your own",
+  "sit":"A decision from your own department, using your own data. Better than any of ours, if it clears the gate.",
+  "ini":"The same four deliverables, on your own redacted material. The instructor signs it off before you start.",
+  "files":[],
+  "warn":"Four questions first, and all four must be yes. Can you name the decision somebody has to make? Do you have the data in a file today? Have you redacted every name, ID, salary and contract reference? Would you be comfortable if this file appeared on a screen in this room? Anything less than four, take one of ours."},
 ]
 
-def scen_widget():
-    tabs='<div class="lw-tabs">'+''.join(
-      '<button class="lw-tab%s" data-sc="%s">%s</button>'%(' on' if i==0 else '', s["key"], s["label"])
-      for i,s in enumerate(SCEN))+'</div>'
-    job='<div class="lw-job">'+''.join(
-      '<span data-sc="%s"%s><b>The question you must answer:</b> %s</span>'
-      %(s["key"], '' if i==0 else ' hidden', s["q"]) for i,s in enumerate(SCEN))+'</div>'
-    docs='<div class="lw-doc">'
-    for i,s in enumerate(SCEN):
-        rows=''.join('<tr>'+''.join('<td>'+c+'</td>' for c in r)+'</tr>' for r in s["rows"])
+def ideas_widget():
+    out='<div class="ds-note" style="margin-bottom:14px">Read two. Pick one. Commit before you open a single tool.</div>'
+    for i in IDEAS:
         dls=''.join('<a class="dl" href="%s" download><span class="ic">&#11015;</span>'
-                    '<span>Download<small>%s</small></span></a><div class="ds-note">%s</div>'
-                    %(f,f,note) for f,note in s["files"])
-        docs+=('<div data-sc="%s"%s>%s<div class="ds-table-wrap"><table class="ds-table"><thead><tr>%s</tr></thead>'
-               '<tbody>%s</tbody></table><div class="ds-more">%s</div></div></div>'
-               %(s["key"], '' if i==0 else ' hidden', dls,
-                 ''.join('<th>'+h+'</th>' for h in s["head"]), rows, s["more"]))
-    docs+='</div>'
-    e = ('<div data-sc="e" hidden><div class="ds-note"><b>Scenario E: your own work.</b> '
-         'Answer these four before you start, and check them with the instructor.<br><br>'
-         '1. Can you name the decision somebody actually has to make?<br>'
-         '2. Do you have the data in front of you, today, in a file?<br>'
-         '3. Have you redacted every name, ID, salary and contract reference?<br>'
-         '4. Would you be comfortable if this file appeared on a screen in this room?<br><br>'
-         'Four yeses and you are clear. Anything else, take Scenario A to D. '
-         'You can do your own work on Sunday, with more time and no audience.</div></div>')
-    tabs=tabs.replace('</div>','<button class="lw-tab" data-sc="e">E &middot; Your own work</button></div>')
-    job=job.replace('</div>','<span data-sc="e" hidden><b>Your job:</b> the same four deliverables, '
-                    'on your own redacted data. Instructor sign off required first.</span></div>')
-    docs=docs.replace('</div>', e+'</div>', 1) if False else docs[:-6]+e+'</div>'
-    return tabs+job+docs
+                    '<span>Download<small>%s</small></span></a>'
+                    '<div class="ds-note" style="margin:4px 0 12px">%s</div>'%(f,f,note)
+                    for f,note in i["files"])
+        out+=('<details class="idea"><summary>%s &middot; %s<span class="dept">%s</span></summary>'
+              '<div class="body">'
+              '<p><b>The situation.</b> %s</p>'
+              '<p><b>Your initiative.</b> %s</p>'
+              '%s'
+              '<p class="warn"><b>Watch out.</b> %s</p>'
+              '</div></details>'
+              %(i["n"], i["name"], i["dept"], i["sit"], i["ini"],
+                (('<p><b>Your data.</b></p>'+dls) if i["files"] else ''), i["warn"]))
+    return out
 
 TASKS=[
 {
- "app":"Claude","sec":"S1 &middot; Connectors and Skills","mins":"~18 min",
+ "app":"Claude","sec":"S1 &middot; Connectors and Skills","mins":"~15 min",
  "title":"D3.1 &middot; Connect something real",
  "scenario":"Two days of pasting. Now stop. Turn on one connector, ask a question that only works because of it, then turn it off again and watch the answer change.",
  "launches":[{"label":"Open Claude","href":CLAUDE,"note":"Connector settings live in your account settings."}],
@@ -86,7 +86,7 @@ TASKS=[
           "Revoke it, ask the same question again, and note what changed."],
  "promptSteps":[
   {"label":"If your organization blocks connectors",
-   "goal":"Plenty of companies do, and that is a reasonable position. Do this instead, and you will get the same lesson without needing permission.",
+   "goal":"Plenty of companies do, and that is a reasonable position. Do this instead and you get the same lesson without needing permission.",
    "prompt":"I want to understand what a connector would change for me. Here is a task I do weekly: [DESCRIBE IT]. Walk me through exactly what a connector to [TOOL] would read, what it would not read, what it would let me stop doing by hand, and what I would need to tell my IT team to get it approved. Be specific about the risks, not reassuring."},
   {"label":"The question to take to IT",
    "goal":"Turn what you just learned into something your IT team can actually answer, rather than a request they have to refuse.",
@@ -96,152 +96,160 @@ TASKS=[
              {"label":"What changed when you revoked it?","hint":"be specific"}],
  "expect":"A connector you have turned on and off yourself, or a specific, sendable request to your IT team. Either one means you understand what you are asking for.",
  "stretch":"Ask Claude what it can see through the connector that you did not expect. The answer is occasionally uncomfortable, and always worth knowing.",
- "boss":"Write the one paragraph a security reviewer would send back rejecting your request. Then rewrite your request so it survives that paragraph."
+ "boss":"Write the one paragraph a security reviewer would send back rejecting your request. Then rewrite the request so it survives that paragraph."
 },
 {
- "app":"Paper first, then Claude","sec":"S2 &middot; Workflow audit","mins":"~22 min",
- "title":"D3.2 &middot; The workflow audit",
- "scenario":"One real task you do every week and resent. Map it honestly, including the steps nobody counts, then pick the single thing worth changing.",
- "launches":[{"label":"Open Claude","href":CLAUDE,"note":"Do the mapping on paper first. Bring it to Claude at step four."}],
- "goal":"One task fully mapped with minutes attached, every step marked P or J, an honest yearly cost, and exactly one opportunity chosen.",
- "steps":["Do the first three steps on paper. It is faster and you will be more honest.",
-          "List every step with its minutes, including finding the file, chasing the input, and waiting for approval.",
-          "Mark each step <b>P</b> for pattern or <b>J</b> for judgment.",
-          "Multiply the total by how often you do it. Write the yearly hours down.",
-          "Pick one P step. The one that costs the most and that you would still check afterwards."],
- "promptSteps":[
-  {"label":"Step 4 &middot; Pressure test it",
-   "goal":"Get Claude to argue with your map. It will find the steps you skipped and the ones you marked P that are really J.",
-   "prompt":"Here is a weekly task of mine, mapped step by step with minutes: [PASTE YOUR MAP]. I have marked each step P for pattern or J for judgment. Argue with me. Which steps did I probably forget? Which did I mark P that are really J, and why? Which single step would you automate first, and which one should never be automated? Be direct, not encouraging.",
-   "findings":[{"label":"Total minutes, one run","hint":"be honest, include the waiting"},
-               {"label":"Times per year","hint":"weekly is 48, fortnightly is 24"},
-               {"label":"Hours per year","hint":"multiply them"},
-               {"label":"The one P step you chose","hint":"name it"},
-               {"label":"A step Claude said was really J","hint":"did you agree?"}]}],
- "expect":"A yearly number that surprises you, and one chosen opportunity you can name in a sentence. If you chose five, you chose none.",
- "stretch":"Map the same task as it would run after the change. What is the new yearly number, and what did you have to add to make it safe?",
- "boss":"Find a step in your task that <b>should not be automated even though it easily could be</b>. Write the one sentence explaining why to somebody who only sees the time saving."
+ "app":"In pairs","sec":"Capstone &middot; Phase 0","mins":"~10 min",
+ "title":"D3.2 &middot; Phase 0. Pick your idea",
+ "scenario":"Ten minutes, no tools open. Pair up, read two ideas, pick one, download your data, and agree who does what. For every deliverable one of you builds, the other verifies.",
+ "widget": ideas_widget(), "widgetFirst": True, "widgetLabel": "Seven ideas. Pick one.",
+ "goal":"An idea you both understand, the data open on one screen, and a role split written down. Nothing built yet, which is the whole point of Phase 0.",
+ "steps":["Pair up. Somebody who does not do your job makes a better partner.",
+          "Read two ideas above together. Pick one and <b>commit</b>. Do not shop around.",
+          "Download your data and open it once, together, before anything else.",
+          "Write down who <b>builds</b> and who <b>verifies</b> for each of the four deliverables."],
+ "findings":[{"label":"Your idea","hint":"the number and the name"},
+             {"label":"Who builds, who verifies","hint":"deliverable by deliverable"},
+             {"label":"Your one sentence recommendation, before any analysis","hint":"you will check this at the end"}],
+ "expect":"One idea, both of you clear on it, data downloaded, and a role split you have actually written down.",
+ "stretch":"Write the one sentence version of your recommendation now, before the data. At the end, check whether the data changed your mind. If it did not, be suspicious of yourself.",
+ "boss":"Name the single number in your data most likely to sink the initiative if it turns out to be wrong. That is the first thing the verifier checks."
 },
 {
- "app":"Claude","sec":"S3 &middot; Capstone","mins":"~40 min",
- "title":"D3.3 &middot; Interrogate the data",
- "scenario":"Pick one scenario and answer the question it asks. Every file has deliberate problems in it, exactly like yesterday. Every scenario also has a second story that contradicts the obvious answer.",
- "widget": scen_widget(), "widgetFirst": True, "widgetLabel": "Pick your scenario",
- "launches":[{"label":"Open Claude","href":CLAUDE,"note":"Upload both files for your scenario and work in one conversation."}],
- "goal":"A defensible answer to the scenario question, backed by numbers you have checked, plus the second story that the first answer hides.",
- "steps":["Pick your scenario above and download both files.",
-          "Profile them before you analyse them. Duplicates, blanks, impossible values, spelling variants.",
-          "Answer the question the scenario actually asks. With numbers.",
-          "Then hunt the second story. It is there in every scenario.",
-          "Build your charts now, while the working is in front of you."],
+ "app":"Claude","sec":"Capstone &middot; D1","mins":"~40 min",
+ "title":"D3.3 &middot; Deliverable 1. Executive briefing",
+ "scenario":"One page a director reads in ninety seconds: the decision, the evidence, the recommendation, the risk. You write the prompt from your idea, using everything from the last two days.",
+ "launches":[{"label":"Open Claude","href":CLAUDE,"note":"One conversation for the whole capstone. Keep it open."}],
+ "goal":"A one page briefing where the recommendation leads, every figure traces to your file, and the risk is named before anyone asks for it.",
+ "steps":["Attach your data to one new Claude conversation and keep it for the whole capstone.",
+          "Profile the files before you analyse them. You know how by now.",
+          "Answer the question your idea asks. With numbers, and with the working shown.",
+          "Then write the briefing. The verifier checks every figure against the file."],
  "promptSteps":[
-  {"label":"Step 1 &middot; Profile before you analyse",
-   "goal":"Find what is wrong with the files before you let them tell you anything.",
-   "prompt":"Before analysing anything, profile both attached files. Report: row counts, exact duplicate rows, blank cells by column, any value that is impossible for its column, and any category spelled more than one way. Give me specific row identifiers. Then tell me which of these problems would change a headline number, and by roughly how much.",
-   "findings":[{"label":"Problems you found","hint":"how many, and the worst one"},
-               {"label":"The one that would change a headline","hint":"which, and by how much"}]},
-  {"label":"Step 2 &middot; Answer the question",
-   "goal":"The actual decision, with the arithmetic shown so you can check it and so you can defend it at 13:20.",
-   "prompt":"Now answer the scenario question using the cleaned data. Show every calculation step by step so I can check it by hand. Where you have made an assumption, say so on its own line. Do not round anything until the final answer.",
-   "findings":[{"label":"Your answer, in one sentence","hint":"the decision, not the description"},
-               {"label":"The number behind it","hint":"and what it is a number of"},
-               {"label":"One assumption you had to make","hint":"and whether it is safe"}]},
-  {"label":"Step 3 &middot; Find the second story",
-   "goal":"Every scenario has something that looks like the answer and is not, or something true that the obvious answer hides.",
-   "prompt":"Now argue against your own conclusion. What in this data looks like a problem but is not? What looks fine but is not? Is there anything true here that my recommendation would hide from the reader? Give me the strongest case against what I just concluded.",
-   "findings":[{"label":"The trap in your scenario","hint":"what looks like the answer and is not"},
-               {"label":"Did it change your recommendation?","hint":"yes, no, or how"}]}],
- "expect":"An answer you would defend in a meeting, the working behind it, and a second finding that makes you sound like somebody who actually read the data.",
- "stretch":"Ask what the data cannot tell you. Then write the one question you would ask the department before you acted on any of this.",
- "boss":"Find the problem in your files that Claude did not flag on its own. There is at least one in every scenario that only a human notices."
-},
-{
- "app":"Claude or Gamma","sec":"S4 &middot; The package","mins":"~30 min",
- "title":"D3.4 &middot; Briefing, deck, templates",
- "scenario":"Turn the analysis into something a leader can act on in five minutes, and something your successor can rerun next quarter without you.",
- "launches":[{"label":"Open Claude","href":CLAUDE,"note":"Same conversation. It already has your analysis."},
-             {"label":"Open Gamma","href":GAMMA,"note":"If you preferred Gamma yesterday, build the deck here."}],
- "goal":"Three artefacts: a one page briefing with a named risk, a six slide deck with traceable figures, and prompt templates a colleague could run cold.",
- "steps":["Write the briefing first. The deck comes from the briefing, not the other way round.",
-          "Build the deck. Six slides, the decision in slide one.",
-          "Write the templates last, while you still remember what you actually had to do.",
-          "Read the briefing out loud once before 13:20."],
- "promptSteps":[
-  {"label":"Step 1 &middot; The executive briefing",
-   "goal":"One page. The decision at the top, three numbers, a recommendation with a cost, and the risk named before anyone asks.",
+  {"label":"Step 1 &middot; Profile, then answer",
+   "goal":"Find what is wrong with the files before you let them tell you anything, then answer the actual question.",
+   "prompt":"Before analysing anything, profile the attached files. Report row counts, exact duplicate rows, blank cells by column, any value impossible for its column, and any category spelled more than one way. Give me row identifiers. Then answer this question using the cleaned data, showing every calculation step by step: [YOUR IDEA'S QUESTION]. Where you assume something, say so on its own line.",
+   "findings":[{"label":"Problems you found in the data","hint":"how many, and the worst one"},
+               {"label":"Your answer, in one sentence","hint":"the decision, not a description"},
+               {"label":"The number behind it","hint":"and what it is a number of"}]},
+  {"label":"Step 2 &middot; Argue against yourself",
+   "goal":"Every idea here has a trap that survives one question. Find yours before the room does.",
+   "prompt":"Now argue against my conclusion. What in this data looks like a problem but is not? What looks fine but is not? Is there anything true here that my recommendation would hide from the reader? Give me the strongest case against what I just concluded.",
+   "findings":[{"label":"The trap in your data","hint":"what looks like the answer and is not"},
+               {"label":"Did it change your recommendation?","hint":"yes, no, or how"}]},
+  {"label":"Step 3 &middot; The briefing",
+   "goal":"One page. Decision at the top, three numbers, a recommendation with a cost, and the risk that would make you wrong.",
    "prompt":"Write a one page executive briefing from our analysis. Structure: the decision being asked for in one sentence at the top, then the evidence in three numbers maximum with the file each came from, then the recommendation with what it costs or saves, then the risk that would make this wrong. Direct and factual. Do not use a number we have not verified together.",
    "findings":[{"label":"The decision, in one sentence","hint":"as it appears at the top"},
-               {"label":"The risk you named","hint":"what would make you wrong"}]},
-  {"label":"Step 2 &middot; The stakeholder deck",
-   "goal":"Six slides from the briefing, each with one point, built the way you learned yesterday.",
-   "prompt":"Turn that briefing into a six slide stakeholder deck. Slide 1 the decision as a headline. Slide 2 the situation in three numbers. Slide 3 the chart with the claim written in the caption. Slide 4 the second finding. Slide 5 the recommendation and its cost. Slide 6 the risk and the mitigation. Eight words or fewer per headline. Every figure carries its source.",
-   "findings":[{"label":"Which tool did you use?","hint":"Claude Design or Gamma"},
-               {"label":"How long did the deck take?","hint":"minutes"}]},
-  {"label":"Step 3 &middot; The reusable templates",
-   "goal":"The part that outlives today. Written so a colleague who was not here can rerun this next quarter.",
-   "prompt":"Now write the reusable prompt templates for this whole piece of work, so somebody who was not in the room could rerun it next quarter. One template per stage: profiling the data, doing the analysis, arguing against the conclusion, and writing the briefing. Use [PLACEHOLDERS] for anything that changes. Add a one line note under each saying what to check in the output before trusting it.",
-   "findings":[{"label":"How many templates?","hint":"four is the target"},
-               {"label":"Where did you save them?","hint":"be specific"}]}],
- "expect":"A briefing, a deck and a set of templates. If somebody who was not here could rerun your analysis from the templates alone, you are finished.",
- "stretch":"Ask Claude to write the three hardest questions a sceptical director would ask about your recommendation. Prepare answers for all three before 13:20.",
- "boss":"Write the version of the briefing where your recommendation is wrong. What would have to be true for that to happen, and how quickly would you find out?"
+               {"label":"The risk you named","hint":"what would make you wrong"},
+               {"label":"Verifier: which figure did you check?","hint":"and did it hold up"}]}],
+ "expect":"A one page briefing where the recommendation leads and every figure traces to your data. Ninety seconds to read, nothing wasted.",
+ "stretch":"Ask Claude to attack it. “What would a sceptical finance director push back on in this briefing?” Fix the two best objections.",
+ "boss":"Write the 60 word version, for the executive who will not read even one page. Same recommendation, nothing lost that matters."
 },
 {
- "app":"In the room","sec":"S5 &middot; Present","mins":"~15 min",
- "title":"D3.5 &middot; Present it",
- "scenario":"Three minutes to present, two to defend. Your peers score it and the instructor scores nothing. This is a rehearsal for the meeting, not an exam.",
- "goal":"A three minute presentation that leads with the decision, survives two minutes of questions, and shows the source of any number somebody challenges.",
- "steps":["Find your trio. Three minutes each, then two minutes of questions.",
-          "Lead with the decision. Not the background, not the method, not an apology.",
-          "When somebody questions a number, <b>show where it came from</b>. That is the whole test.",
-          "Score each other on the six lines below. Honest scores only, they are the only useful ones."],
- "findings":[{"label":"Score: did they lead with the decision?","hint":"out of 5"},
-             {"label":"Score: was every number sourced?","hint":"out of 5"},
-             {"label":"Score: did they name a real risk?","hint":"out of 5"},
-             {"label":"Score: could you act on this?","hint":"out of 5"},
-             {"label":"The best question they were asked","hint":"write it down"},
-             {"label":"One thing you will steal from their approach","hint":"be specific"}],
- "expect":"Everybody presents, everybody is questioned, and everybody leaves with one question they could not answer. That question is the most useful thing you take home.",
- "stretch":"Present it a second time in ninety seconds instead of three minutes. What did you cut, and did the argument get weaker or stronger?",
- "boss":"Present the version your most sceptical colleague would give. Same data, opposite conclusion. Then say which of the two you actually believe, and why."
-},
-{
- "app":"Claude","sec":"S5 &middot; After today","mins":"~8 min",
- "title":"D3.6 &middot; The Monday plan",
- "scenario":"Last task of the programme. Everything above stays theoretical unless one thing changes in your actual week. Pick that one thing and write it down before you leave.",
- "launches":[{"label":"Open Claude","href":CLAUDE,"note":"Start a fresh chat. This one is for you, not for anyone else."}],
- "goal":"One task, one method, one month, written down with a date on it. Not ten things you intend to try.",
- "steps":["Go back to the workflow audit from this morning.",
-          "Pick the single opportunity you chose there. Not a different, easier one.",
-          "Write down exactly how you will run it differently, and when.",
-          "Name the person you will tell, so somebody expects it to happen."],
+ "app":"Claude Design or Gamma","sec":"Capstone &middot; D2","mins":"~35 min",
+ "title":"D3.4 &middot; Deliverable 2. Stakeholder deck",
+ "scenario":"Five or six slides that carry your briefing into a room. You compared the two tools yesterday. Now pick the one that fits this job and build it.",
+ "launches":[{"label":"Open Claude","href":CLAUDE,"note":"Same conversation. It already has your analysis and your briefing."},
+             {"label":"Open Gamma","href":GAMMA,"note":"If you preferred Gamma yesterday, build it here."}],
+ "goal":"A five or six slide deck that tells the same story as the briefing, with every number checked by the person who did not build it.",
+ "steps":["Choose your tool. One sentence on why, in the findings box.",
+          "Five or six slides: the decision, the situation, the evidence, the recommendation, the plan.",
+          "Every headline eight words or fewer. Every figure carries its source.",
+          "The verifier opens two slides and checks them against the data."],
  "promptSteps":[
-  {"label":"The plan",
-   "goal":"Something specific enough that you would notice if you had not done it.",
-   "prompt":"I want to change one thing about how I work, starting Monday. The task is: [YOUR TASK]. The step I am changing is: [THE P STEP]. Write me a plan for the next four weeks: what I do the first time, what I check every time before I trust the output, what would tell me it is not working, and what I should have to show for it after a month. Keep it to one short page. Do not add anything I did not ask for.",
-   "findings":[{"label":"The one task you are changing","hint":"name it"},
-               {"label":"When you will do it first","hint":"a date, not 'soon'"},
-               {"label":"What you check before you trust it","hint":"one line"},
-               {"label":"Who you told","hint":"a name"}]}],
- "expect":"A one page plan with a date and a name on it. The date and the name are what make it happen.",
- "stretch":"Write the note you would send that person now, so it is already sent before you leave the room.",
- "boss":"Write what you would tell somebody in four weeks if it did not work. Naming the failure in advance makes it far easier to admit, and far easier to fix."
+  {"label":"The deck prompt",
+   "goal":"The briefing turned into slides, without the story drifting on the way.",
+   "prompt":"Turn that briefing into a six slide stakeholder deck. Slide 1 the decision as a headline. Slide 2 the situation in three numbers. Slide 3 the evidence with the claim written in the caption. Slide 4 the second finding, the one that complicates the obvious answer. Slide 5 the recommendation and its cost. Slide 6 the risk and what we would do about it. Eight words or fewer per headline. Every figure carries its source.",
+   "findings":[{"label":"Which tool, and why","hint":"one sentence"},
+               {"label":"A figure the verifier checked on a slide","hint":"and whether it held"}]}],
+ "expect":"A five or six slide deck that tells the same story as the briefing. If the deck and the briefing disagree anywhere, one of them is wrong and you need to know which.",
+ "stretch":"Regenerate your evidence slide for a different audience, the front line team rather than the director. Notice what has to change, and what must not.",
+ "boss":"Run the same prompt in the other tool and keep whichever deck is honestly better. Be ready to say why when the room asks."
 },
 {
- "app":"Assessment","sec":"S6 &middot; Close","mins":"~25 min",
- "title":"D3.7 &middot; Quiz, test and survey",
+ "app":"Claude","sec":"Capstone &middot; D3","mins":"~25 min",
+ "title":"D3.5 &middot; Deliverable 3. Charts that argue",
+ "scenario":"Two or three charts that carry the argument, each with one written insight underneath. Not decoration. Evidence.",
+ "launches":[{"label":"Open Claude","href":CLAUDE,"note":"Same conversation."}],
+ "goal":"Two or three charts, each defending exactly one claim in your briefing, each with a verified number and a one line insight. Plus the chart that argues against you.",
+ "steps":["Decide the two or three claims your initiative stands on. Each gets exactly one chart.",
+          "Build them. One claim, a caption that states the claim, and a source line.",
+          "Ask Claude to list the exact rows behind every chart, then spot check two by hand.",
+          "Build the counter chart, the one view that argues against your recommendation."],
+ "promptSteps":[
+  {"label":"Step 1 &middot; The charts",
+   "goal":"Charts that each make one point, with the point written underneath rather than left for the reader to guess.",
+   "prompt":"Build [TWO or THREE] charts from our corrected figures, one for each of these claims: [YOUR CLAIMS]. For each chart give me a caption that states the single claim the chart makes, and a source line naming the file and any correction I applied. No decoration, no second y axis, no chart that does not defend a claim.",
+   "findings":[{"label":"Chart one, in one sentence","hint":"the claim it makes"},
+               {"label":"Chart two, in one sentence","hint":"the claim it makes"}]},
+  {"label":"Step 2 &middot; Cite the rows",
+   "goal":"The single most useful verification habit of the three days. Do it here and then keep doing it at work.",
+   "prompt":"List the exact rows from the source file behind every number in every chart. Give me the row identifiers, not a description.",
+   "findings":[{"label":"Which two did you spot check?","hint":"and did they hold"},
+               {"label":"Your counter chart","hint":"what does it show that hurts your case"}]}],
+ "expect":"Two or three charts, each defending one claim, each with a verified number and a one line insight. If a chart defends nothing, it goes.",
+ "stretch":"Put the counter chart in the deck rather than hiding it, and address it in the pitch before the room finds it. It reads as confidence, not weakness.",
+ "boss":"Find a number in your own charts that you cannot fully trace back to a row. Then either fix it or cut it."
+},
+{
+ "app":"Claude","sec":"Capstone &middot; D4","mins":"~15 min",
+ "title":"D3.6 &middot; Deliverable 4. Communication pack",
+ "scenario":"The initiative is decided. Now it has to land with the people it affects. Pick the two items that fit your audience, then bank three reusable templates.",
+ "launches":[{"label":"Open Claude","href":CLAUDE,"note":"Same conversation, so the facts already agree."}],
+ "goal":"Two finished communication items that agree with the briefing on every fact, plus three templates ready for the prompt library you started yesterday.",
+ "steps":["Choose TWO: an internal email to staff, a public FAQ, or a one page fact sheet.",
+          "Draft them from the briefing, so the facts already agree.",
+          "Write three reusable prompt templates with placeholders.",
+          "The verifier checks the comms against the briefing, line by line."],
+ "promptSteps":[
+  {"label":"Step 1 &middot; The two items",
+   "goal":"Communication that says the same thing as the briefing, in the language of the people it lands on.",
+   "prompt":"From the briefing, draft [ITEM 1] and [ITEM 2] for [AUDIENCE]. Keep every fact identical to the briefing. Say what is happening, when, what it means for the reader, and what they need to do. Apologise once at most. Do not promise a date the data does not support.",
+   "findings":[{"label":"Which two items, and for whom","hint":"be specific about the audience"},
+               {"label":"Verifier: any fact that disagreed with the briefing?","hint":"which one"}]},
+  {"label":"Step 2 &middot; Three templates",
+   "goal":"The part that outlives today. Written so somebody who was not here can rerun this next quarter.",
+   "prompt":"Now write three reusable prompt templates from this capstone, one per stage: profiling the data, doing the analysis, and writing the briefing. Use [PLACEHOLDERS] for anything that changes. Add a one line note under each saying what to check in the output before trusting it.",
+   "findings":[{"label":"Your three templates","hint":"names only"},
+               {"label":"Where did you save them?","hint":"be specific, you will want them next week"}]}],
+ "expect":"Two finished communication items that agree with the briefing on every fact, plus three templates in your library.",
+ "stretch":"Take one item and produce it in three lengths: a full email, a poster, and an SMS. Same facts, three formats. That is one more library entry, not three.",
+ "boss":"Draft the answer to the most hostile question your audience could ask, and put it in the FAQ before anybody has to ask it out loud."
+},
+{
+ "app":"In the room","sec":"Present","mins":"~20 min",
+ "title":"D3.7 &middot; Assemble, rehearse, present",
+ "scenario":"Assemble the package, run the pitch once out loud, cut what does not earn its place. Six minutes per pair, then one question from the room.",
+ "goal":"A six minute pitch you have actually run once, a package that tells one consistent story, and a ready answer for the obvious challenge.",
+ "steps":["Assemble: briefing, then deck with the charts in it, then the comms items. One package, one story.",
+          "Run the pitch once out loud. Cut whatever does not earn its place.",
+          "Present. Decision first, and both of you speak.",
+          "When the question comes, <b>show where the number came from</b>. That is the whole test."],
+ "findings":[{"label":"Who presents which section","hint":"agree it before you stand up"},
+             {"label":"Your answer to “how do you know?”","hint":"the file, and the rows"},
+             {"label":"The question you could not answer","hint":"write it down, it is the most useful thing today"},
+             {"label":"One thing you will steal from another pair","hint":"be specific"}],
+ "expect":"A six minute pitch you have run at least once, and a package where the briefing, the deck and the comms all say the same thing.",
+ "stretch":"Prepare the three minute emergency version. Schedules slip, and the pairs who can compress still land their recommendation.",
+ "boss":"Trade packages with another pair for two minutes and find one number in theirs to challenge in the questions. Expect them to do the same to you."
+},
+{
+ "app":"Assessment","sec":"Close","mins":"~10 min",
+ "title":"D3.8 &middot; Quiz, test and survey",
  "scenario":"Three short things, in this order. The quiz is a warm up. The MAP test is the same one you took on Tuesday morning. The survey is how the next version of this programme gets better.",
  "goal":"All three done before 14:00, and one honest sentence in the survey that would be uncomfortable to say out loud.",
- "steps":["<b>13:35</b> Quiz. The instructor gives you the link.",
-          "<b>13:45</b> Post-program MAP test. Word for word the test from Tuesday morning.",
-          "<b>13:52</b> End of program survey. Five minutes, and please be blunt.",
-          "<b>13:57</b> Certificates and a photograph."],
+ "steps":["<b>13:50</b> Quiz. The instructor gives you the link.",
+          "<b>13:53</b> Post-program MAP test. Word for word the test from Tuesday morning.",
+          "<b>13:56</b> End of program survey. Five minutes, and please be blunt.",
+          "<b>13:58</b> Certificates and a photograph."],
  "findings":[{"label":"Quiz score","hint":"for your own reference"},
              {"label":"The topic you scored lowest on","hint":"that is your revision list"},
              {"label":"One thing you would change about this programme","hint":"put this in the survey too"}],
  "expect":"Quiz done, test submitted, survey submitted. Then a certificate and a photograph.",
  "stretch":"Look at the topics you got wrong and go back to the relevant day page. All three stay online after today.",
- "boss":"Write down the one question from the quiz you were least sure about, then go and find the answer yourself rather than asking."
+ "boss":"Write down the one question you were least sure about, then go and find the answer yourself rather than asking."
 },
 ]
 
@@ -251,4 +259,4 @@ html = page("Day 3 Lab &middot; AI Essentials in the Workplace",
             "aiet_day3_lab", "coded-aiet-day-3.html")
 out=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','site','coded-aiet-day-3-lab.html')
 open(out,'w').write(html)
-print('tasks:',len(TASKS),'bytes:',len(html),'em:',html.count('—'))
+print('tasks:',len(TASKS),'ideas:',len(IDEAS),'bytes:',len(html),'em:',html.count('—'))

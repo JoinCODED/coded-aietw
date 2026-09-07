@@ -228,6 +228,24 @@ a{color:inherit;text-decoration:none}
   color:var(--soft);font-weight:600;margin-bottom:11px}
 .pstep .psg{font-size:15px;color:var(--ink2);line-height:1.55}
 
+/* ---------- capstone idea accordion ---------- */
+.idea{border:1px solid var(--line2);border-radius:var(--r);margin-bottom:10px;overflow:hidden;background:rgba(0,0,0,.24)}
+.idea[open]{border-color:var(--line3);background:rgba(0,0,0,.34)}
+.idea summary{cursor:pointer;padding:15px 18px;font-size:15.5px;font-weight:600;color:var(--ink2);
+  list-style:none;display:flex;align-items:center;gap:11px;transition:color .15s}
+.idea summary::-webkit-details-marker{display:none}
+.idea summary::before{content:'+';font-family:var(--mono);font-size:15px;color:var(--soft);width:18px;flex:none}
+.idea[open] summary::before{content:'\2212'}
+.idea summary:hover{color:var(--ink)}
+.idea summary .dept{margin-left:auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ghost);font-weight:400}
+.idea .body{padding:2px 20px 18px 47px}
+.idea .body p{font-size:14.5px;line-height:1.62;margin:12px 0;color:var(--dim)}
+.idea .body p b{color:var(--ink2)}
+.idea .body p.warn{color:var(--gold-lt)}
+.idea .body p.warn b{color:var(--gold)}
+.idea .body .dl{margin-top:6px}
+
 /* ---------- findings ---------- */
 .findings{margin-top:16px;display:flex;flex-direction:column;gap:11px}
 .find{display:flex;flex-direction:column;gap:6px}

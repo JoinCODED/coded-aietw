@@ -68,3 +68,15 @@ The privacy and data security slides at the top of the Day 3 deck are the ones
 originally written for Day 1. The Day 1 generator still holds its own copies in
 its parked block; the two sets are independent, so editing one does not change
 the other.
+
+### Day 3 capstone ideas
+
+The seven ideas live in the `IDEAS` list at the top of `build_day3_lab.py`.
+Each entry carries `n`, `name`, `dept`, `sit` (the situation), `ini` (the
+initiative), `files` (download plus a one line description each), and `warn`
+(the "watch out" that points at the trap without revealing it). `ideas_widget()`
+renders them as a `<details class="idea">` accordion, and task 2 sets
+`widgetFirst` so the picker sits above the steps.
+
+The deck's `usecase()` helper takes a department, a headline, a list of safe
+uses, a list of guardrails, and one ethical risk line.
