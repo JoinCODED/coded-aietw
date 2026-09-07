@@ -157,6 +157,9 @@
   .foot-col h4{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:18px}
   .foot-col a{display:block;font-size:15px;color:var(--ink-dim);margin-bottom:13px;transition:color .15s,padding .15s}
   .foot-col a:hover{color:var(--soft);padding-left:3px}
+  .foot-col .foot-ph{display:block;font-size:15px;color:var(--ink-faint);margin-bottom:13px;
+    border-bottom:1px dashed var(--line-2);padding-bottom:2px;width:fit-content;cursor:default}
+  .foot-col a.foot-ph{color:var(--ink-dim);border-bottom:none;cursor:pointer}
   .foot-divider{position:relative;height:1px;background:var(--line);margin:48px 0 30px}
   .foot-bottom{position:relative;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
     font-family:var(--mono);font-size:12px;color:var(--ink-faint)}
@@ -319,6 +322,7 @@
           </div>
           <div class="foot-col">
             <h4>Connect</h4>
+            <span class="foot-ph" id="survey-foot" data-placeholder="true">Satisfaction survey</span>
             <a href="https://coded.kw" target="_blank" rel="noopener">CODED</a>
           </div>
         </div>

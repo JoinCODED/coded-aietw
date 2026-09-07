@@ -11,7 +11,7 @@ PLAN = [
  ("12:10","12:50","Lunch and prayer","The deck has a 40 or 50 minute countdown.","brk"),
  ("12:50","13:20","Section 4 &middot; The package","Briefing, deck and reusable templates. Task 4.","lab"),
  ("13:20","13:35","Section 5 &middot; Present it","Trios. Three minutes to present, two to defend. Tasks 5 and 6.","lab"),
- ("13:35","13:45","Practice quiz","Twelve questions across all three days. Your score is yours alone.","open"),
+ ("13:35","13:45","Quiz","Across all three days. A warm up for the MAP test.","open"),
  ("13:45","13:55","MAP test and survey","The same test as Tuesday morning, then five minutes of honest feedback.","open"),
  ("13:55","14:00","Certificates","And a photograph.","open"),
 ]
@@ -211,9 +211,9 @@ HTML = """<!DOCTYPE html>
     </div>
     <div class="panel cta-panel">
       <div class="cta-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/><path d="M18 15l3 3-3 3"/></svg></div>
-      <h3>Practice quiz</h3>
-      <p>Twelve questions across all three days, with instant feedback and a topic breakdown. Nobody sees your score.</p>
-      <a class="slides-btn" href="coded-aiet-quiz.html">Open the quiz &rarr;</a>
+      <h3>The quiz</h3>
+      <p>Across all three days, at 13:35. A warm up for the MAP test that follows it.</p>
+      <span class="slides-btn ph" id="quiz" data-placeholder="true">Link to be added</span>
     </div>
   </div>
 
@@ -258,7 +258,7 @@ HTML = """<!DOCTYPE html>
   <div class="panel" id="assessment">
     <div class="ph"><h2>Before you leave</h2><span class="pn">13:35 to 14:00</span></div>
     <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg></span>
-      <span class="rt"><a href="coded-aiet-quiz.html">Practice quiz</a><br><span style="color:var(--ink-dim);font-size:13.5px">Twelve questions, instant feedback, topic breakdown. Nobody sees your score.</span></span><span class="rs">13:35</span></div>
+      <span class="rt">Quiz<br><span style="color:var(--ink-dim);font-size:13.5px">Across all three days. A warm up for the MAP test that follows.</span></span><span class="rs" id="quiz-row" data-placeholder="true">Link pending</span></div>
     <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 10l7-7 7 7"/></svg></span>
       <span class="rt">Post-program MAP test<br><span style="color:var(--ink-dim);font-size:13.5px">Word for word the test from Tuesday morning. Eight minutes, silent.</span></span><span class="rs" id="map-post" data-placeholder="true">Link pending</span></div>
     <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 01-9 8.4L3 21l1.1-4.6A8.4 8.4 0 1121 11.5z"/></svg></span>

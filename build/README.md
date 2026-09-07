@@ -50,13 +50,12 @@ so a change there hits both labs. It supports:
 | `engine` | The classify engine (Day 1 only, currently unused) |
 | `expect` / `stretch` / `boss` | The three closing cards |
 
-## Day 3 and the quiz
+## Day 3
 
 ```bash
 python3 build/build_day3_deck.py   # -> site/coded-aiet-day-3-deck.html
 python3 build/build_day3_lab.py    # -> site/coded-aiet-day-3-lab.html
 python3 build/build_day3_page.py   # -> site/coded-aiet-day-3.html
-python3 build/build_quiz.py        # -> site/coded-aiet-quiz.html
 ```
 
 The Day 3 capstone scenarios live in the `SCEN` list at the top of

@@ -18,7 +18,6 @@ Workshop site for the CODED three day programme.
 | Day 3 hub | `site/coded-aiet-day-3.html` |
 | Day 3 deck, 36 slides | `site/coded-aiet-day-3-deck.html` |
 | Day 3 lab, 7 tasks | `site/coded-aiet-day-3-lab.html` |
-| Practice quiz, 12 questions | `site/coded-aiet-quiz.html` |
 
 All three days are built and every internal link resolves.
 
@@ -78,9 +77,19 @@ Three assessment links are not live yet.
 
 | Element id | Item | Lives on |
 |---|---|---|
-| `map-pre` | Pre-program MAP test | Day 1 page, and slide 3 of the Day 1 deck |
-| `map-post` | Post-program MAP test | Day 3 page, and slide 31 of the Day 3 deck |
-| `survey` | End of program survey | Day 3 page, and slide 32 of the Day 3 deck |
+| `map-pre` | Pre-program MAP test | Day 1 page CTA panel, and slide 3 of the Day 1 deck |
+| `quiz` | Quiz | Day 3 page CTA panel, and slide 30 of the Day 3 deck |
+| `quiz-row` | Quiz | Day 3 page, "Before you leave" panel |
+| `map-post` | Post-program MAP test | Day 3 page panel, and slide 31 of the Day 3 deck |
+| `survey` | End of program survey | Day 3 page panel, and slide 32 of the Day 3 deck |
+| `survey-foot` | End of program survey | Landing page footer, Connect column |
+
+Six placeholders across four files. All of them carry `data-placeholder="true"`,
+so this finds every one of them:
+
+```bash
+grep -rn 'data-placeholder' site/
+```
 
 To activate the Day 1 one, change the `<span class="slides-btn ph">` to an
 `<a href="..." class="slides-btn">` and drop the `ph` class and the
@@ -104,8 +113,8 @@ C Customer Service, D Procurement, and E the participant's own redacted work,
 which needs instructor sign off against four questions first. Every scenario
 file carries deliberate flaws. Notes save under `aiet_day3_lab`.
 
-The practice quiz is standalone at `coded-aiet-quiz.html` and holds nothing back
-to a server, so nobody sees anybody's score.
+The quiz at 13:35 is an external link the instructor supplies. It is a
+placeholder on both the Day 3 page and the deck until then.
 
 ## Day 2 at a glance
 

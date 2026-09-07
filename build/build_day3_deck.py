@@ -315,16 +315,16 @@ add('lab5','Task 5',
   '<b>Write it down.</b></div>')
 
 # ============================== ASSESSMENT AND CLOSE
-add('a1','Practice quiz',
+add('a1','Quiz',
   eyebrow('13:35') +
-  '<h2 class="demo-h b">Practice quiz.</h2>'
-  '<div class="lead b">Twelve questions across all three days. Instant feedback, and it tells you '
-  'which topic to look at again. It is not scored by anyone but you.</div>'
-  '<div class="testbox b"><div class="tl">Practice quiz</div>'
-  '<div class="tv">10 minutes</div>'
-  '<div class="td">A warm up for the test that follows. Lean on it. '
+  '<h2 class="demo-h b">Quiz.</h2>'
+  '<div class="lead b">Across all three days. A warm up for the test that follows. '
   'Getting one wrong here is cheaper than getting it wrong at your desk.</div>'
-  '<a class="tph" href="coded-aiet-quiz.html">Open the quiz &rarr;</a></div>',
+  '<div class="testbox b"><div class="tl">Quiz</div>'
+  '<div class="tv">10 minutes</div>'
+  '<div class="td">Take it seriously and it tells you exactly which topic to look at again '
+  'before the MAP test.</div>'
+  '<span class="tph" id="quiz" data-placeholder="true">Link to be added</span></div>',
   center=True)
 
 add('a2','Post MAP test',

@@ -230,19 +230,18 @@ TASKS=[
 {
  "app":"Assessment","sec":"S6 &middot; Close","mins":"~25 min",
  "title":"D3.7 &middot; Quiz, test and survey",
- "scenario":"Three short things, in this order. The quiz is practice and nobody sees your score. The MAP test is the same one you took on Tuesday morning. The survey is how the next version of this programme gets better.",
- "launches":[{"label":"Open the practice quiz","href":"coded-aiet-quiz.html","note":"Twelve questions across all three days. Instant feedback and a topic breakdown."}],
+ "scenario":"Three short things, in this order. The quiz is a warm up. The MAP test is the same one you took on Tuesday morning. The survey is how the next version of this programme gets better.",
  "goal":"All three done before 14:00, and one honest sentence in the survey that would be uncomfortable to say out loud.",
- "steps":["<b>13:35</b> Practice quiz. Twelve questions, instant feedback. Your score is yours alone.",
+ "steps":["<b>13:35</b> Quiz. The instructor gives you the link.",
           "<b>13:45</b> Post-program MAP test. Word for word the test from Tuesday morning.",
           "<b>13:52</b> End of program survey. Five minutes, and please be blunt.",
           "<b>13:57</b> Certificates and a photograph."],
- "findings":[{"label":"Practice quiz score","hint":"out of 12, for your own reference"},
+ "findings":[{"label":"Quiz score","hint":"for your own reference"},
              {"label":"The topic you scored lowest on","hint":"that is your revision list"},
              {"label":"One thing you would change about this programme","hint":"put this in the survey too"}],
  "expect":"Quiz done, test submitted, survey submitted. Then a certificate and a photograph.",
- "stretch":"Look at the quiz topics you got wrong and go back to the relevant day page. All three stay online after today.",
- "boss":"Take the practice quiz a second time and get twelve out of twelve without looking anything up."
+ "stretch":"Look at the topics you got wrong and go back to the relevant day page. All three stay online after today.",
+ "boss":"Write down the one question from the quiz you were least sure about, then go and find the answer yourself rather than asking."
 },
 ]
 
