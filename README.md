@@ -15,13 +15,17 @@ Workshop site for the CODED three day programme.
 | Day 2 hub | `site/coded-aiet-day-2.html` |
 | Day 2 deck, 39 slides | `site/coded-aiet-day-2-deck.html` |
 | Day 2 lab, 7 tasks | `site/coded-aiet-day-2-lab.html` |
+| Day 3 hub | `site/coded-aiet-day-3.html` |
+| Day 3 deck, 36 slides | `site/coded-aiet-day-3-deck.html` |
+| Day 3 lab, 7 tasks | `site/coded-aiet-day-3-lab.html` |
+| Practice quiz, 12 questions | `site/coded-aiet-quiz.html` |
+
+All three days are built and every internal link resolves.
 
 Participant files, all invented and safe to upload:
 `aiet-sample-operations-report.txt`, `employee-satisfaction-2026.csv`,
-`department-budget-2026.xlsx` and its `.csv` twin.
-
-Day 3 is not built yet, so the landing page link to `coded-aiet-day-3.html`
-is dead until it exists.
+`department-budget-2026.xlsx` and its `.csv` twin, and the eight capstone
+scenario files.
 
 ## Deploy
 
@@ -75,12 +79,33 @@ Three assessment links are not live yet.
 | Element id | Item | Lives on |
 |---|---|---|
 | `map-pre` | Pre-program MAP test | Day 1 page, and slide 3 of the Day 1 deck |
-| `map-post` | Post-program MAP test | Day 3, once built |
-| `survey` | End of program survey | Day 3, once built |
+| `map-post` | Post-program MAP test | Day 3 page, and slide 31 of the Day 3 deck |
+| `survey` | End of program survey | Day 3 page, and slide 32 of the Day 3 deck |
 
 To activate the Day 1 one, change the `<span class="slides-btn ph">` to an
 `<a href="..." class="slides-btn">` and drop the `ph` class and the
 `data-placeholder` attribute.
+
+## Day 3 at a glance
+
+| Time | Section |
+|---|---|
+| 09:00 to 09:25 | Open and data security. Where your text goes, the five second scan, your paste rule |
+| 09:25 to 10:05 | Connectors, MCP and Skills. Task 1 |
+| 10:20 to 11:00 | Workflow audit. Task 2 |
+| 11:10 to 12:10 | Capstone, the analysis. Task 3 |
+| 12:50 to 13:20 | The package: briefing, deck, templates. Task 4 |
+| 13:20 to 13:35 | Present it, in trios. Tasks 5 and 6 |
+| 13:35 to 13:55 | Practice quiz, MAP test, survey. Task 7 |
+| 13:55 to 14:00 | Certificates |
+
+The capstone offers five scenarios. A Operations, B Human Resources,
+C Customer Service, D Procurement, and E the participant's own redacted work,
+which needs instructor sign off against four questions first. Every scenario
+file carries deliberate flaws. Notes save under `aiet_day3_lab`.
+
+The practice quiz is standalone at `coded-aiet-quiz.html` and holds nothing back
+to a server, so nobody sees anybody's score.
 
 ## Day 2 at a glance
 

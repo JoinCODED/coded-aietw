@@ -49,3 +49,23 @@ so a change there hits both labs. It supports:
 | `findings` | Labelled inputs that save to the browser |
 | `engine` | The classify engine (Day 1 only, currently unused) |
 | `expect` / `stretch` / `boss` | The three closing cards |
+
+## Day 3 and the quiz
+
+```bash
+python3 build/build_day3_deck.py   # -> site/coded-aiet-day-3-deck.html
+python3 build/build_day3_lab.py    # -> site/coded-aiet-day-3-lab.html
+python3 build/build_day3_page.py   # -> site/coded-aiet-day-3.html
+python3 build/build_quiz.py        # -> site/coded-aiet-quiz.html
+```
+
+The Day 3 capstone scenarios live in the `SCEN` list at the top of
+`build_day3_lab.py`. Each entry carries its label, the question the participant
+must answer, its files, and the preview table rows. Task 3 sets
+`widgetFirst: True` so the scenario picker renders above the steps rather than
+below the prompts.
+
+The privacy and data security slides at the top of the Day 3 deck are the ones
+originally written for Day 1. The Day 1 generator still holds its own copies in
+its parked block; the two sets are independent, so editing one does not change
+the other.

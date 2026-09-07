@@ -393,6 +393,7 @@ function render(){
     '<div class="task-tag"><span class="app">'+t.app+'</span><span>Task '+(cur+1)+' of '+TASKS.length+'</span><span class="mins">'+t.mins+'</span></div>'
    +'<h1 class="task-h">'+t.title+'</h1>'
    +'<p class="scn">'+t.scenario+'</p>'
+   +((t.widget&&t.widgetFirst)?'<div class="step-card"><div class="sc-k">'+(t.widgetLabel||'Choose one')+'</div>'+t.widget+'</div>':'')
    +(t.steps?'<div class="step-card"><div class="sc-k">Steps</div><ol>'+t.steps.map(s=>'<li>'+s+'</li>').join('')+'</ol>'
       +(t.prompt?'<div class="prompt" id="promptBox"><span class="copy-tag">tap to copy</span>'+t.prompt+'</div>':'')
       +'</div>':'')
@@ -406,7 +407,7 @@ function render(){
    +(t.starterlist?'<div class="step-card"><div class="sc-k">Starter menu, tap any to copy</div>'
       +'<div class="lw-starters">'+t.starterlist.map(x=>'<div class="prompt st-prompt" data-p="'+x.replace(/"/g,'&quot;')+'"><span class="copy-tag">tap to copy</span>'+x+'</div>').join('')+'</div></div>':'')
    +(t.engine?'<div class="step-card">'+engineHTML(t)+'</div>':'')
-   +(t.widget?'<div class="step-card"><div class="sc-k">Build and test</div>'+t.widget+'</div>':'')
+   +((t.widget&&!t.widgetFirst)?'<div class="step-card"><div class="sc-k">Build and test</div>'+t.widget+'</div>':'')
    +'<div class="expect"><div class="ex-k">Done looks like</div><p>'+t.expect+'</p></div>'
    +(t.stretch?'<div class="step-card" style="border-left-color:var(--soft)"><div class="sc-k">Tier 2 · Stretch, finished early?</div><p style="font-size:15px;color:var(--ink2);line-height:1.55">'+t.stretch+'</p></div>':'')
    +(t.boss?'<div class="step-card" style="border-left-color:var(--gold)"><div class="sc-k" style="color:var(--gold-lt)">Tier 3 · Boss challenge</div><p style="font-size:15px;color:var(--ink2);line-height:1.55">'+t.boss+'</p></div>':'')

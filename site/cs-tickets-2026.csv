@@ -1,0 +1,565 @@
+ticket_id,channel,date_opened,hour_opened,request_type,first_response_hours,resolved_first_contact,satisfaction_score
+T70001,WhatsApp,2026-04-23,10:00,Account change,2.5,No,5
+T70002,Walk-in,2026-05-09,17:00,Delivery issue,0.3,Yes,3
+T70083,Email,2026-08-27,17:00,Delivery issue,14.6,No,3
+T70004,WhatsApp,2026-06-15,12:00,Account change,4.1,No,5
+T70005,WhatsApp,2026-06-15,08:00,Account change,19.6,Yes,3
+T70006,Email,2026-05-01,17:00,Account change,12.2,Yes,4
+T70007,Walk-in,2026-06-04,11:00,Complaint,0.3,Yes,3
+T70008,whatsapp,2026-08-23,09:00,Technical problem,29.3,No,2
+T70009,WhatsApp,2026-04-05,09:00,Complaint,6.4,No,4
+T70010,WhatsApp,2026-05-15,11:00,Order status,4.7,Yes,4
+T70011,WhatsApp,2026-06-25,09:00,Technical problem,19.7,No,3
+T70012,Web form,2026-09-19,09:00,Product question,10.2,Yes,5
+T70013,Web form,2026-08-12,11:00,Product question,15.3,Yes,4
+T70014,Web form,2026-09-08,13:00,Order status,88.7,Yes,2
+T70015,Email,2026-07-18,08:00,Delivery issue,10.2,No,4
+T70016,Email,2026-06-22,10:00,Delivery issue,3.7,No,5
+T70017,WhatsApp,2026-08-10,18:00,Account change,39.1,No,1
+T70018,Phone,2026-07-04,18:00,Account change,0.3,Yes,4
+T70019,Phone,2026-08-20,16:00,Order status,0.6,Yes,3
+T70020,WhatsApp,2026-08-15,17:00,Refund request,13.3,Yes,3
+T70021,Phone,2026-04-22,12:00,Refund request,0.5,Yes,3
+T70022,Email,2026-05-25,11:00,Order status,39.9,Yes,2
+T70023,Email,2026-05-17,08:00,Delivery issue,65.8,Yes,1
+T70024,Phone,2026-06-21,10:00,Refund request,0.3,No,4
+T70025,WhatsApp,2026-07-06,10:00,Delivery issue,26.5,Yes,2
+T70026,WhatsApp,2026-07-22,16:00,Delivery issue,56.8,Yes,1
+T70027,WhatsApp,2026-08-18,15:00,Complaint,9.4,No,3
+T70028,Phone,2026-05-10,14:00,Complaint,0.4,Yes,4
+T70029,Email,2026-05-14,16:00,Complaint,12.9,Yes,4
+T70030,WhatsApp,2026-09-11,11:00,Refund request,24.2,No,2
+T70031,WhatsApp,2026-05-11,18:00,Delivery issue,4.6,No,4
+T70083,Email,2026-08-27,17:00,Delivery issue,14.6,No,3
+T70032,Phone,2026-04-10,10:00,Technical problem,0.6,Yes,3
+T70033,WhatsApp,2026-09-23,16:00,Account change,85.3,No,1
+T70034,Email,2026-07-06,10:00,Refund request,12.5,Yes,4
+T70035,Phone,2026-09-01,17:00,Account change,0.5,Yes,3
+T70036,WhatsApp,2026-05-07,18:00,Product question,2.1,Yes,5
+T70037,Email,2026-04-09,12:00,Complaint,17.2,No,3
+T70038,WhatsApp,2026-09-06,15:00,Technical problem,15.8,Yes,3
+T70039,Email,2026-05-12,10:00,Order status,28.9,No,2
+T70040,WhatsApp,2026-07-11,08:00,Complaint,13.4,No,3
+T70041,WhatsApp,2026-08-12,16:00,Technical problem,18.4,No,3
+T70042,Email,2026-06-04,13:00,Product question,105.8,No,1
+T70043,Walk-in,2026-06-17,15:00,Product question,0.5,Yes,3
+T70044,Email,2026-09-24,14:00,Order status,6.9,No,4
+T70045,Walk-in,2026-07-09,14:00,Delivery issue,0.1,Yes,5
+T70046,Phone,2026-06-17,17:00,Technical problem,0.5,Yes,3
+T70047,Email,2026-04-13,13:00,Product question,35.9,No,2
+T70048,Phone,2026-04-26,10:00,Complaint,0.3,No,4
+T70049,Email,2026-07-11,12:00,Order status,11.8,Yes,4
+T70050,Email,2026-08-05,15:00,Complaint,7.9,Yes,4
+T70051,Email,2026-06-17,13:00,Account change,31.5,No,2
+T70052,Walk-in,2026-05-05,09:00,Technical problem,0.4,No,3
+T70053,WhatsApp,2026-07-16,15:00,Product question,13.4,No,3
+T70054,Web form,2026-09-02,13:00,Account change,38.6,Yes,3
+T70055,Email,2026-09-13,12:00,Order status,17.7,No,3
+T70056,Email,2026-09-22,17:00,Refund request,10.6,No,4
+T70057,Web form,2026-08-26,18:00,Order status,23.2,No,4
+T70058,Email,2026-06-04,13:00,Order status,14.8,No,3
+T70059,WhatsApp,2026-07-13,14:00,Delivery issue,14.2,No,3
+T70060,Email,2026-04-17,13:00,Product question,1.4,No,5
+T70061,Email,2026-06-28,17:00,Product question,18.8,No,3
+T70062,WhatsApp,2026-09-15,15:00,Complaint,30.7,Yes,2
+T70063,Email,2026-04-23,08:00,Product question,24.1,No,3
+T70064,Phone,2026-07-24,08:00,Complaint,0.2,No,5
+T70065,Phone,2026-09-16,10:00,Refund request,0.3,No,4
+T70066,WhatsApp,2026-07-16,12:00,Refund request,11.1,No,3
+T70067,Phone,2026-09-01,08:00,Product question,0.4,Yes,4
+T70068,Web form,2026-07-05,09:00,Complaint,49.5,No,2
+T70069,WhatsApp,2026-04-02,15:00,Order status,3.7,No,5
+T70070,WhatsApp,2026-05-21,12:00,Order status,29.5,No,2
+T70071,Web form,2026-07-19,13:00,Refund request,86.2,Yes,2
+T70072,WhatsApp,2026-08-27,12:00,Order status,15.1,Yes,3
+T70073,WhatsApp,2026-09-11,10:00,Delivery issue,15.0,No,3
+T70074,Email,2026-08-11,10:00,Order status,9.0,Yes,4
+T70075,WhatsApp,2026-06-07,12:00,Technical problem,25.1,Yes,2
+T70076,Email,2026-08-09,09:00,Order status,5.1,No,5
+T70077,Web form,2026-04-28,09:00,Product question,40.6,Yes,3
+T70078,Phone,2026-06-09,11:00,Order status,0.4,No,4
+T70079,Phone,2026-09-14,12:00,Complaint,0.6,Yes,3
+T70080,Walk-in,2026-06-26,15:00,Complaint,0.3,Yes,3
+T70081,WhatsApp,2026-09-22,12:00,Refund request,26.6,No,2
+T70082,Email,2026-09-04,11:00,Delivery issue,11.6,No,4
+T70084,WhatsApp,2026-09-12,08:00,Account change,19.7,Yes,3
+T70085,WhatsApp,2026-07-02,12:00,Delivery issue,8.6,Yes,4
+T70086,Email,2026-04-26,12:00,Order status,65.7,No,1
+T70087,Phone,2026-05-01,09:00,Complaint,0.2,No,5
+T70088,WhatsApp,2026-08-11,16:00,Refund request,18.5,No,3
+T70089,Email,2026-08-15,08:00,Technical problem,11.5,No,4
+T70090,WhatsApp,2026-06-01,16:00,Product question,12.4,No,3
+T70091,Email,2026-06-13,12:00,Technical problem,8.7,No,4
+T70092,Web form,2026-04-15,10:00,Account change,60.1,Yes,2
+T70093,Walk-in,2026-05-19,16:00,Order status,0.3,Yes,3
+T70094,Web form,2026-08-17,10:00,Complaint,30.2,No,3
+T70095,Web form,2026-06-27,13:00,Complaint,103.5,No,1
+T70096,Email,2026-06-25,12:00,Complaint,52.7,Yes,2
+T70097,Phone,2026-06-13,17:00,Product question,0.5,Yes,4
+T70098,Email,2026-05-12,13:00,Product question,20.6,No,3
+T70099,WhatsApp,2026-08-24,16:00,Delivery issue,12.1,No,3
+T70100,WhatsApp,2026-07-20,11:00,Refund request,16.8,No,3
+T70101,WhatsApp,2026-05-24,08:00,Complaint,3.4,Yes,5
+T70102,Web form,2026-08-28,13:00,Delivery issue,47.7,No,2
+T70103,Phone,2026-08-26,16:00,Delivery issue,0.3,Yes,4
+T70104,Phone,2026-06-15,14:00,Account change,1.0,Yes,3
+T70105,Phone,2026-06-13,16:00,Account change,0.5,Yes,4
+T70106,Email,2026-05-09,10:00,Refund request,10.9,No,4
+T70107,Phone,2026-05-22,13:00,Refund request,0.3,Yes,4
+T70108,Email,2026-08-04,13:00,Technical problem,18.4,Yes,3
+T70109,WhatsApp,2026-08-18,15:00,Order status,14.2,No,3
+T70110,Web form,2026-09-20,15:00,Product question,72.0,Yes,2
+T70111,Walk-in,2026-06-20,09:00,Order status,0.4,Yes,3
+T70112,WhatsApp,2026-09-28,17:00,Order status,16.5,No,3
+T70113,Phone,2026-06-22,11:00,Complaint,0.2,No,5
+T70114,WhatsApp,2026-09-06,17:00,Complaint,8.3,No,4
+T70115,Phone,2026-07-27,13:00,Product question,0.4,Yes,4
+T70116,Email,2026-05-09,17:00,Refund request,122.8,No,1
+T70117,Email,2026-07-14,08:00,Order status,36.4,No,2
+T70118,Email,2026-07-11,17:00,Refund request,54.7,No,2
+T70119,WhatsApp,2026-09-17,12:00,Complaint,16.4,No,3
+T70120,Phone,2026-06-16,12:00,Technical problem,0.3,Yes,4
+T70121,Web form,2026-07-04,12:00,Technical problem,139.0,Yes,1
+T70122,WhatsApp,2026-05-14,15:00,Account change,10.8,No,3
+T70123,WhatsApp,2026-09-28,09:00,Technical problem,29.0,Yes,2
+T70124,Phone,2026-05-24,14:00,Order status,0.3,No,4
+T70125,WhatsApp,2026-09-07,18:00,Account change,4.7,No,4
+T70126,WhatsApp,2026-05-18,12:00,Technical problem,28.9,Yes,2
+T70127,WhatsApp,2026-09-25,15:00,Complaint,25.2,No,2
+T70128,Phone,2026-09-04,11:00,Delivery issue,0.4,Yes,4
+T70129,Email,2026-07-24,17:00,Delivery issue,24.1,No,3
+T70130,Phone,2026-08-03,14:00,Product question,0.9,Yes,3
+T70131,Email,2026-08-26,15:00,Complaint,5.2,No,4
+T70132,Phone,2026-08-15,14:00,Delivery issue,0.3,Yes,4
+T70133,WhatsApp,2026-04-23,18:00,Complaint,9.8,Yes,3
+T70134,Phone,2026-06-28,18:00,Order status,0.6,Yes,3
+T70135,WhatsApp,2026-07-17,17:00,Complaint,29.8,Yes,2
+T70136,WhatsApp,2026-09-18,15:00,Order status,14.6,No,3
+T70137,Web form,2026-05-22,09:00,Account change,93.1,No,1
+T70138,WhatsApp,2026-04-24,17:00,Complaint,7.4,No,4
+T70139,Email,2026-09-22,09:00,Account change,64.4,No,1
+T70140,Email,2026-09-02,12:00,Complaint,33.4,Yes,2
+T70141,Web form,2026-09-15,10:00,Account change,96.2,No,1
+T70142,Email,2026-09-22,15:00,Technical problem,26.6,No,3
+T70143,WhatsApp,2026-06-16,12:00,Refund request,22.5,Yes,2
+T70144,Phone,2026-07-26,12:00,Delivery issue,0.6,Yes,3
+T70145,Walk-in,2026-04-04,10:00,Product question,0.2,No,4
+T70146,Web form,2026-07-06,16:00,Delivery issue,41.0,Yes,3
+T70147,Phone,2026-08-20,17:00,Delivery issue,0.3,Yes,4
+T70148,Phone,2026-08-05,14:00,Order status,0.2,No,5
+T70150,Email,2026-09-02,08:00,Complaint,18.4,Yes,3
+T70151,Web form,2026-06-04,14:00,Product question,46.9,No,2
+T70152,WhatsApp,2026-04-05,12:00,Account change,10.4,No,3
+T70153,Phone,2026-06-12,09:00,Refund request,0.3,Yes,4
+T70154,Email,2026-09-15,16:00,Delivery issue,21.0,Yes,3
+T70155,Email,2026-08-02,18:00,Technical problem,4.4,Yes,5
+T70156,Web form,2026-08-07,11:00,Complaint,96.0,No,1
+T70157,Web form,2026-05-24,18:00,Order status,42.9,No,2
+T70158,Email,2026-08-26,08:00,Refund request,14.1,Yes,3
+T70159,Email,2026-06-01,11:00,Delivery issue,24.1,No,3
+T70160,WhatsApp,2026-05-20,08:00,Delivery issue,10.8,No,3
+T70161,Email,2026-07-22,11:00,Order status,15.8,Yes,3
+T70162,WhatsApp,2026-08-18,09:00,Delivery issue,9.3,No,4
+T70163,WhatsApp,2026-04-19,12:00,Delivery issue,12.1,Yes,3
+T70164,Phone,2026-09-02,17:00,Order status,1.4,Yes,2
+T70165,Phone,2026-08-03,14:00,Refund request,0.2,Yes,5
+T70166,WhatsApp,2026-06-06,10:00,Product question,5.2,Yes,4
+T70167,WhatsApp,2026-08-19,18:00,Technical problem,37.1,No,1
+T70168,WhatsApp,2026-05-18,17:00,Account change,8.2,No,4
+T70169,Web form,2026-05-01,11:00,Order status,28.9,Yes,3
+T70170,Web form,2026-09-19,11:00,Refund request,94.8,No,1
+T70171,WhatsApp,2026-08-16,17:00,Order status,6.7,Yes,4
+T70172,Email,2026-09-02,10:00,Complaint,16.9,No,3
+T70173,Phone,2026-04-14,16:00,Refund request,0.4,Yes,4
+T70174,WhatsApp,2026-09-17,11:00,Technical problem,23.3,Yes,2
+T70175,Web form,2026-08-07,18:00,Delivery issue,37.2,No,3
+T70176,Phone,2026-05-25,09:00,Order status,1.5,No,2
+T70177,Phone,2026-05-18,18:00,Technical problem,0.4,No,4
+T70178,WhatsApp,2026-05-02,09:00,Refund request,11.5,Yes,3
+T70179,WhatsApp,2026-08-22,18:00,Delivery issue,4.4,Yes,5
+T70180,WhatsApp,2026-04-02,12:00,Technical problem,2.5,Yes,5
+T70181,Web form,2026-05-09,11:00,Order status,37.9,No,3
+T70182,Email,2026-08-01,09:00,Refund request,28.4,Yes,2
+T70183,Walk-in,2026-07-09,08:00,Account change,0.4,Yes,3
+T70184,WhatsApp,2026-07-22,12:00,Delivery issue,13.7,No,3
+T70185,Web form,2026-09-13,13:00,Technical problem,34.0,Yes,3
+T70186,WhatsApp,2026-07-06,12:00,Account change,9.6,No,3
+T70187,WhatsApp,2026-07-23,08:00,Product question,6.5,No,4
+T70188,Web form,2026-07-14,10:00,Account change,7.4,No,5
+T70189,Walk-in,2026-08-27,16:00,Refund request,0.3,Yes,3
+T70190,Web form,2026-08-18,09:00,Account change,65.4,No,2
+T70191,WhatsApp,2026-08-22,15:00,Technical problem,52.9,Yes,1
+T70192,Web form,2026-09-17,08:00,Delivery issue,10.4,No,4
+T70193,WhatsApp,2026-09-13,11:00,Account change,28.4,Yes,2
+T70194,Walk-in,2026-08-11,16:00,Order status,0.7,Yes,2
+T70195,Email,2026-04-18,14:00,Complaint,67.8,Yes,1
+T70196,Phone,2026-08-15,11:00,Order status,0.4,No,4
+T70197,WhatsApp,2026-08-02,09:00,Refund request,7.0,No,4
+T70198,Email,2026-08-03,09:00,Product question,4.7,No,5
+T70199,Phone,2026-04-17,15:00,Product question,1.3,No,2
+T70200,Walk-in,2026-05-05,16:00,Technical problem,0.3,Yes,4
+T70201,Web form,2026-07-12,13:00,Account change,39.2,Yes,3
+T70202,Walk-in,2026-07-16,09:00,Product question,0.3,Yes,4
+T70203,Email,2026-06-07,15:00,Refund request,4.4,Yes,5
+T70204,Web form,2026-08-10,18:00,Order status,27.7,Yes,3
+T70205,Email,2026-04-13,08:00,Delivery issue,4.0,Yes,5
+T70206,Walk-in,2026-05-12,17:00,Order status,0.3,No,4
+T70207,WhatsApp,2026-09-01,18:00,Refund request,67.0,No,1
+T70208,Phone,2026-07-25,13:00,Technical problem,0.6,No,3
+T70209,Web form,2026-04-12,13:00,Complaint,39.1,No,3
+T70210,Web form,2026-09-02,16:00,Product question,56.1,Yes,2
+T70211,Phone,2026-08-14,18:00,Delivery issue,0.6,No,3
+T70212,WhatsApp,2026-08-14,14:00,Complaint,10.9,No,3
+T70213,WhatsApp,2026-05-12,18:00,Delivery issue,3.9,No,5
+T70214,Email,2026-06-12,12:00,Delivery issue,31.1,Yes,2
+T70215,WhatsApp,2026-08-26,10:00,Account change,10.1,No,3
+T70216,Phone,2026-08-24,16:00,Order status,0.4,No,4
+T70217,Walk-in,2026-06-03,18:00,Technical problem,0.5,Yes,3
+T70218,WhatsApp,2026-09-14,16:00,Delivery issue,36.3,Yes,1
+T70219,WhatsApp,2026-07-15,13:00,Delivery issue,57.8,No,1
+T70220,Email,2026-04-25,09:00,Product question,5.5,No,4
+T70221,WhatsApp,2026-08-13,14:00,Delivery issue,14.2,No,3
+T70222,WhatsApp,2026-07-18,16:00,Product question,28.9,Yes,2
+T70223,Phone,2026-08-11,18:00,Complaint,0.5,No,4
+T70149,WhatsApp,2026-08-19,18:00,Account change,812.0,No,1
+T70224,WhatsApp,2026-09-17,09:00,Complaint,27.1,Yes,2
+T70225,Walk-in,2026-09-18,17:00,Complaint,0.2,No,4
+T70226,WhatsApp,2026-06-24,10:00,Complaint,7.6,Yes,4
+T70227,Walk-in,2026-07-08,08:00,Account change,0.2,No,4
+T70228,Email,2026-05-12,08:00,Technical problem,35.1,No,2
+T70229,WhatsApp,2026-06-26,09:00,Order status,12.4,No,3
+T70230,Phone,2026-06-13,17:00,Account change,0.1,Yes,5
+T70231,WhatsApp,2026-09-03,11:00,Technical problem,12.0,No,3
+T70232,Phone,2026-07-03,09:00,Technical problem,0.5,No,4
+T70233,WhatsApp,2026-05-15,14:00,Technical problem,15.1,Yes,3
+T70234,Phone,2026-06-14,10:00,Complaint,0.1,Yes,5
+T70235,Walk-in,2026-08-09,18:00,Account change,0.1,No,5
+T70236,WhatsApp,2026-06-21,14:00,Account change,24.3,No,2
+T70237,Phone,2026-05-05,18:00,Delivery issue,0.5,Yes,4
+T70238,WhatsApp,2026-07-08,12:00,Order status,34.0,Yes,2
+T70239,Email,2026-07-19,17:00,Complaint,46.8,Yes,2
+T70240,Email,2026-04-05,11:00,Product question,18.9,Yes,3
+T70241,WhatsApp,2026-08-01,15:00,Order status,11.0,No,3
+T70242,Phone,2026-09-08,15:00,Order status,0.3,No,4
+T70243,Web form,2026-07-02,16:00,Order status,8.8,No,5
+T70244,Email,2026-04-08,13:00,Account change,28.0,No,2
+T70245,Email,2026-08-12,12:00,Delivery issue,19.7,No,3
+T70246,Phone,2026-09-05,10:00,Refund request,0.2,Yes,5
+T70247,WhatsApp,2026-08-06,09:00,Product question,18.5,Yes,3
+T70248,Email,2026-09-27,09:00,Complaint,23.2,No,3
+T70249,Email,2026-05-16,11:00,Product question,105.0,Yes,1
+T70250,Walk-in,2026-08-02,10:00,Product question,0.5,Yes,3
+T70251,WhatsApp,2026-08-21,14:00,Complaint,16.1,No,3
+T70252,WhatsApp,2026-09-28,12:00,Order status,12.3,No,3
+T70253,Email,2026-05-11,16:00,Technical problem,15.6,Yes,3
+T70254,Web form,2026-09-11,17:00,Refund request,11.4,Yes,4
+T70255,WhatsApp,2026-05-08,18:00,Refund request,32.1,No,2
+T70256,Email,2026-06-28,10:00,Technical problem,19.9,No,3
+T70257,Email,2026-05-04,13:00,Account change,50.0,Yes,2
+T70258,Phone,2026-09-17,09:00,Account change,0.8,Yes,3
+T70259,WhatsApp,2026-08-10,12:00,Complaint,32.8,Yes,2
+T70260,Web form,2026-05-26,12:00,Complaint,20.5,Yes,4
+T70261,Phone,2026-04-15,10:00,Account change,0.9,No,3
+T70262,WhatsApp,2026-09-17,09:00,Refund request,7.2,No,4
+T70263,Email,2026-05-02,14:00,Product question,50.7,No,2
+T70264,Phone,2026-08-25,09:00,Complaint,0.2,Yes,5
+T70265,Email,2026-08-01,09:00,Product question,20.9,No,3
+T70266,Web form,2026-04-04,11:00,Refund request,44.1,No,2
+T70267,Phone,2026-05-07,17:00,Delivery issue,0.4,Yes,4
+T70268,Phone,2026-04-08,13:00,Product question,0.3,Yes,4
+T70269,Email,2026-09-07,15:00,Product question,13.6,Yes,3
+T70270,Email,2026-05-12,11:00,Product question,61.4,No,1
+T70271,WhatsApp,2026-04-26,15:00,Complaint,1.3,No,5
+T70272,Email,2026-05-20,11:00,Technical problem,12.0,No,4
+T70273,Email,2026-09-20,18:00,Product question,42.3,Yes,2
+T70274,WhatsApp,2026-08-01,09:00,Complaint,15.4,No,3
+T70275,WhatsApp,2026-07-20,10:00,Product question,4.8,Yes,4
+T70276,WhatsApp,2026-04-10,09:00,Refund request,28.0,No,2
+T70278,WhatsApp,2026-04-02,18:00,Refund request,25.5,No,2
+T70279,Web form,2026-07-20,11:00,Refund request,38.5,No,3
+T70280,Phone,2026-08-24,16:00,Product question,0.2,No,5
+T70281,Walk-in,2026-07-18,14:00,Account change,0.1,No,5
+T70282,Email,2026-08-13,09:00,Technical problem,32.7,No,2
+T70283,Email,2026-06-11,08:00,Technical problem,23.9,No,3
+T70284,WhatsApp,2026-05-08,15:00,Product question,16.4,No,3
+T70285,Email,2026-04-02,15:00,Order status,67.6,No,1
+T70286,Email,2026-09-01,15:00,Refund request,20.6,No,3
+T70287,Web form,2026-08-06,11:00,Complaint,32.4,No,3
+T70288,WhatsApp,2026-09-23,15:00,Product question,13.7,No,3
+T70289,Email,2026-08-19,11:00,Order status,36.7,No,2
+T70290,Email,2026-07-19,08:00,Account change,19.6,No,3
+T70291,Phone,2026-06-24,08:00,Complaint,0.2,Yes,5
+T70292,Web form,2026-09-09,12:00,Delivery issue,43.8,Yes,2
+T70293,Email,2026-08-12,09:00,Refund request,10.2,No,4
+T70294,Email,2026-08-14,09:00,Refund request,20.5,Yes,3
+T70295,WhatsApp,2026-05-02,14:00,Delivery issue,5.2,No,4
+T70296,Web form,2026-05-10,18:00,Refund request,91.0,No,1
+T70297,WhatsApp,2026-06-02,15:00,Product question,53.5,Yes,1
+T70298,WhatsApp,2026-05-04,08:00,Complaint,6.1,Yes,4
+T70299,WhatsApp,2026-09-08,12:00,Refund request,12.5,No,3
+T70300,Phone,2026-07-08,10:00,Complaint,0.3,Yes,4
+T70301,Phone,2026-09-03,08:00,Delivery issue,0.3,No,4
+T70302,Email,2026-09-18,17:00,Account change,76.1,No,1
+T70303,WhatsApp,2026-07-02,17:00,Account change,5.2,Yes,4
+T70304,Email,2026-06-04,18:00,Delivery issue,3.7,No,5
+T70305,Phone,2026-08-18,18:00,Order status,0.2,Yes,5
+T70306,Phone,2026-07-11,18:00,Account change,0.3,Yes,4
+T70307,Walk-in,2026-04-03,10:00,Account change,0.1,Yes,5
+T70308,WhatsApp,2026-06-01,10:00,Refund request,53.7,No,1
+T70309,Phone,2026-07-11,14:00,Complaint,0.2,No,5
+T70310,WhatsApp,2026-08-08,10:00,Delivery issue,7.8,No,4
+T70311,Phone,2026-06-19,15:00,Delivery issue,0.3,Yes,5
+T70312,WhatsApp,2026-04-12,13:00,Complaint,1.2,No,5
+T70313,WhatsApp,2026-09-13,15:00,Account change,29.1,Yes,2
+T70314,WhatsApp,2026-04-15,12:00,Refund request,6.4,No,4
+T70315,Email,2026-07-02,15:00,Delivery issue,14.1,No,3
+T70316,Walk-in,2026-04-20,16:00,Refund request,0.1,Yes,5
+T70317,Phone,2026-05-04,16:00,Order status,0.5,Yes,4
+T70318,WhatsApp,2026-06-16,10:00,Refund request,9.2,No,4
+T70319,Phone,2026-06-22,17:00,Complaint,0.3,Yes,5
+T70320,Walk-in,2026-09-15,18:00,Complaint,0.3,Yes,4
+T70321,Email,2026-04-20,17:00,Refund request,20.2,Yes,3
+T70322,WhatsApp,2026-04-15,15:00,Delivery issue,4.2,No,5
+T70323,Email,2026-08-19,18:00,Order status,9.9,No,4
+T70324,Web form,2026-05-17,15:00,Delivery issue,34.9,No,3
+T70325,WhatsApp,2026-09-15,12:00,Product question,16.7,No,3
+T70326,Web form,2026-07-24,17:00,Order status,23.4,No,3
+T70327,WhatsApp,2026-06-06,13:00,Product question,47.4,No,1
+T70328,WhatsApp,2026-06-02,09:00,Product question,5.7,No,4
+T70329,WhatsApp,2026-07-01,08:00,Delivery issue,27.3,No,2
+T70330,WhatsApp,2026-09-15,08:00,Account change,6.5,Yes,4
+T70331,WhatsApp,2026-04-25,15:00,Order status,4.6,Yes,4
+T70332,WhatsApp,2026-06-07,16:00,Refund request,2.6,Yes,5
+T70333,WhatsApp,2026-08-21,18:00,Order status,6.3,No,4
+T70334,Phone,2026-09-22,16:00,Account change,0.7,Yes,3
+T70335,Email,2026-07-21,08:00,Refund request,36.5,Yes,2
+T70336,WhatsApp,2026-06-06,08:00,Product question,26.5,No,2
+T70337,WhatsApp,2026-06-03,17:00,Refund request,3.9,No,5
+T70338,Email,2026-09-02,17:00,Account change,29.5,Yes,2
+T70339,WhatsApp,2026-05-12,18:00,Order status,7.7,No,4
+T70340,WhatsApp,2026-09-14,15:00,Delivery issue,4.6,No,4
+T70341,Email,2026-04-28,08:00,Account change,22.1,No,3
+T70342,Email,2026-06-28,08:00,Complaint,35.8,Yes,2
+T70343,Phone,2026-05-10,18:00,Complaint,0.9,Yes,3
+T70344,Email,2026-07-15,12:00,Technical problem,26.3,No,3
+T70345,WhatsApp,2026-09-13,17:00,Delivery issue,8.4,No,4
+T70346,Email,2026-09-10,14:00,Order status,17.2,No,3
+T70347,WhatsApp,2026-05-19,14:00,Product question,47.6,No,1
+T70349,WhatsApp,2026-08-10,08:00,Complaint,21.6,Yes,2
+T70350,WhatsApp,2026-07-25,11:00,Product question,3.7,No,5
+T70351,Phone,2026-07-18,14:00,Delivery issue,0.3,Yes,5
+T70352,WhatsApp,2026-08-03,16:00,Account change,23.4,Yes,2
+T70353,Email,2026-09-28,12:00,Refund request,67.5,Yes,1
+T70354,Email,2026-09-02,09:00,Complaint,44.3,No,2
+T70355,Walk-in,2026-07-27,15:00,Delivery issue,0.6,No,2
+T70356,WhatsApp,2026-06-22,12:00,Order status,34.4,Yes,2
+T70357,Email,2026-09-08,16:00,Technical problem,42.2,No,2
+T70358,WhatsApp,2026-08-20,10:00,Complaint,11.1,No,3
+T70359,WhatsApp,2026-05-24,11:00,Order status,12.7,No,3
+T70360,Phone,2026-06-23,09:00,Product question,0.2,No,5
+T70361,Phone,2026-09-28,16:00,Product question,0.2,Yes,5
+T70362,Email,2026-04-11,18:00,Order status,10.1,Yes,4
+T70363,WhatsApp,2026-05-05,09:00,Order status,13.2,Yes,3
+T70364,Walk-in,2026-09-12,18:00,Account change,0.1,No,5
+T70365,Walk-in,2026-09-06,18:00,Delivery issue,0.1,Yes,5
+T70366,Phone,2026-08-28,09:00,Order status,1.2,No,2
+T70367,WhatsApp,2026-06-18,10:00,Account change,5.8,Yes,4
+T70368,Walk-in,2026-06-12,13:00,Refund request,0.6,No,3
+T70369,WhatsApp,2026-07-10,17:00,Refund request,7.4,Yes,4
+T70370,WhatsApp,2026-04-25,17:00,Product question,1.2,No,5
+T70371,Web form,2026-08-20,13:00,Order status,17.6,No,4
+T70372,Phone,2026-06-08,10:00,Complaint,0.4,Yes,4
+T70373,WhatsApp,2026-05-26,16:00,Delivery issue,4.1,No,5
+T70374,Email,2026-06-13,14:00,Complaint,33.2,No,2
+T70375,WhatsApp,2026-07-12,11:00,Refund request,8.4,No,4
+T70376,Web form,2026-08-06,12:00,Technical problem,24.2,Yes,3
+T70377,WhatsApp,2026-09-24,11:00,Delivery issue,13.0,Yes,3
+T70378,Walk-in,2026-07-08,15:00,Complaint,0.3,Yes,4
+T70379,Email,2026-09-11,13:00,Account change,20.5,No,3
+T70380,Email,2026-07-26,18:00,Order status,13.5,No,3
+T70381,Web form,2026-06-12,08:00,Refund request,25.6,No,3
+T70382,WhatsApp,2026-07-19,15:00,Delivery issue,32.2,No,2
+T70383,WhatsApp,2026-06-26,11:00,Complaint,9.7,No,3
+T70384,Walk-in,2026-09-02,18:00,Technical problem,0.3,Yes,4
+T70385,Email,2026-08-09,14:00,Technical problem,23.3,No,3
+T70386,WhatsApp,2026-08-13,08:00,Delivery issue,6.0,No,4
+T70387,Web form,2026-05-26,13:00,Order status,30.5,No,3
+T70388,Web form,2026-06-09,17:00,Technical problem,52.1,No,2
+T70389,Phone,2026-06-07,17:00,Order status,0.3,Yes,5
+T70390,Email,2026-05-16,18:00,Product question,13.3,No,3
+T70391,Phone,2026-05-09,18:00,Technical problem,0.2,No,5
+T70392,Email,2026-07-20,13:00,Product question,25.5,No,3
+T70393,Phone,2026-08-05,10:00,Technical problem,0.2,Yes,5
+T70394,WhatsApp,2026-09-21,09:00,Complaint,14.3,No,3
+T70395,WhatsApp,2026-05-10,17:00,Complaint,4.5,Yes,4
+T70396,Web form,2026-09-12,12:00,Technical problem,16.4,No,4
+T70397,Web form,2026-07-13,12:00,Account change,21.3,Yes,4
+T70398,Phone,2026-06-04,12:00,Complaint,0.6,No,3
+T70399,WhatsApp,2026-07-13,10:00,Complaint,11.7,No,3
+T70400,Email,2026-06-09,11:00,Technical problem,20.9,No,3
+T70401,Phone,2026-04-23,14:00,Account change,0.2,No,5
+T70402,Email,2026-05-17,17:00,Product question,32.4,Yes,2
+T70403,WhatsApp,2026-04-01,14:00,Product question,11.8,No,3
+T70404,Phone,2026-07-14,13:00,Refund request,0.6,No,3
+T70405,WhatsApp,2026-08-23,08:00,Order status,19.4,Yes,3
+T70406,WhatsApp,2026-05-21,08:00,Delivery issue,10.8,No,3
+T70407,Email,2026-05-17,09:00,Account change,13.0,No,3
+T70408,WhatsApp,2026-06-08,08:00,Delivery issue,13.0,No,3
+T70409,WhatsApp,2026-06-17,17:00,Product question,6.9,No,4
+T70410,WhatsApp,2026-09-10,17:00,Complaint,23.7,Yes,2
+T70411,WhatsApp,2026-06-10,12:00,Product question,8.7,Yes,4
+T70412,WhatsApp,2026-07-26,10:00,Account change,4.1,No,5
+T70413,Email,2026-05-10,10:00,Complaint,49.8,Yes,2
+T70414,WhatsApp,2026-09-14,11:00,Order status,25.9,No,2
+T70415,Email,2026-06-02,13:00,Account change,7.2,Yes,4
+T70416,Phone,2026-04-15,14:00,Refund request,0.4,No,4
+T70417,Web form,2026-05-14,10:00,Order status,62.8,No,2
+T70418,Email,2026-07-18,14:00,Account change,16.6,Yes,3
+T70419,Phone,2026-05-20,14:00,Complaint,0.7,Yes,3
+T70420,WhatsApp,2026-08-16,09:00,Order status,61.7,No,1
+T70421,Phone,2026-09-18,18:00,Refund request,0.3,No,5
+T70422,Web form,2026-04-26,08:00,Account change,26.7,No,3
+T70423,WhatsApp,2026-07-16,13:00,Refund request,40.3,No,1
+T70424,Web form,2026-05-13,17:00,Refund request,73.0,No,2
+T70425,Email,2026-09-03,12:00,Product question,47.0,No,2
+T70426,Email,2026-06-28,13:00,Delivery issue,95.2,Yes,1
+T70427,Web form,2026-04-17,08:00,Product question,67.8,No,2
+T70428,Phone,2026-06-06,13:00,Complaint,0.7,Yes,3
+T70429,Email,2026-05-09,14:00,Product question,47.4,Yes,2
+T70430,Phone,2026-09-08,12:00,Account change,0.6,No,3
+T70431,WhatsApp,2026-07-07,08:00,Complaint,16.0,No,3
+T70432,Web form,2026-09-07,09:00,Delivery issue,89.5,Yes,2
+T70433,Walk-in,2026-05-09,13:00,Complaint,0.1,Yes,5
+T70434,WhatsApp,2026-08-02,16:00,Order status,9.9,No,3
+T70435,Phone,2026-08-28,08:00,Delivery issue,0.8,Yes,3
+T70436,Walk-in,2026-05-02,12:00,Delivery issue,0.1,No,5
+T70437,WhatsApp,2026-07-16,08:00,Complaint,14.1,No,3
+T70438,Email,2026-05-24,16:00,Technical problem,58.4,No,1
+T70439,Email,2026-07-04,14:00,Order status,11.5,No,4
+T70440,WhatsApp,2026-09-13,15:00,Refund request,19.5,Yes,3
+T70441,Email,2026-04-19,08:00,Account change,17.8,No,3
+T70442,Walk-in,2026-07-20,08:00,Order status,0.1,No,5
+T70443,Phone,2026-06-23,13:00,Product question,0.9,Yes,3
+T70444,Web form,2026-07-02,17:00,Complaint,75.4,No,2
+T70445,Phone,2026-06-25,12:00,Technical problem,0.2,No,5
+T70446,Phone,2026-07-18,08:00,Technical problem,1.5,No,2
+T70447,Phone,2026-08-08,18:00,Technical problem,0.4,Yes,4
+T70448,Web form,2026-07-17,16:00,Complaint,9.6,No,5
+T70449,WhatsApp,2026-04-22,15:00,Delivery issue,4.5,Yes,5
+T70450,Phone,2026-08-25,17:00,Technical problem,0.6,Yes,3
+T70451,WhatsApp,2026-06-07,15:00,Complaint,17.5,No,3
+T70452,WhatsApp,2026-05-08,15:00,Product question,14.6,Yes,3
+T70453,Email,2026-09-26,13:00,Account change,8.1,No,4
+T70454,Email,2026-07-13,11:00,Delivery issue,84.1,Yes,1
+T70455,Email,2026-07-05,17:00,Delivery issue,17.8,Yes,3
+T70456,WhatsApp,2026-08-13,15:00,Order status,13.4,No,3
+T70457,Email,2026-06-11,11:00,Account change,59.5,No,1
+T70458,Email,2026-04-10,16:00,Account change,28.8,No,2
+T70459,Phone,2026-07-05,08:00,Account change,0.4,No,4
+T70460,Web form,2026-07-14,13:00,Product question,43.8,No,2
+T70461,WhatsApp,2026-08-09,14:00,Order status,15.9,No,3
+T70462,WhatsApp,2026-07-01,17:00,Complaint,4.4,No,5
+T70463,Email,2026-08-13,08:00,Product question,7.6,No,4
+T70464,Web form,2026-04-23,12:00,Complaint,55.2,No,2
+T70465,Phone,2026-07-07,14:00,Delivery issue,0.3,No,5
+T70466,Email,2026-05-05,12:00,Product question,46.3,No,2
+T70467,Phone,2026-05-28,16:00,Order status,0.6,Yes,3
+T70468,Email,2026-06-09,12:00,Complaint,8.7,No,4
+T70469,Email,2026-08-05,13:00,Delivery issue,16.9,No,3
+T70470,Email,2026-08-15,12:00,Delivery issue,85.0,No,1
+T70471,Email,2026-06-09,17:00,Account change,22.0,Yes,3
+T70472,Email,2026-04-16,18:00,Refund request,16.1,No,3
+T70473,Phone,2026-09-05,18:00,Delivery issue,0.2,No,5
+T70474,WhatsApp,2026-08-26,10:00,Order status,12.0,No,3
+T70475,Walk-in,2026-04-28,09:00,Account change,0.2,Yes,4
+T70476,WhatsApp,2026-08-16,13:00,Product question,9.7,No,3
+T70477,WhatsApp,2026-04-20,11:00,Order status,12.0,Yes,3
+T70478,Phone,2026-09-20,09:00,Technical problem,0.2,No,5
+T70479,WhatsApp,2026-09-21,13:00,Refund request,24.0,Yes,2
+T70480,WhatsApp,2026-05-03,16:00,Complaint,11.6,No,3
+T70481,Email,2026-05-01,08:00,Order status,73.2,Yes,1
+T70482,WhatsApp,2026-09-15,17:00,Product question,19.8,No,2
+T70483,WhatsApp,2026-09-25,17:00,Refund request,21.0,No,2
+T70484,Phone,2026-08-03,14:00,Product question,0.3,No,5
+T70485,Email,2026-06-04,16:00,Product question,15.8,Yes,3
+T70486,Web form,2026-09-26,18:00,Refund request,8.8,No,5
+T70487,Email,2026-09-12,16:00,Refund request,34.9,Yes,2
+T70488,WhatsApp,2026-09-28,16:00,Technical problem,37.2,No,1
+T70489,Email,2026-07-16,12:00,Refund request,32.4,No,2
+T70490,WhatsApp,2026-06-22,13:00,Complaint,30.8,No,2
+T70491,WhatsApp,2026-09-27,18:00,Refund request,13.8,No,3
+T70492,WhatsApp,2026-07-28,15:00,Account change,26.2,Yes,2
+T70493,Phone,2026-05-18,08:00,Technical problem,1.1,No,2
+T70494,Email,2026-09-11,10:00,Complaint,7.8,No,4
+T70495,Phone,2026-08-01,08:00,Delivery issue,0.4,Yes,4
+T70496,Web form,2026-06-10,18:00,Order status,91.2,No,1
+T70497,WhatsApp,2026-07-13,14:00,Complaint,5.8,Yes,4
+T70498,Phone,2026-09-24,17:00,Delivery issue,0.7,No,3
+T70499,Email,2026-08-02,09:00,Delivery issue,68.9,Yes,1
+T70500,WhatsApp,2026-08-15,09:00,Delivery issue,24.7,Yes,2
+T70501,Web form,2026-08-12,16:00,Technical problem,17.5,Yes,4
+T70502,Phone,2026-07-01,12:00,Delivery issue,0.2,Yes,5
+T70503,Walk-in,2026-09-22,15:00,Order status,0.3,Yes,4
+T70504,Phone,2026-06-25,08:00,Order status,2.0,No,2
+T70505,Walk-in,2026-06-28,12:00,Refund request,0.4,Yes,3
+T70506,Phone,2026-06-19,12:00,Product question,0.9,Yes,3
+T70507,Phone,2026-08-22,16:00,Refund request,0.3,No,5
+T70508,Phone,2026-09-07,14:00,Refund request,1.1,No,3
+T70509,Web form,2026-04-08,09:00,Refund request,23.8,Yes,3
+T70510,Email,2026-05-18,12:00,Product question,61.7,Yes,1
+T70511,Walk-in,2026-05-13,08:00,Refund request,0.2,Yes,5
+T70512,Phone,2026-07-20,08:00,Technical problem,0.3,Yes,5
+T70513,Phone,2026-06-06,17:00,Refund request,0.6,No,3
+T70514,WhatsApp,2026-09-23,11:00,Delivery issue,27.9,No,2
+T70515,Email,2026-09-28,18:00,Delivery issue,5.7,Yes,4
+T70516,Phone,2026-04-21,14:00,Account change,0.9,Yes,3
+T70517,WhatsApp,2026-07-25,09:00,Refund request,10.2,No,3
+T70518,WhatsApp,2026-09-08,13:00,Order status,20.5,Yes,2
+T70519,Email,2026-09-09,18:00,Order status,60.5,No,1
+T70520,WhatsApp,2026-06-12,13:00,Order status,15.5,No,3
+T70521,WhatsApp,2026-08-05,10:00,Delivery issue,14.6,No,3
+T70522,WhatsApp,2026-04-11,16:00,Technical problem,20.1,No,2
+T70348,Email,2026-05-17,08:00,Delivery issue,-3.5,Yes,1
+T70523,Email,2026-06-18,13:00,Delivery issue,21.6,No,3
+T70524,Email,2026-07-11,15:00,Order status,37.1,No,2
+T70525,Walk-in,2026-06-04,10:00,Order status,0.4,No,3
+T70526,Web form,2026-04-20,12:00,Account change,32.0,No,3
+T70527,Web form,2026-05-28,15:00,Account change,13.9,Yes,4
+T70528,WhatsApp,2026-07-15,13:00,Complaint,22.6,Yes,2
+T70529,Phone,2026-04-26,09:00,Delivery issue,1.7,No,2
+T70277,Phone,2026-04-22,12:00,Refund request,,Yes,3
+T70530,Email,2026-05-22,18:00,Product question,26.2,No,3
+T70531,Phone,2026-08-02,16:00,Complaint,0.4,No,4
+T70532,Email,2026-06-16,08:00,Refund request,21.1,No,3
+T70533,WhatsApp,2026-07-24,12:00,Account change,6.5,Yes,4
+T70534,Email,2026-05-08,08:00,Refund request,17.4,No,3
+T70535,Email,2026-07-17,17:00,Refund request,24.6,No,3
+T70536,Email,2026-04-18,11:00,Complaint,51.7,Yes,2
+T70537,WhatsApp,2026-09-11,12:00,Technical problem,19.5,No,3
+T70538,Email,2026-08-15,13:00,Order status,25.5,No,3
+T70539,Web form,2026-07-14,11:00,Delivery issue,35.7,No,3
+T70540,Web form,2026-06-16,17:00,Complaint,36.9,No,3
+T70541,Email,2026-09-17,13:00,Product question,23.0,Yes,3
+T70542,Phone,2026-05-04,18:00,Account change,0.2,No,5
+T70543,Email,2026-09-27,12:00,Account change,21.1,Yes,3
+T70544,Web form,2026-06-26,09:00,Delivery issue,42.9,No,2
+T70545,WhatsApp,2026-06-24,11:00,Refund request,4.2,No,5
+T70546,Email,2026-04-06,16:00,Delivery issue,26.2,No,3
+T70547,Phone,2026-04-18,15:00,Delivery issue,0.5,No,4
+T70548,WhatsApp,2026-09-05,11:00,Product question,16.8,No,3
+T70549,WhatsApp,2026-05-19,08:00,Technical problem,5.5,No,4
+T70550,Phone,2026-07-17,08:00,Refund request,0.9,No,3
+T70551,Phone,2026-09-19,10:00,Refund request,0.4,No,4
+T70552,Email,2026-05-05,13:00,Account change,47.4,No,2
+T70553,Email,2026-04-26,08:00,Technical problem,27.1,No,3
+T70554,Phone,2026-07-16,12:00,Complaint,0.8,Yes,3
+T70555,Email,2026-06-04,08:00,Delivery issue,12.9,No,4
+T70556,WhatsApp,2026-09-14,08:00,Refund request,7.1,No,4
+T70557,Walk-in,2026-05-14,15:00,Order status,0.7,No,2
+T70558,WhatsApp,2026-06-08,08:00,Complaint,5.2,Yes,4
+T70559,WhatsApp,2026-07-01,10:00,Refund request,10.5,Yes,3
+T70560,Email,2026-08-24,09:00,Refund request,17.9,No,3
+T70561,Phone,2026-07-24,17:00,Account change,0.4,No,4
+T70562,Phone,2026-09-15,08:00,Complaint,0.3,No,5
+T70563,WhatsApp,2026-06-24,11:00,Order status,8.0,No,4
+T70564,Phone,2026-05-10,08:00,Product question,0.4,No,4
