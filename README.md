@@ -23,9 +23,17 @@ until those pages exist.
 Every page is self contained. CSS is inline, the logo is a base64 data URI, and
 there is no build step or bundler at deploy time.
 
-Netlify serves `site/` as the publish directory, set in `netlify.toml`. A drag and
-drop of the `site/` folder works too. Links between pages are same directory
-relative, so a flat upload is fine and clean URLs resolve.
+Vercel serves `site/` as the output directory, set in `vercel.json`. Import the
+repository in Vercel, leave the framework preset as **Other**, and leave the build
+command empty. `outputDirectory` in `vercel.json` does the rest.
+
+`cleanUrls` is on, so `/coded-aiet-day-1` serves the page and the `.html` form
+redirects to it. Links between pages are same directory relative, so nothing
+breaks either way.
+
+The datasets and the sample report live inside `site/` because the labs link to
+them for download. `build/`, `datasets/` and `instructor/` are excluded from the
+deployment by `.vercelignore`.
 
 ## Rebuild
 

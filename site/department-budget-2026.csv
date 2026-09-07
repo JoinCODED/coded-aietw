@@ -1,0 +1,33 @@
+Department,Line item,Annual Budget (KD),YTD Budget (KD),YTD Actual (KD),Variance (KD),Variance %
+Operations,Salaries and wages,910000,682500,752600,70100,10.3
+Operations,Fuel,161000,120750,131050,10300,8.5
+Operations,Vehicle maintenance,103000,77250,87000,9750,12.6
+Operations,Warehouse consumables,73000,54750,57050,2300,4.2
+Operations,Overtime,88000,66000,69600,3600,5.5
+Operations,Third-party logistics,73000,54750,58000,3250,5.9
+Operations,Facilities and utilities,59000,44250,31150,-13100,-29.6
+Finance,Salaries and wages,379000,284250,302300,18050,6.4
+Finance,Audit and assurance,57000,42750,48550,5800,13.6
+Finance,Banking charges,29000,21750,22500,750,3.4
+Finance,Software licences,63000,47250,49600,2350,5.0
+Finance,Professional fees,46000,34500,36100,1600,4.6
+Human Resources,Salaries and wages,290000,217500,223700,6200,2.9
+Human Resources,Training and development,40000,30000,14000,-16000,-40.0
+Human Resources,Recruitment,36000,27000,29900,2900,10.7
+Human Resources,Employee wellbeing,20000,15000,15350,350,2.3
+Human Resources,HR system subscription,21000,15750,17250,1500,9.5
+Customer Service,Salaries and wages,575000,431250,448300,17050,4.0
+Customer Service,Contact centre platform,76000,57000,62900,5900,10.4
+Customer Service,Training,0,0,6100,6100,
+Customer Service,Training,0,0,6100,6100,
+Customer Service,Customer refunds and goodwill,42000,31500,35250,3750,11.9
+Information Technology,Salaries and wages,291000,218250,249350,31100,14.2
+Information Technology,Cloud hosting,89000,66750,80150,13400,20.1
+Information Technology,Hardware refresh,100000,75000,44000,-31000,-31.0
+Information Technology,Software licences,82000,61500,74900,13400,21.8
+Information Technology,Network and connectivity,44000,33000,37950,4950,15.0
+Information Technology,Security tooling,2000,1500,"1,250",-250,-16.7
+Information Technology,Support contracts,32000,24000,27300,3300,13.8
+Procurement,Salaries and wages,199000,149250,140450,-8800,-5.9
+Procurement,Supplier audit programme,27000,20250,19250,-1000,-4.9
+Operations,Insurance recovery credit,0,0,14750,14750,
