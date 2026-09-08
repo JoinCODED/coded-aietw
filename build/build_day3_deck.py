@@ -58,12 +58,12 @@ add('outcomes','Outcomes',
   '<div class="road one">'
   '<div class="ritem b"><div class="rn">01</div><div><div class="rt">An executive briefing</div>'
   '<div class="rd">One page. The decision, the evidence, the recommendation, the risk.</div></div></div>'
-  '<div class="ritem b"><div class="rn">02</div><div><div class="rt">A stakeholder deck</div>'
-  '<div class="rd">Six slides with charts, built the way you learned yesterday.</div></div></div>'
-  '<div class="ritem b"><div class="rn">03</div><div><div class="rt">Reusable prompt templates</div>'
-  '<div class="rd">So the next person can run it without you in the room.</div></div></div>'
-  '<div class="ritem b"><div class="rn">04</div><div><div class="rt">Five minutes in front of the room</div>'
-  '<div class="rd">Three to present, two to defend it.</div></div></div>'
+  '<div class="ritem b"><div class="rn">02</div><div><div class="rt">A stakeholder deck with its charts</div>'
+  '<div class="rd">Charts first, each defending one claim. Then six slides, built the way you learned yesterday.</div></div></div>'
+  '<div class="ritem b"><div class="rn">03</div><div><div class="rt">A communication pack</div>'
+  '<div class="rd">Two items that land the decision, and three templates so the next person can run it without you.</div></div></div>'
+  '<div class="ritem b"><div class="rn">04</div><div><div class="rt">Three minutes in front of the room</div>'
+  '<div class="rd">Then one question from the room. Expect somebody to check a number.</div></div></div>'
   '</div>')
 
 # ---- quick review of days 1 and 2 ----
@@ -253,7 +253,7 @@ add('s1t2','S1 · The honest limits',
   '<li>Give you access you did not already have</li>'
   '<li>Make your data less confidential</li>'
   '<li>Work without your organization allowing it</li>'
-  '<li>Replace the paste rule you wrote at 09:20</li></ul></div>'
+  '<li>Replace the paste rule you wrote this morning</li></ul></div>'
   '</div>'
   '<div class="keyline b">Everything from box 2 onward <b>still applies.</b> '
   'A connector changes the plumbing, not the exposure.</div>')
@@ -282,8 +282,22 @@ add('lab1','Task 1',
     '<div class="keyline b">Knowing how to turn it off is the part <b>your IT team will ask about.</b></div>')
 
 
+add('lab2','Task 2',
+    eyebrow('Task 2&nbsp;&middot;&nbsp;Assessment&nbsp;&middot;&nbsp;10:30') +
+    '<h2 class="demo-h sm b">The same test<br>as Tuesday.</h2>'
+    '<div class="testbox b"><div class="tl">Post-program MAP test</div>'
+    '<div class="tv">8 minutes, silent</div>'
+    '<div class="td">Word for word the test you took on the first morning, before we taught anything. '
+    'We take it now, before the capstone, so it measures the teaching and not the afternoon. '
+    'Compare the two and you can see exactly how far you moved.</div>'
+    '<a class="tph" id="map-post" href="https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-map-test-pre-day-1-09-00-copy" target="_blank" rel="noopener">Open the MAP test &#8599;</a></div>'
+    '<div class="keyline b">Submit, close the tab, and wait. <b>The capstone starts at 10:40.</b></div>'
+    '<a class="labgo b" href="coded-aiet-day-3-lab.html#t2">Open task 2 &rarr;</a>',
+    center=True)
+
+
 question('cap0','Capstone','Now build something<br>you would actually <b>send.</b>',
-         'In pairs. Three hours. Presented at 13:30.', sec=True)
+         'In pairs. Three hours. Presented at 13:20.', sec=True)
 
 add('cap1','Capstone · How it works',
     eyebrow('Capstone','How it works') +
@@ -291,8 +305,8 @@ add('cap1','Capstone · How it works',
     + minilist([('Pair up','Two people. Pick somebody who does not do your job.'),
                 ('Choose one idea','Seven on the lab page. Read two, pick one, commit.'),
                 ('Split the work','For every deliverable one of you <b>builds</b>, the other <b>verifies</b>.'),
-                ('Four deliverables','A briefing, a deck, charts, and a communication pack.'),
-                ('Present at 13:30','Six minutes, then one question from the room.')]) +
+                ('Four deliverables','A briefing, the charts, a deck, and a communication pack. In that order.'),
+                ('Present at 13:20','Three minutes, then one question from the room.')]) +
     '<div class="keyline b">The verifier is not a formality. '
     '<b>Every number gets checked by the person who did not produce it.</b></div>')
 
@@ -324,10 +338,10 @@ add('cap3','Capstone · Three failures',
 
 
 
-add('lab2','Task 2',
+add('lab3','Task 3',
     eyebrow('Phase 0&nbsp;&middot;&nbsp;No tools open') +
     '<h2 class="demo-h sm b">Pick your idea.<br>Split the work.</h2>'
-    + lab(2,'10','Ten minutes, in pairs, before anything is opened',
+    + lab(3,'10','Ten minutes, in pairs, before anything is opened',
           ["Pair up. Somebody who does not do your job is a better partner.", "Read two ideas on the lab page. Pick one and <b>commit</b>.", "Download your data and open it once, together.", "Agree who <b>builds</b> and who <b>verifies</b> for each of the four deliverables."],
           where='In pairs') +
     '<div class="keyline b">No deliverable starts in this phase. <b>That is the point of it.</b></div>')
@@ -343,10 +357,10 @@ add('s4t1','S4 · The briefing',
   '<div class="keyline b">The risk section is what separates a briefing from a pitch. '
   '<b>Leaders trust the person who names the weakness first.</b></div>')
 
-add('lab3','Task 3',
+add('lab4','Task 4',
     eyebrow('Deliverable 1&nbsp;&middot;&nbsp;In Claude') +
     '<h2 class="demo-h sm b">The executive<br>briefing.</h2>'
-    + lab(3,'40','One page a director reads in ninety seconds',
+    + lab(4,'40','One page a director reads in ninety seconds',
           ["Attach your data to one Claude conversation and keep it for the whole capstone.", "Profile the files first. You know how. Then answer the question your idea asks.", "Write the briefing: the decision, three numbers, the recommendation, the risk.", "The verifier checks <b>every figure</b> against the file before it is finished."],
           where='In Claude') +
     '<div class="keyline b">Ask it to argue against your own conclusion before you write. <b>Every dataset has a trap.</b></div>')
@@ -356,53 +370,52 @@ brk('brk2','Break 2','Section 2 done.<br><b>Short break.</b>',
     'You know what to build. The rest of the day is building it.',[10,15],
     'Pick a length. Then we do not stop again until lunch.')
 
-# ============================== S3 CAPSTONE ANALYSIS
-
-add('s4t2','S4 · The deck',
-  eyebrow('Deliverable 2') +
-  '<h2 class="demo-h b">Six slides.<br>Yesterday\'s method.</h2>'
-  '<div class="lead b">Claude Design or Gamma. Your choice, and you already have an opinion about which.</div>'
-  + minilist([('Slide 1','The decision, as a headline'),
-              ('Slide 2','The situation in three numbers'),
-              ('Slide 3','Your chart, with the claim in the caption'),
-              ('Slide 4','What is really going on, the second story'),
-              ('Slide 5','The recommendation and what it costs'),
-              ('Slide 6','The risk, and what you would do about it')]) +
-  '<div class="keyline b">Every figure traceable. <b>Somebody in this room will check one of them.</b></div>')
-
-add('lab4','Task 4',
-    eyebrow('Deliverable 2&nbsp;&middot;&nbsp;Claude or Gamma') +
-    '<h2 class="demo-h sm b">The stakeholder<br>deck.</h2>'
-    + lab(4,'35','Five or six slides that carry the briefing into a room',
-          ["Pick your tool. You earned an opinion on this yesterday.", "Five or six slides: the decision, the situation, the evidence, the recommendation, the plan.", "Every headline eight words or fewer. Every figure carries its source.", "Verifier checks two slides against the data before you move on."],
-          where='Claude or Gamma') +
-    '<div class="keyline b">The deck tells the <b>same story</b> as the briefing. If it does not, one of them is wrong.</div>')
-
-
-brk('brk3','Lunch','Analysis done.<br><b>Lunch and prayer.</b>',
-    'After lunch you turn it into a package. Briefing, deck, templates, then you present it.',[40,50],
-    'Back at the time on screen. Do not lose your working.')
-
-# ============================== S4 THE PACKAGE
+# ============================== S3 CAPSTONE CHARTS
 
 add('cap4','Capstone · Charts',
-    eyebrow('Deliverable 3') +
+    eyebrow('Deliverable 2') +
     '<h2 class="demo-h b">Two or three charts.<br>Each one argues.</h2>'
     + minilist([('One claim per chart','If you cannot say it in a sentence, it is decoration'),
                 ('The caption states it','Not "Overtime by team". Say what the chart shows you.'),
                 ('A source line','Which file, which rows, and what you corrected'),
                 ('The counter chart','The one view that argues against you. Address it before the room finds it.')]) +
-    '<div class="keyline b">A chart that defends nothing <b>goes in the bin.</b></div>')
-
-
+    '<div class="keyline b">A chart that defends nothing <b>goes in the bin.</b> '
+    'The ones that survive go into the deck after lunch.</div>')
 
 add('lab5','Task 5',
-    eyebrow('Deliverable 3&nbsp;&middot;&nbsp;In Claude') +
+    eyebrow('Deliverable 2&nbsp;&middot;&nbsp;In Claude') +
     '<h2 class="demo-h sm b">Charts that<br>argue.</h2>'
     + lab(5,'25','Two or three charts, each defending one claim',
           ["Decide the two or three claims your idea stands on. Each gets exactly one chart.", "Build them. One claim, a caption that states it, and a source line.", "Ask Claude to list <b>the exact rows</b> behind every chart, then spot check two.", "Build the <b>counter chart</b>: the one view that argues against you."],
           where='In Claude') +
     '<div class="keyline b">That citation habit is <b>the single most useful thing you take back to work.</b></div>')
+
+
+brk('brk3','Lunch','Charts done.<br><b>Lunch and prayer.</b>',
+    'After lunch: the deck, with the charts in it. Then the comms pack. Then you present it.',[40,50],
+    'Back at the time on screen. Do not lose your working.')
+
+# ============================== S4 THE PACKAGE
+
+add('s4t2','S4 · The deck',
+  eyebrow('Deliverable 3') +
+  '<h2 class="demo-h b">Six slides.<br>Yesterday\'s method.</h2>'
+  '<div class="lead b">Claude Design or Gamma. Your choice, and you already have an opinion about which.</div>'
+  + minilist([('Slide 1','The decision, as a headline'),
+              ('Slide 2','The situation in three numbers'),
+              ('Slide 3','Your first chart, with its claim as the caption'),
+              ('Slide 4','Your second chart, the second story that complicates the obvious answer'),
+              ('Slide 5','The recommendation and what it costs'),
+              ('Slide 6','The risk, and what you would do about it')]) +
+  '<div class="keyline b">Every figure traceable. <b>Somebody in this room will check one of them.</b></div>')
+
+add('lab6','Task 6',
+    eyebrow('Deliverable 3&nbsp;&middot;&nbsp;Claude or Gamma') +
+    '<h2 class="demo-h sm b">The stakeholder<br>deck.</h2>'
+    + lab(6,'20','Five or six slides that carry the briefing into a room',
+          ["Pick your tool. You earned an opinion on this yesterday. Gamma users: paste the briefing text first, it cannot see your conversation.", "Five or six slides: the decision, the situation, <b>your charts on slides 3 and 4</b>, the recommendation, the risk.", "Every headline eight words or fewer. Every figure carries its source.", "Verifier checks two slides against the data before you move on."],
+          where='Claude or Gamma') +
+    '<div class="keyline b">The deck tells the <b>same story</b> as the briefing. If it does not, one of them is wrong.</div>')
 
 
 add('cap5','Capstone · Comms pack',
@@ -418,19 +431,19 @@ add('cap5','Capstone · Comms pack',
 
 
 
-add('lab6','Task 6',
+add('lab7','Task 7',
     eyebrow('Deliverable 4&nbsp;&middot;&nbsp;In Claude') +
     '<h2 class="demo-h sm b">The comms<br>pack.</h2>'
-    + lab(6,'15','Two communication items, plus three reusable templates',
+    + lab(7,'15','Two communication items, plus three reusable templates',
           ["Pick two: an internal email, a public FAQ, or a one page fact sheet.", "Draft them from the briefing, so every fact already agrees.", "Write three <b>reusable prompt templates</b> with placeholders.", "Verifier checks the comms against the briefing, line by line."],
           where='In Claude') +
     '<div class="keyline b">The templates are the part that <b>outlives today.</b></div>')
 
 
 add('s5t1','Present · How this works',
-    eyebrow('13:30') +
-    '<h2 class="demo-h b">Six minutes.<br>Then one question.</h2>'
-    + minilist([('Six minutes','Both of you speak. Split it however you like.'),
+    eyebrow('13:20') +
+    '<h2 class="demo-h b">Three minutes.<br>Then one question.</h2>'
+    + minilist([('Three minutes','Both of you speak. Split it however you like.'),
                 ('The decision first','Not the background, not the method, not an apology.'),
                 ('One question','From the room. Expect somebody to check a number.'),
                 ('"How do you know?"','That is the question. Have the file open when it comes.')]) +
@@ -439,52 +452,30 @@ add('s5t1','Present · How this works',
 
 
 
-add('lab7','Task 7',
+add('lab8','Task 8',
     eyebrow('Present&nbsp;&middot;&nbsp;In the room') +
     '<h2 class="demo-h sm b">Assemble,<br>then present.</h2>'
-    + lab(7,'20','Six minutes per pair, then one question',
+    + lab(8,'30','Three minutes per pair, then one question',
           ["Assemble one package: briefing, then deck with charts in, then comms.", "Run the pitch once out loud. Cut whatever does not earn its place.", "Present. Decision first. Both of you speak.", "When the question comes, <b>show where the number came from.</b>"],
           where='In the room') +
-    '<div class="keyline b">Prepare the three minute version too. <b>Schedules slip.</b></div>')
+    '<div class="keyline b">Prepare the ninety second version too. <b>Schedules slip.</b></div>')
 
-
-add('a1','Quiz',
-  eyebrow('13:35') +
-  '<h2 class="demo-h b">Quiz.</h2>'
-  '<div class="lead b">Across all three days. A warm up for the test that follows. '
-  'Getting one wrong here is cheaper than getting it wrong at your desk.</div>'
-  '<div class="testbox b"><div class="tl">Quiz</div>'
-  '<div class="tv">10 minutes</div>'
-  '<div class="td">Take it seriously and it tells you exactly which topic to look at again '
-  'before the MAP test.</div>'
-  '<span class="tph" id="quiz" data-placeholder="true">Link to be added</span></div>',
-  center=True)
-
-add('a2','Post MAP test',
-  eyebrow('13:45') +
-  '<h2 class="demo-h b">The same test<br>as Tuesday.</h2>'
-  '<div class="testbox b"><div class="tl">Post-program MAP test</div>'
-  '<div class="tv">8 minutes, silent</div>'
-  '<div class="td">Word for word the test you took on the first morning, before we taught anything. '
-  'Compare the two and you can see exactly how far you moved.</div>'
-  '<span class="tph" id="map-post" data-placeholder="true">Link to be added</span></div>',
-  center=True)
 
 add('a3','Survey',
-  eyebrow('13:52') +
+  eyebrow('13:50') +
   '<h2 class="demo-h b">Tell us what<br>to fix.</h2>'
   '<div class="testbox b"><div class="tl">End of program survey</div>'
   '<div class="tv">5 minutes</div>'
   '<div class="td">What worked, what did not, and what you will actually use on Sunday. '
   'Please be blunt. The polite answers do not help us build the next one.</div>'
-  '<span class="tph" id="survey" data-placeholder="true">Link to be added</span></div>',
+  '<a class="tph" id="survey" href="https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-end-of-programme-survey" target="_blank" rel="noopener">Open the survey &#8599;</a></div>',
   center=True)
 
-add('lab8','Task 8',
+add('lab9','Task 9',
     eyebrow('Before you leave&nbsp;&middot;&nbsp;13:50') +
-    '<h2 class="demo-h sm b">Quiz, test<br>and survey.</h2>'
-    + lab(8,'10','Three short things, in this order',
-          ["<b>13:50</b> Quiz. The instructor gives you the link.", "<b>13:53</b> Post-program MAP test. The same one as Tuesday morning.", "<b>13:56</b> End of program survey. Please be blunt.", "<b>13:58</b> Certificates and a photograph."],
+    '<h2 class="demo-h sm b">Survey,<br>then certificates.</h2>'
+    + lab(9,'10','Two things, in this order',
+          ["<b>13:50</b> End of program survey. Five minutes. Please be blunt.", "<b>13:55</b> Certificates and a photograph."],
           where='Assessment') +
     '<div class="keyline b">All three day pages <b>stay online</b> after today.</div>')
 

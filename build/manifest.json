@@ -35,16 +35,16 @@
     "lab_walkthrough": true,
     "instructor_solutions": true,
     "cheat_sheet": true,
-    "practice_quiz": "tbc",
+    "practice_quiz": false,
     "exam": "tbc",
     "facilitator_kit": true,
     "workshop_index": true
   },
 
   "assessments": {
-    "map_pre":  { "day": 1, "label": "Pre-program MAP test",  "url": null },
-    "map_post": { "day": 3, "label": "Post-program MAP test", "url": null },
-    "survey":   { "day": 3, "label": "End of program survey", "url": null }
+    "map_pre":  { "day": 1, "label": "Pre-program MAP test",  "url": "https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-map-test-pre-day-1-09-00" },
+    "map_post": { "day": 3, "label": "Post-program MAP test", "url": "https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-map-test-pre-day-1-09-00-copy" },
+    "survey":   { "day": 3, "label": "End of program survey", "url": "https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-end-of-programme-survey" }
   },
 
   "days": [

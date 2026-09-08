@@ -10,14 +10,14 @@ Workshop site for the CODED three day programme.
 |---|---|
 | Landing | `site/index.html` |
 | Day 1 hub | `site/coded-aiet-day-1.html` |
-| Day 1 deck, 57 slides | `site/coded-aiet-day-1-deck.html` |
+| Day 1 deck, 60 slides | `site/coded-aiet-day-1-deck.html` |
 | Day 1 lab, 7 tasks | `site/coded-aiet-day-1-lab.html` |
 | Day 2 hub | `site/coded-aiet-day-2.html` |
-| Day 2 deck, 39 slides | `site/coded-aiet-day-2-deck.html` |
+| Day 2 deck, 40 slides | `site/coded-aiet-day-2-deck.html` |
 | Day 2 lab, 7 tasks | `site/coded-aiet-day-2-lab.html` |
 | Day 3 hub | `site/coded-aiet-day-3.html` |
-| Day 3 deck, 49 slides | `site/coded-aiet-day-3-deck.html` |
-| Day 3 lab, 8 tasks | `site/coded-aiet-day-3-lab.html` |
+| Day 3 deck, 48 slides | `site/coded-aiet-day-3-deck.html` |
+| Day 3 lab, 9 tasks | `site/coded-aiet-day-3-lab.html` |
 
 All three days are built and every internal link resolves.
 
@@ -71,44 +71,42 @@ IBM Plex Mono and IBM Plex Sans Arabic.
 | `--indigo` | `#3E50DD` | Day 3 accent only |
 | `--ink` / `--ink-dim` / `--ink-faint` | `#F2F6FC` / `#9FB2D4` / `#6F83A8` | text |
 
-## Placeholders still to fill
+## Assessment links
 
-Three assessment links are not live yet.
+The MAP tests and the survey are live. The URLs are recorded in
+`build/manifest.json` under `assessments` and written into the generators.
 
 | Element id | Item | Lives on |
 |---|---|---|
 | `map-pre` | Pre-program MAP test | Day 1 page CTA panel, and slide 3 of the Day 1 deck |
-| `quiz` | Quiz | Day 3 page CTA panel, and slide 30 of the Day 3 deck |
-| `quiz-row` | Quiz | Day 3 page, "Before you leave" panel |
-| `map-post` | Post-program MAP test | Day 3 page panel, and slide 31 of the Day 3 deck |
-| `survey` | End of program survey | Day 3 page panel, and slide 32 of the Day 3 deck |
+| `map-post` | Post-program MAP test | Day 3 page CTA panel, slide 25 of the Day 3 deck, and the lab's Task 2. Taken at 10:30, before the capstone |
+| `survey` | End of program survey | Day 3 page "Before you leave" panel, slide 43 of the Day 3 deck, and the lab's Task 9 |
 | `survey-foot` | End of program survey | Landing page footer, Connect column |
 
-Six placeholders across four files. All of them carry `data-placeholder="true"`,
-so this finds every one of them:
+There is no quiz. The post-program MAP test is taken at 10:30 on Day 3, before
+the capstone, so it measures the teaching rather than the afternoon. Day 3
+closes with the survey and certificates. No placeholders remain; this should
+return nothing:
 
 ```bash
 grep -rn 'data-placeholder' site/
 ```
 
-To activate the Day 1 one, change the `<span class="slides-btn ph">` to an
-`<a href="..." class="slides-btn">` and drop the `ph` class and the
-`data-placeholder` attribute.
-
 ## Day 3 at a glance
 
 | Time | Section |
 |---|---|
-| 09:00 to 09:20 | Review. Day 1 and Day 2 in four lines each |
-| 09:20 to 09:55 | Security and data sharing, then use cases by department |
-| 10:10 to 10:35 | Connectors, MCP and Skills. Task 1 |
-| 10:35 to 10:45 | Capstone Phase 0. Pair up, pick an idea. Task 2 |
-| 10:45 to 11:25 | Deliverable 1, the executive briefing. Task 3 |
-| 11:35 to 12:10 | Deliverable 2, the stakeholder deck. Task 4 |
-| 12:50 to 13:15 | Deliverable 3, charts that argue. Task 5 |
-| 13:15 to 13:30 | Deliverable 4, the communication pack. Task 6 |
-| 13:30 to 13:50 | Present, six minutes per pair. Task 7 |
-| 13:50 to 14:00 | Quiz, MAP test, survey, certificates. Task 8 |
+| 09:00 to 09:15 | Review. Day 1 and Day 2 in four lines each |
+| 09:15 to 09:50 | Security and data sharing, then use cases by department |
+| 10:05 to 10:30 | Connectors, MCP and Skills. Task 1 |
+| 10:30 to 10:40 | Post-program MAP test, before the capstone. Task 2 |
+| 10:40 to 10:50 | Capstone Phase 0. Pair up, pick an idea. Task 3 |
+| 10:50 to 11:30 | Deliverable 1, the executive briefing. Task 4 |
+| 11:40 to 12:05 | Deliverable 2, charts that argue. Task 5 |
+| 12:45 to 13:05 | Deliverable 3, the stakeholder deck, with the charts in it. Task 6 |
+| 13:05 to 13:20 | Deliverable 4, the communication pack. Task 7 |
+| 13:20 to 13:50 | Present, three minutes per pair, then one question. Task 8 |
+| 13:50 to 14:00 | Survey and certificates. Task 9 |
 
 ### The security block
 
@@ -139,9 +137,9 @@ Each idea carries the situation, the initiative, its data, and a "watch out"
 that points at the trap without giving it away. Every dataset has deliberate
 flaws. Notes save under `aiet_day3_lab`.
 
-The four deliverables are an executive briefing, a stakeholder deck, two or
-three charts that each defend one claim, and a communication pack with three
-reusable templates.
+The four deliverables, in order, are an executive briefing, two or
+three charts that each defend one claim, a stakeholder deck that carries those
+charts, and a communication pack with three reusable templates.
 
 ## Day 2 at a glance
 

@@ -47,7 +47,7 @@ TASKS = [
  "widget": openclaude(),
  "expect":"One result on screen you would actually consider sending, and one sentence on what was missing from it.",
  "stretch":"Steer it without rewriting your prompt. “Make it shorter.” Then “make it warmer.” Then “now write it for someone who has already complained twice.” That is iterative prompting, three hours early.",
- "boss":"Break it on purpose. Ask for a specific figure, date or regulation in your industry. Get it to be confidently wrong, and catch it. Bring what you found to the 13:25 session."
+ "boss":"Break it on purpose. Ask for a specific figure, date or regulation in your industry. Get it to be confidently wrong, and catch it. Bring what you found to Task 6, where we check a summary against its source."
 },
 {
  "app":"Claude","sec":"S2 &middot; Prompting","mins":"~14 min",

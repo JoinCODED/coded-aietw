@@ -72,8 +72,8 @@ add('maptest', 'MAP test (pre)',
     '<div class="testbox b"><div class="tl">Pre-program MAP test</div>'
     '<div class="tv">8 minutes, silent</div>'
     '<div class="td">This is your baseline. There is no pass mark, and your score is not shared '
-    'with anyone. You take the same test again at the end of Day 3.</div>'
-    '<span class="tph" id="map-pre" data-placeholder="true">Link to be added</span></div>',
+    'with anyone. You take the same test again on Day 3, just before the capstone.</div>'
+    '<a class="tph" id="map-pre" href="https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-map-test-pre-day-1-09-00" target="_blank" rel="noopener">Open the MAP test &#8599;</a></div>',
     center=True)
 
 question('theq', 'THE QUESTION',
@@ -229,6 +229,29 @@ add('s5t2', 'S1 · The junior',
     '<div class="keyline b" style="margin-top:34px">You would check that person\'s numbers. '
     '<b>Check these too.</b></div>')
 
+question('s6q', 'S1 · When wrong', 'What is it doing<br>when it is <b>wrong</b>?')
+
+add('s6t1', 'S1 · No I dont know',
+    eyebrow('Section 1', '1.6') +
+    '<h2 class="demo-h b">It does not say<br>"I do not know".</h2>'
+    '<div class="defbox b"><div class="dt">Remember the prediction slide</div>'
+    '<div class="dd">It predicts the most likely next piece of text. '
+    'When it has no real answer, <b>the most likely next text is still an answer.</b> '
+    'It sounds exactly as confident as when it is right.</div></div>'
+    '<div class="keyline b">The word for this is <b>hallucination</b>. '
+    'It is not lying. It has no idea it is doing it.</div>')
+
+add('s6t2', 'S1 · Three shapes',
+    eyebrow('Section 1', '1.6') +
+    '<h2 class="demo-h b">Three shapes<br>of failure.</h2>'
+    + cards([
+        ('Shape 1', 'Invented fact', 'A number, a date, a rule that sounds right and is not. The most common one.'),
+        ('Shape 2', 'Invented source', 'A report title, an author, a link. It looks real. It does not exist.'),
+        ('Shape 3', 'Invented confidence', 'It answers a question about your company it was never told anything about.'),
+    ]) +
+    '<div class="punch b">Shape 2 is the dangerous one at work.'
+    '<span class="sm">A fake source in a report you circulate is very hard to walk back.</span></div>')
+
 add('lab1', 'Task 1',
     eyebrow('Task 1', 'In Claude') +
     '<h2 class="demo-h sm b">First contact.</h2>'
@@ -237,7 +260,7 @@ add('lab1', 'Task 1',
            'Pick one starter from the menu and run it. There is an Arabic one too.',
            'Read what comes back. <b>Would you actually use it?</b> That is the bar.',
            'Turn to the person next to you and name one thing that surprised you.']) +
-    '<div class="keyline b">Everything today runs on <b>sample data we supply</b>. Do not paste anything real from your own work. The rules for that come at <b>13:25</b>.</div>')
+    '<div class="keyline b">Everything today runs on <b>sample data we supply</b>. Do not paste anything real from your own work. The rules for your own material come on <b>Thursday morning</b>, before the capstone.</div>')
 
 add('brk1', 'Break 1',
     eyebrow('Break') +
@@ -453,7 +476,7 @@ add('lab6', 'Task 6',
 add('brk4', 'Break 4',
     eyebrow('Break') +
     '<h2 class="brk-h b">Section 4 done.<br><b>Short break.</b></h2>'
-    '<div class="brk-sub b">Last stretch. Trust, privacy, and the rules you take back to your desk.</div>'
+    '<div class="brk-sub b">Last stretch. Your inbox, and the thread you were copied into on Monday.</div>'
     '<div class="brk-pick b"><button class="brk-opt" data-min="10"><span class="bn">10</span><span class="bu">minutes</span></button><button class="brk-opt alt" data-min="15"><span class="bn">15</span><span class="bu">minutes</span></button></div>'
     '<div class="brk-note b">Pick a length. The countdown goes full screen and shows the room when to be back.</div>', center=True)
 
@@ -547,7 +570,7 @@ add('c2', 'Close · What you built',
     '<div class="ritem b"><div class="rn">02</div><div><div class="rt">A research summary you checked</div>'
     '<div class="rd">Lab 6. Three facts traced back to the source.</div></div></div>'
     '<div class="ritem b"><div class="rn">03</div><div><div class="rt">Five reusable prompts</div>'
-    '<div class="rd">Labs 1 to 6, plus your paste rule at the top.</div></div></div>'
+    '<div class="rd">Labs 1 to 6. Name them before you leave.</div></div></div>'
     '</div>')
 
 add('c3', 'Close · Prompt library',
@@ -580,38 +603,16 @@ add('close', 'End',
 # ================================================================
 # PARKED SLIDES. Not emitted into the deck.
 #   s9t3    the "one test for any prompt" check
-#   s6q s6t1 s6t2            hallucinations: three shapes of failure
 #   s7q s7t1 s7t2 s7t3 s7close   privacy: the four boxes, the paste rule,
 #                                the five second scan
-# To restore: set RESTORE_PARKED = True and add the ids to ORDER above.
-# Recommended home for the privacy block: the opening of Day 2, before
-# anyone in the room touches real data.
+# The hallucination slides (s6q, s6t1, s6t2) were restored to Section 1,
+# between s5t2 and lab1, so the word is defined before s9t2 uses it.
+# To restore the rest: set RESTORE_PARKED = True. They append after 'close',
+# so move the add() calls into the flow above if you want them in order.
+# The privacy block now lives in the Day 3 deck.
 # ================================================================
 RESTORE_PARKED = False
 if RESTORE_PARKED:
-    question('s6q', 'S5 · When wrong', 'What is it doing<br>when it is <b>wrong</b>?', sec=True)
-
-    add('s6t1', 'S2 · No I dont know',
-        eyebrow('Section 5', '5.1') +
-        '<h2 class="demo-h b">It does not say<br>"I do not know".</h2>'
-        '<div class="defbox b"><div class="dt">Remember the prediction slide</div>'
-        '<div class="dd">It predicts the most likely next piece of text. '
-        'When it has no real answer, <b>the most likely next text is still an answer.</b> '
-        'It sounds exactly as confident as when it is right.</div></div>'
-        '<div class="keyline b">The word for this is <b>hallucination</b>. '
-        'It is not lying. It has no idea it is doing it.</div>')
-
-    add('s6t2', 'S2 · Three shapes',
-        eyebrow('Section 5', '5.1') +
-        '<h2 class="demo-h b">Three shapes<br>of failure.</h2>'
-        + cards([
-            ('Shape 1', 'Invented fact', 'A number, a date, a rule that sounds right and is not. The most common one.'),
-            ('Shape 2', 'Invented source', 'A report title, an author, a link. It looks real. It does not exist.'),
-            ('Shape 3', 'Invented confidence', 'It answers a question about your company it was never told anything about.'),
-        ]) +
-        '<div class="punch b">Shape 2 is the dangerous one at work.'
-        '<span class="sm">A fake source in a report you circulate is very hard to walk back.</span></div>')
-
     add('s7close', 'S2 · Your paste rule',
         eyebrow('Section 5') +
         '<h2 class="demo-h b">Write your own<br>paste rule.</h2>'

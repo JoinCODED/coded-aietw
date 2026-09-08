@@ -21,9 +21,11 @@ python3 build/build_day1_page.py    # -> site/coded-aiet-day-1.html
 
 ## Parked slides
 
-`build_day1_deck.py` ends with a `RESTORE_PARKED = False` block holding nine written
-but unused slides: one prompting check, three on hallucinations, and five on privacy.
-Set the flag to `True` and add the ids to `ORDER` to bring them back.
+`build_day1_deck.py` ends with a `RESTORE_PARKED = False` block holding six written
+but unused slides: one prompting check and five on privacy. The three hallucination
+slides now sit in Section 1, between the junior metaphor and Task 1. Set the flag to
+`True` to append the parked ones after the close slide, or move their `add()` calls
+into the flow to place them.
 
 ## Day 2
 
@@ -75,7 +77,7 @@ The seven ideas live in the `IDEAS` list at the top of `build_day3_lab.py`.
 Each entry carries `n`, `name`, `dept`, `sit` (the situation), `ini` (the
 initiative), `files` (download plus a one line description each), and `warn`
 (the "watch out" that points at the trap without revealing it). `ideas_widget()`
-renders them as a `<details class="idea">` accordion, and task 2 sets
+renders them as a `<details class="idea">` accordion, and task 3 sets
 `widgetFirst` so the picker sits above the steps.
 
 The deck's `usecase()` helper takes a department, a headline, a list of safe

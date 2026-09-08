@@ -110,12 +110,26 @@ add('s1t4','S1 · The warning',
   '<div class="keyline b">Today\'s source is <b>yesterday\'s report</b>, and it still has five faults in it. '
   'That is on purpose.</div>')
 
+add('s1demo','S1 · Watch first',
+  eyebrow('Watch this one','3 minutes') +
+  '<h2 class="demo-h b">Watch first.<br>Then you build.</h2>'
+  '<div class="road one">'
+  '<div class="ritem b"><div class="rn">01</div><div><div class="rt">Where Claude Design lives</div>'
+  '<div class="rd">In the same conversation that already has the report attached. Watch where it is opened from.</div></div></div>'
+  '<div class="ritem b"><div class="rn">02</div><div><div class="rt">One brief in, six slides out</div>'
+  '<div class="rd">The six part deck brief from the last slide, pasted as written.</div></div></div>'
+  '<div class="ritem b"><div class="rn">03</div><div><div class="rt">Change one slide by asking</div>'
+  '<div class="rd">One sentence fixes one slide. Nothing else moves.</div></div></div>'
+  '</div>'
+  '<div class="keyline b">If your account cannot open Claude Design, <b>pair with a neighbour.</b> '
+  'One drives, one checks the figures. Both of you fill in the findings.</div>')
+
 add('lab1','Task 1',
   eyebrow('Task 1','Claude Design') +
   '<h2 class="demo-h sm b">Report to deck.</h2>'
   + lab(1,'20','Six slides from the report you already know is dirty',
         ['Attach yesterday\'s operations report to a new Claude conversation.',
-         'Write your own six part prompt, then ask Claude to design it.',
+         'Write your own six part prompt, then open Claude Design <b>where you just saw it opened</b> and ask it to build the deck.',
          'Open two slides and <b>check every figure against the source</b>.',
          'Fix one slide by hand, so you feel where Claude stops and you start.'],
         where='Claude Design') +
@@ -171,7 +185,7 @@ add('lab2','Task 2',
   '<h2 class="demo-h sm b">Same prompt,<br>different tool.</h2>'
   + lab(2,'15','One prompt, two decks, one honest opinion',
         ['Copy the prompt from task 1. <b>The exact same one</b>, not an improved version.',
-         'Generate it in Gamma and pick a theme.',
+         'Gamma cannot see the report. <b>Paste the report text under your prompt</b>, then generate and pick a theme.',
          'Put the two decks side by side and answer the four questions.',
          'Export the Gamma deck to PowerPoint and see what shifts.'],
         where='Gamma') +
@@ -346,7 +360,8 @@ add('lab7','Task 7',
         ['Scroll back through two days and find the prompts that worked.',
          'Save four things for each: a title, the prompt with <b>[PLACEHOLDERS]</b>, the tool, what you fixed.',
          'Add one for a task <b>only your department has</b>.',
-         'Then turn your best one into a Skill, and run it once to prove it works.']) +
+         'Then turn your best one into a Skill. Skills are created from <b>Settings, under Capabilities</b>. '
+         'No Skills on your account? Save the same text as a <b>Project instruction</b>. Run it once either way.']) +
   '<div class="keyline b">A prompt you cannot find again is not a saved prompt. '
   '<b>Name it for when you would reach for it.</b></div>')
 
@@ -377,8 +392,8 @@ add('c3','Close · Bring',
   + minilist([('Your prompt library','The one you built in task 7'),
               ('One real workflow','A task you do every week that you dread. We audit it at 09:30.'),
               ('Your laptop','Charged, with Claude and Excel open')]) +
-  '<div class="keyline b">There is a short test tomorrow afternoon, and an end of programme survey. '
-  '<b>Both take ten minutes together.</b></div>')
+  '<div class="keyline b">Tomorrow you take the same MAP test as Tuesday, just before the capstone. '
+  '<b>The day ends with a short survey.</b></div>')
 
 add('close','End',
   '<div class="clock b"><span class="live-dot"></span>End of Day 2</div>'

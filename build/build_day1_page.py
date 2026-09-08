@@ -213,7 +213,7 @@ HTML = """<!DOCTYPE html>
       <div class="cta-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg></div>
       <h3>Pre-program MAP test</h3>
       <p>Eight minutes at 09:00, before we teach anything. No pass mark, and your score is not shared.</p>
-      <span class="slides-btn ph" id="map-pre" data-placeholder="true">Link to be added</span>
+      <a class="slides-btn" id="map-pre" href="https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-map-test-pre-day-1-09-00" target="_blank" rel="noopener">Open the MAP test &rarr;</a>
     </div>
   </div>
 
@@ -235,7 +235,7 @@ HTML = """<!DOCTYPE html>
       <div class="out"><div class="on">02</div><div class="ot">A research summary</div>
         <div class="od">One page, with every number traced back to the source. From task 6.</div></div>
       <div class="out"><div class="on">03</div><div class="ot">Five reusable prompts</div>
-        <div class="od">Named so you can find them again, with your own paste rule at the top.</div></div>
+        <div class="od">Named so you can find them again. Day 2 adds to them.</div></div>
     </div>
   </div>
 
@@ -248,7 +248,7 @@ HTML = """<!DOCTYPE html>
     <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v5h5"/><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg></span>
       <span class="rt">Nothing else. Every document in the labs is supplied and invented</span><span class="rs">Note</span></div>
     <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.2v.3"/></svg></span>
-      <span class="rt">Do not paste anything real from your own work today. The rules come at 13:25</span><span class="rs">Important</span></div>
+      <span class="rt">Do not paste anything real from your own work today. The rules for your own material come on Thursday morning</span><span class="rs">Important</span></div>
   </div>
 
   <div class="foot-row">

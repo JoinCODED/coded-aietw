@@ -2,30 +2,32 @@
 import os
 
 PLAN = [
- ("09:00","09:20","Review","Day 1 and Day 2 in four lines each. Say what is still fuzzy.","open"),
- ("09:20","09:55","Security and data sharing","Where your text goes. Anonymise first. Why a public tool needs more care than Copilot. Use cases by department.","open"),
- ("09:55","10:10","Break","Pick 10 or 15 minutes.","brk"),
- ("10:10","10:35","Connectors, MCP and Skills","What a connector does and does not do. Task 1.","lab"),
- ("10:35","10:45","Capstone &middot; Phase 0","Pair up, pick one of seven ideas, split build and verify. Task 2.","lab"),
- ("10:45","11:25","Deliverable 1 &middot; Executive briefing","Profile, analyse, argue against yourself, then write one page. Task 3.","lab"),
- ("11:25","11:35","Break","Pick 10 or 15 minutes.","brk"),
- ("11:35","12:10","Deliverable 2 &middot; Stakeholder deck","Five or six slides, Claude Design or Gamma. Task 4.","lab"),
- ("12:10","12:50","Lunch and prayer","The deck has a 40 or 50 minute countdown.","brk"),
- ("12:50","13:15","Deliverable 3 &middot; Charts that argue","One claim each, cited rows, plus the counter chart. Task 5.","lab"),
- ("13:15","13:30","Deliverable 4 &middot; Communication pack","Two items and three reusable templates. Task 6.","lab"),
- ("13:30","13:50","Present","Six minutes per pair, then one question from the room. Task 7.","lab"),
- ("13:50","14:00","Quiz, test, survey and certificates","Task 8.","open"),
+ ("09:00","09:15","Review","Day 1 and Day 2 in four lines each. Say what is still fuzzy.","open"),
+ ("09:15","09:50","Security and data sharing","Where your text goes. Anonymise first. Why a public tool needs more care than Copilot. Use cases by department.","open"),
+ ("09:50","10:05","Break","Pick 10 or 15 minutes.","brk"),
+ ("10:05","10:30","Connectors, MCP and Skills","What a connector does and does not do. Task 1.","lab"),
+ ("10:30","10:40","Post-program MAP test","Eight minutes, silent. The same test as Tuesday, before the capstone. Task 2.","open"),
+ ("10:40","10:50","Capstone &middot; Phase 0","Pair up, pick one of seven ideas, split build and verify. Task 3.","lab"),
+ ("10:50","11:30","Deliverable 1 &middot; Executive briefing","Profile, analyse, argue against yourself, then write one page. Task 4.","lab"),
+ ("11:30","11:40","Break","Pick 10 or 15 minutes.","brk"),
+ ("11:40","12:05","Deliverable 2 &middot; Charts that argue","One claim each, cited rows, plus the counter chart. Task 5.","lab"),
+ ("12:05","12:45","Lunch and prayer","The deck has a 40 or 50 minute countdown.","brk"),
+ ("12:45","13:05","Deliverable 3 &middot; Stakeholder deck","Five or six slides with the charts in, Claude Design or Gamma. Task 6.","lab"),
+ ("13:05","13:20","Deliverable 4 &middot; Communication pack","Two items and three reusable templates. Task 7.","lab"),
+ ("13:20","13:50","Present","Three minutes per pair, then one question from the room. Task 8.","lab"),
+ ("13:50","14:00","Survey and certificates","Task 9.","open"),
 ]
 
 LABS = [
  ("01","Connect something real","In Claude","One connector, one question that needs it, then revoke it."),
- ("02","Phase 0. Pick your idea","In pairs","Seven ideas. Read two, pick one, split build and verify."),
- ("03","Executive briefing","In Claude","Profile, analyse, argue against yourself, then one page."),
- ("04","Stakeholder deck","Claude or Gamma","Five or six slides that carry the briefing into a room."),
+ ("02","Post-program MAP test","Assessment","Eight minutes, silent. The same test as Tuesday, before the capstone."),
+ ("03","Phase 0. Pick your idea","In pairs","Seven ideas. Read two, pick one, split build and verify."),
+ ("04","Executive briefing","In Claude","Profile, analyse, argue against yourself, then one page."),
  ("05","Charts that argue","In Claude","One claim each, cited rows, plus the counter chart."),
- ("06","Communication pack","In Claude","Two items, three reusable templates."),
- ("07","Assemble and present","In the room","Six minutes per pair, then one question."),
- ("08","Quiz, test and survey","Assessment","Three short things, in that order."),
+ ("06","Stakeholder deck","Claude or Gamma","Five or six slides that carry the briefing and the charts into a room."),
+ ("07","Communication pack","In Claude","Two items, three reusable templates."),
+ ("08","Assemble and present","In the room","Three minutes per pair, then one question."),
+ ("09","Survey, then certificates","Assessment","Five minutes, please be blunt. Then a certificate and a photograph."),
 ]
 
 def plan_rows():
@@ -167,6 +169,9 @@ HTML = """<!DOCTYPE html>
   .res .ri{color:var(--soft);flex:none}
   .res .rt{flex:1;font-size:15px}
   .res .rs{font-family:var(--mono);font-size:11px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase}
+  .res a.rs.live{color:var(--light);background:rgba(47,116,214,.16);border:1px solid rgba(47,116,214,.45);
+    border-radius:20px;padding:6px 12px;transition:all .15s}
+  .res a.rs.live:hover{background:rgba(47,116,214,.3);color:#fff}
 
   .foot-row{margin:52px 0 40px;padding-top:26px;border-top:1px solid var(--line);
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
@@ -188,7 +193,7 @@ HTML = """<!DOCTYPE html>
   <h1>Features and capstone</h1>
   <div class="tag">Build it, then present it</div>
   <p class="lede">A review, then the rules for sharing data, then the capstone. In pairs you pick one of seven
-    ideas and build a full implementation package, which you present to the room at 13:30.</p>
+    ideas and build a full implementation package, which you present to the room at 13:20.</p>
   <div class="dmeta">
     <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3 2"/></svg> 09:00 to 14:00</span>
     <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10.5c0 6.5-9 12.5-9 12.5s-9-6-9-12.5a9 9 0 0118 0z"/><circle cx="12" cy="10.5" r="3"/></svg> CODED Campus, Kuwait</span>
@@ -208,14 +213,14 @@ HTML = """<!DOCTYPE html>
     <div class="panel cta-panel">
       <div class="cta-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v6.5L4.5 18a2 2 0 001.8 3h11.4a2 2 0 001.8-3L15 9.5V3"/><path d="M8 3h8M7.5 14h9"/></svg></div>
       <h3>The lab</h3>
-      <p>Eight tasks. You work in pairs from 10:35 and present at 13:30.</p>
+      <p>Nine tasks. The MAP test at 10:30, then you work in pairs from 10:40 and present at 13:20. Three minutes, then one question.</p>
       <a class="slides-btn" href="coded-aiet-day-3-lab.html">Open the lab &rarr;</a>
     </div>
     <div class="panel cta-panel">
       <div class="cta-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/><path d="M18 15l3 3-3 3"/></svg></div>
-      <h3>The quiz</h3>
-      <p>Across all three days, at 13:35. A warm up for the MAP test that follows it.</p>
-      <span class="slides-btn ph" id="quiz" data-placeholder="true">Link to be added</span>
+      <h3>The MAP test</h3>
+      <p>At 10:30, before the capstone starts. Word for word the test you took on Tuesday morning. Eight minutes, silent.</p>
+      <a class="slides-btn" id="map-post" href="https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-map-test-pre-day-1-09-00-copy" target="_blank" rel="noopener">Open the MAP test &rarr;</a>
     </div>
   </div>
 
@@ -242,7 +247,7 @@ HTML = """<!DOCTYPE html>
   </div>
 
   <div class="panel" id="files">
-    <div class="ph"><h2>The seven capstone ideas</h2><span class="pn">Pairs pick one at 10:35</span></div>
+    <div class="ph"><h2>The seven capstone ideas</h2><span class="pn">Pairs pick one at 10:40</span></div>
     <div class="res"><span class="ri" style="font-family:var(--mono);font-size:12px;color:var(--soft)">01</span>
       <span class="rt"><b>The Overtime Decision</b><br><span style="color:var(--ink-dim);font-size:13.5px">Hire, or keep paying overtime? Nine months of overtime against hiring costs.</span></span><span class="rs">2 files</span></div>
     <div class="res"><span class="ri" style="font-family:var(--mono);font-size:12px;color:var(--soft)">02</span>
@@ -262,13 +267,9 @@ HTML = """<!DOCTYPE html>
   </div>
 
   <div class="panel" id="assessment">
-    <div class="ph"><h2>Before you leave</h2><span class="pn">13:35 to 14:00</span></div>
-    <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg></span>
-      <span class="rt">Quiz<br><span style="color:var(--ink-dim);font-size:13.5px">Across all three days. A warm up for the MAP test that follows.</span></span><span class="rs" id="quiz-row" data-placeholder="true">Link pending</span></div>
-    <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 10l7-7 7 7"/></svg></span>
-      <span class="rt">Post-program MAP test<br><span style="color:var(--ink-dim);font-size:13.5px">Word for word the test from Tuesday morning. Eight minutes, silent.</span></span><span class="rs" id="map-post" data-placeholder="true">Link pending</span></div>
+    <div class="ph"><h2>Before you leave</h2><span class="pn">13:50 to 14:00</span></div>
     <div class="res"><span class="ri"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 01-9 8.4L3 21l1.1-4.6A8.4 8.4 0 1121 11.5z"/></svg></span>
-      <span class="rt">End of program survey<br><span style="color:var(--ink-dim);font-size:13.5px">Five minutes. Please be blunt, the polite answers do not help.</span></span><span class="rs" id="survey" data-placeholder="true">Link pending</span></div>
+      <span class="rt">End of program survey<br><span style="color:var(--ink-dim);font-size:13.5px">Five minutes. Please be blunt, the polite answers do not help.</span></span><a class="rs live" id="survey" href="https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-end-of-programme-survey" target="_blank" rel="noopener">Open &rarr;</a></div>
   </div>
 
   <div class="foot-row">
