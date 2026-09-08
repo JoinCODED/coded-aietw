@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from deck_shell import page, slide
+from deck_shell import page, slide, qr_block
+
+MAP_PRE = "https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-map-test-pre-day-1-09-00"
 
 S = []
 def add(sid, title, body, **kw): S.append(slide(sid, title, body, **kw))
@@ -73,7 +75,8 @@ add('maptest', 'MAP test (pre)',
     '<div class="tv">8 minutes, silent</div>'
     '<div class="td">This is your baseline. There is no pass mark, and your score is not shared '
     'with anyone. You take the same test again on Day 3, just before the capstone.</div>'
-    '<a class="tph" id="map-pre" href="https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-map-test-pre-day-1-09-00" target="_blank" rel="noopener">Open the MAP test &#8599;</a></div>',
+    + qr_block(MAP_PRE) +
+    '<a class="tph" id="map-pre" href="' + MAP_PRE + '" target="_blank" rel="noopener">Open the MAP test &#8599;</a></div>',
     center=True)
 
 question('theq', 'THE QUESTION',

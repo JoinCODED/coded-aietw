@@ -203,6 +203,10 @@ svg{display:block}
 .testbox .tl{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--soft);font-weight:600;margin-bottom:14px}
 .testbox .tv{font-size:26px;font-weight:700;letter-spacing:-.6px;margin-bottom:12px}
 .testbox .td{font-size:15.5px;color:var(--w6);line-height:1.5;max-width:520px;margin:0 auto}
+.testbox .qr{margin:22px auto 6px;width:188px;height:188px;padding:12px;background:#fff;border-radius:14px;
+  box-shadow:0 10px 34px rgba(0,0,0,.45)}
+.testbox .qr svg{display:block;width:100%;height:100%;shape-rendering:crispEdges}
+.testbox .qrcap{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--w4);margin-top:10px}
 .testbox .tph{margin-top:20px;display:inline-flex;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--w4);background:var(--w06);border:1px dashed var(--w2);border-radius:10px;padding:11px 18px}
 .testbox a.tph{color:#fff;background:linear-gradient(135deg,var(--primary),var(--deepblue));border:1px solid rgba(255,255,255,.14);border-style:solid;text-decoration:none}
 
@@ -567,6 +571,24 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
          'family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&'
          'display=swap" rel="stylesheet">')
 
+
+def qr_svg(url):
+    """Inline SVG QR code for a URL. Built at generation time, so the deck
+    stays self contained and works offline. High error correction, so a
+    projector at the back of the room still scans."""
+    import qrcode
+    from qrcode.constants import ERROR_CORRECT_H
+    q = qrcode.QRCode(error_correction=ERROR_CORRECT_H, border=0)
+    q.add_data(url)
+    q.make(fit=True)
+    m = q.get_matrix()
+    n = len(m)
+    d = ''.join('M%d %dh1v1h-1z' % (x, y) for y, row in enumerate(m) for x, v in enumerate(row) if v)
+    return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" role="img" aria-label="QR code for %s">'
+            '<rect width="%d" height="%d" fill="#fff"/><path d="%s" fill="#000"/></svg>' % (n, n, url, n, n, d))
+
+def qr_block(url, caption="Scan with your phone, or use the button"):
+    return '<div class="qr">' + qr_svg(url) + '</div><div class="qrcap">' + caption + '</div>'
 
 def page(title, slides_html, back_href="coded-aiet-day-1.html"):
     chrome = CHROME.replace('coded-aiet-day-1.html', back_href)

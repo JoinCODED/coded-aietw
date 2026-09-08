@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from deck_shell import page, slide
+from deck_shell import page, slide, qr_block
+
+MAP_POST = "https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-map-test-pre-day-1-09-00-copy"
 
 S=[]
 def add(sid,title,body,**kw): S.append(slide(sid,title,body,**kw))
@@ -290,7 +292,8 @@ add('lab2','Task 2',
     '<div class="td">Word for word the test you took on the first morning, before we taught anything. '
     'We take it now, before the capstone, so it measures the teaching and not the afternoon. '
     'Compare the two and you can see exactly how far you moved.</div>'
-    '<a class="tph" id="map-post" href="https://portal.joincoded.com/sv/ai-essentials-in-the-workplace-map-test-pre-day-1-09-00-copy" target="_blank" rel="noopener">Open the MAP test &#8599;</a></div>'
+    + qr_block(MAP_POST) +
+    '<a class="tph" id="map-post" href="' + MAP_POST + '" target="_blank" rel="noopener">Open the MAP test &#8599;</a></div>'
     '<div class="keyline b">Submit, close the tab, and wait. <b>The capstone starts at 10:40.</b></div>'
     '<a class="labgo b" href="coded-aiet-day-3-lab.html#t2">Open task 2 &rarr;</a>',
     center=True)
